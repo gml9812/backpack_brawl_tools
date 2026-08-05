@@ -316,7 +316,9 @@
     lastResult = result;
     selectedPlacementId = null;
     elements.progress.textContent = result.status === 'optimal'
-      ? '전체 탐색을 완료해 최적임을 증명했습니다.'
+      ? result.proof === 'score-upper-bound'
+        ? '이론적 연결 상한에 도달해 최적임을 증명했습니다.'
+        : '전체 탐색을 완료해 최적임을 증명했습니다.'
       : result.status === 'best-found' ? '시간 제한까지 찾은 가장 좋은 배치입니다. 최적임이 증명되지는 않았습니다.'
         : statusLabel(result);
     if (!result.layout?.length) {
