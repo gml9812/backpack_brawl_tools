@@ -14,7 +14,7 @@ const core = global.BBOptimizerCore;
 assert.equal(data.schemaVersion, 1);
 assert.equal(data.version, '6.0.1');
 assert.match(data.verifiedOn, /^\d{4}-\d{2}-\d{2}$/);
-assert.deepEqual(data.board, { columns: 6, rows: 9 });
+assert.deepEqual(data.board, { columns: 9, rows: 6 });
 assert.equal(data.items.length, 940, 'The current board-item catalog must be complete');
 assert.equal(data.catalog.selectable, 889);
 assert.equal(data.catalog.reviewRequired, 51);
@@ -47,4 +47,5 @@ for (const item of data.items) {
 const bag = data.items.find((item) => item.id === 'armor-pack');
 assert.equal(bag.selectable, false);
 assert.match(bag.unsupportedReason, /Bag/);
+assert.match(bag.unsupportedReason, /9×6/);
 console.log('optimizer-data.test.js passed');

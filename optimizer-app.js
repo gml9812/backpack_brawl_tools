@@ -26,6 +26,8 @@
     details: $('optimizerConnectionDetails'), selectedPlacement: $('optimizerSelectedPlacement'),
     copyLink: $('optimizerCopyLinkButton'), sources: $('optimizerSourceList')
   };
+  elements.board.style.setProperty('--board-columns', data.board.columns);
+  elements.board.style.setProperty('--board-rows', data.board.rows);
 
   function titleCase(value) { return value === 'shared' ? 'Shared' : value.charAt(0).toUpperCase() + value.slice(1); }
   function totalCount() { return [...selected.values()].reduce((sum, count) => sum + count, 0); }
@@ -42,6 +44,28 @@
       parent.title = item.name;
     }, { once: true });
     parent.append(image);
+  }
+
+  function appendFootprint(parent, placement) {
+    const occupied = new Set(placement.footprint.map(([x, y]) => `${x},${y}`));
+    const neighbors = [
+      ['top', 0, -1],
+      ['right', 1, 0],
+      ['bottom', 0, 1],
+      ['left', -1, 0]
+    ];
+    placement.footprint.forEach(([x, y]) => {
+      const cell = document.createElement('span');
+      cell.className = 'placed-item-cell';
+      cell.style.left = `${x / placement.width * 100}%`;
+      cell.style.top = `${y / placement.height * 100}%`;
+      cell.style.width = `${100 / placement.width}%`;
+      cell.style.height = `${100 / placement.height}%`;
+      neighbors.forEach(([side, dx, dy]) => {
+        if (!occupied.has(`${x + dx},${y + dy}`)) cell.classList.add(`is-edge-${side}`);
+      });
+      parent.append(cell);
+    });
   }
 
   function populateFilters() {
@@ -346,7 +370,7 @@
 
   function renderBoard() {
     elements.board.replaceChildren();
-    for (let index = 0; index < 54; index += 1) {
+    for (let index = 0; index < data.board.columns * data.board.rows; index += 1) {
       const cell = document.createElement('span');
       cell.className = 'optimizer-cell';
       cell.setAttribute('aria-hidden', 'true');
@@ -361,12 +385,13 @@
       if (placement.instanceId === selectedPlacementId) button.classList.add('is-source');
       else if (targets.has(placement.instanceId)) button.classList.add('is-target');
       else if (selectedPlacementId) button.classList.add('is-dimmed');
-      button.style.left = `${placement.x / 6 * 100}%`;
-      button.style.top = `${placement.y / 9 * 100}%`;
-      button.style.width = `${placement.width / 6 * 100}%`;
-      button.style.height = `${placement.height / 9 * 100}%`;
+      button.style.left = `${placement.x / data.board.columns * 100}%`;
+      button.style.top = `${placement.y / data.board.rows * 100}%`;
+      button.style.width = `${placement.width / data.board.columns * 100}%`;
+      button.style.height = `${placement.height / data.board.rows * 100}%`;
       button.setAttribute('aria-label', `${placement.instanceId}, rotation ${placement.rotation} degrees, column ${placement.x + 1}, row ${placement.y + 1}`);
       appendImage(button, item);
+      appendFootprint(button, placement);
       const image = button.querySelector('img');
       if (image) image.style.transform = `rotate(${placement.rotation}deg)`;
       button.addEventListener('click', () => {
@@ -394,11 +419,11 @@
         group.offsets.forEach(([dx, dy]) => {
           const x = placement.x + dx;
           const y = placement.y + dy;
-          if (x < 0 || y < 0 || x >= 6 || y >= 9) return;
+          if (x < 0 || y < 0 || x >= data.board.columns || y >= data.board.rows) return;
           const key = `${x},${y}`;
           const record = aggregate.get(key) || { x, y, count: 0, active: false, sources: new Set() };
           record.count += 1;
-          const cell = 1n << BigInt(y * 6 + x);
+          const cell = 1n << BigInt(y * data.board.columns + x);
           const groupTargets = targetsByGroup.get(`${placement.instanceId}|${group.id}`) || [];
           record.active ||= groupTargets.some((target) => (target.occupancyMask & cell) !== 0n);
           record.sources.add(placement.instanceId);
@@ -410,10 +435,10 @@
       const marker = document.createElement('span');
       marker.className = `star-marker${record.active ? ' is-active' : ''}`;
       if (selectedPlacementId && !record.sources.has(selectedPlacementId)) marker.style.opacity = '.25';
-      marker.style.left = `${record.x / 6 * 100}%`;
-      marker.style.top = `${record.y / 9 * 100}%`;
-      marker.style.width = `${100 / 6}%`;
-      marker.style.height = `${100 / 9}%`;
+      marker.style.left = `${record.x / data.board.columns * 100}%`;
+      marker.style.top = `${record.y / data.board.rows * 100}%`;
+      marker.style.width = `${100 / data.board.columns}%`;
+      marker.style.height = `${100 / data.board.rows}%`;
       marker.textContent = record.active ? '★' : '☆';
       if (record.count > 1) {
         const badge = document.createElement('b');

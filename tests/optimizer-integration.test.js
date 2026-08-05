@@ -15,6 +15,8 @@ const css = fs.readFileSync(path.join(root, 'optimizer.css'), 'utf8');
 assert.match(html, /name="viewport" content="width=device-width, initial-scale=1"/);
 assert.match(css, /@media \(max-width: 560px\)/);
 assert.match(css, /\.optimizer-board \{ width: 100%;/);
+assert.match(css, /aspect-ratio: var\(--board-columns\) \/ var\(--board-rows\)/);
+assert.match(html, /aria-label="9열 6행 최적 배치 보드"/);
 assert.match(css, /\.optimizer-layout \{ grid-template-columns: 1fr;/);
 assert.match(css, /min-height: 44px/);
 
@@ -33,8 +35,8 @@ for (const placement of result.layout) {
   assert.equal(core.masksOverlap(occupied, placement.occupancyMask), false, `${placement.instanceId} overlaps`);
   occupied |= placement.occupancyMask;
   for (const [dx, dy] of placement.footprint) {
-    assert.ok(placement.x + dx >= 0 && placement.x + dx < 6);
-    assert.ok(placement.y + dy >= 0 && placement.y + dy < 9);
+    assert.ok(placement.x + dx >= 0 && placement.x + dx < data.board.columns);
+    assert.ok(placement.y + dy >= 0 && placement.y + dy < data.board.rows);
   }
 }
 assert.equal(result.evaluation.connections.length, result.score.validConnections);

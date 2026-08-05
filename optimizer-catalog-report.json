@@ -13,27 +13,27 @@
     },
     {
       "id": "armor-pack",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "bag-of-bargains",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "bag-of-lost-souls",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "bag-of-wilful-burden",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "barkweave-basket",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "berserker-sack",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "blast-furnace-bellows",
@@ -41,19 +41,19 @@
     },
     {
       "id": "bloody-backpack",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "bolstering-bag",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "bottom-trawl",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "briny-fish-basket",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "cast-iron-anchor",
@@ -61,11 +61,11 @@
     },
     {
       "id": "cast-net",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "critical-sack",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "cursed-idol",
@@ -73,7 +73,7 @@
     },
     {
       "id": "cutting-board-bag",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "dragonfang",
@@ -85,7 +85,7 @@
     },
     {
       "id": "drift-net",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "dull-oyster-shucker",
@@ -109,11 +109,11 @@
     },
     {
       "id": "fanny-pack",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "grab-bag",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "grapeshot-slinger",
@@ -121,15 +121,15 @@
     },
     {
       "id": "medium-bag",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "parts-satchel",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "planner-s-pack",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "predator-scales",
@@ -137,23 +137,23 @@
     },
     {
       "id": "pumpkin-patch",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "radiance-satchel",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "ranger-s-satchel",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "recharge-rucksack",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "reinforced-mining-bag",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "reptile-stalker",
@@ -161,7 +161,7 @@
     },
     {
       "id": "retiarius-net",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "rhongomiant",
@@ -177,7 +177,7 @@
     },
     {
       "id": "shadow-satchel",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "stalker-s-shiv",
@@ -185,11 +185,11 @@
     },
     {
       "id": "stamina-sack",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "stinger-collector",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "stone-golem",
@@ -197,19 +197,19 @@
     },
     {
       "id": "tactical-knapsack",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "toolbox",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "warrior-backpack",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
       "id": "wizard-s-pouch",
-      "reason": "Bag items are excluded from the fixed 6×9 board model."
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
     }
   ]
 }

@@ -22,4 +22,7 @@ assert.match(html, /href="index\.html"/);
 assert.match(index, /href="optimizer\.html"/);
 assert.match(html, /aria-live="polite"/);
 assert.match(html, /role="alert"/);
+assert.match(app, /appendFootprint\(button, placement\)/);
+assert.match(css, /\.placed-item-cell\.is-edge-top/);
+assert.match(css, /\.placed-item\.is-source \{ --footprint-border:/);
 console.log('optimizer-structure.test.js passed');

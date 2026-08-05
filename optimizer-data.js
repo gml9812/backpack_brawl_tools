@@ -12,7 +12,7 @@
     version: '6.0.1',
     verifiedOn,
     supportLevel: 'verified-fixtures',
-    board: { columns: 6, rows: 9 },
+    board: { columns: 9, rows: 6 },
     types: ['Accessory', 'Bag', 'Food', 'Ingredient', 'Melee', 'Mineral', 'Part', 'Pet', 'Ranged', 'Rat', 'Wand Or Staff', 'Weapon'],
     sources: [
       {
@@ -151,7 +151,7 @@
         id: 'armor-pack', name: 'Armor Pack', hero: 'shared', rarity: 'Rare',
         types: ['Bag'], image: 'assets/items/armor-pack.webp',
         footprint: [[0, 0], [1, 0], [0, 1], [1, 1]], rotations: [0, 90, 180, 270], starGroups: [],
-        selectable: false, dataStatus: 'verified', unsupportedReason: 'Bag items are excluded from the fixed 6×9 board model.',
+        selectable: false, dataStatus: 'verified', unsupportedReason: 'Bag items are excluded from the fixed 9×6 board model.',
         source: source('armor-pack')
       }
     ]
@@ -166,6 +166,10 @@
       return curated ? { ...generated, ...curated, dataStatus: curated.dataStatus || 'verified' } : generated;
     });
     curatedItems.filter((item) => !generatedIds.has(item.id)).forEach((item) => root.BB_OPTIMIZER_DATA.items.push(item));
+    root.BB_OPTIMIZER_DATA.items = root.BB_OPTIMIZER_DATA.items.map((item) => item.types?.includes('Bag')
+      ? { ...item, unsupportedReason: 'Bag items are excluded from the fixed 9×6 board model.' }
+      : item);
+
     root.BB_OPTIMIZER_DATA.types = [...new Set(root.BB_OPTIMIZER_DATA.items.flatMap((item) => item.types || []))].sort();
     root.BB_OPTIMIZER_DATA.supportLevel = 'full-generated-catalog';
     root.BB_OPTIMIZER_DATA.catalog = {

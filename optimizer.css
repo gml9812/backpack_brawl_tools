@@ -173,13 +173,13 @@
 
 .optimizer-board {
   position: relative;
-  width: min(100%, 590px);
-  aspect-ratio: 6 / 9;
+  width: min(100%, 720px);
+  aspect-ratio: var(--board-columns) / var(--board-rows);
   margin-inline: auto;
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-columns: repeat(var(--board-columns), 1fr);
+  grid-template-rows: repeat(var(--board-rows), 1fr);
   border: 3px solid #343932;
   border-radius: 15px;
   background: #dfe5d9;
@@ -189,20 +189,48 @@
 .optimizer-cell { border: 1px solid rgba(42, 49, 40, .18); }
 
 .placed-item {
+  --footprint-border: rgba(255, 255, 255, .92);
+  --footprint-fill: rgba(47, 55, 45, .22);
   position: absolute;
   z-index: 2;
-  padding: 2px;
-  overflow: hidden;
-  border: 2px solid rgba(255, 255, 255, .78);
-  border-radius: 9px;
-  background: rgba(47, 55, 45, .22);
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   cursor: pointer;
-  transition: filter .15s ease, box-shadow .15s ease, opacity .15s ease;
+  transition: filter .15s ease, opacity .15s ease;
 }
 
-.placed-item img { width: 100%; height: 100%; object-fit: contain; pointer-events: none; }
-.placed-item.is-source { box-shadow: 0 0 0 4px #f0b500 inset, 0 0 0 2px #2d342b; z-index: 5; }
-.placed-item.is-target { box-shadow: 0 0 0 4px #45bc77 inset, 0 0 0 2px #173f29; z-index: 4; }
+.placed-item-cell {
+  position: absolute;
+  z-index: 0;
+  box-sizing: border-box;
+  border: 0 solid var(--footprint-border);
+  background: var(--footprint-fill);
+  box-shadow: inset 0 0 0 1px rgba(35, 42, 33, .24);
+  pointer-events: none;
+}
+
+.placed-item-cell.is-edge-top { border-top-width: 2px; }
+.placed-item-cell.is-edge-right { border-right-width: 2px; }
+.placed-item-cell.is-edge-bottom { border-bottom-width: 2px; }
+.placed-item-cell.is-edge-left { border-left-width: 2px; }
+
+.placed-item img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  box-sizing: border-box;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.placed-item:focus-visible { outline: 3px solid #17251a; outline-offset: 3px; }
+.placed-item.is-source { --footprint-border: #f0b500; --footprint-fill: rgba(240, 181, 0, .24); z-index: 5; }
+.placed-item.is-target { --footprint-border: #45bc77; --footprint-fill: rgba(69, 188, 119, .24); z-index: 4; }
 .placed-item.is-dimmed { opacity: .46; filter: saturate(.55); }
 
 .star-marker {

@@ -258,7 +258,7 @@ const items = pageRecords.map((record, index) => {
   const missingImage = !images[index];
   const selectable = !bag && !missingLayout && !ambiguousStars && !missingImage;
   let unsupportedReason = '';
-  if (bag) unsupportedReason = 'Bag items are excluded from the fixed 6×9 board model.';
+  if (bag) unsupportedReason = 'Bag items are excluded from the fixed 9×6 board model.';
   else if (missingLayout) unsupportedReason = 'Structured footprint data is unavailable.';
   else if (ambiguousStars) unsupportedReason = 'Star target wording could not be mapped safely.';
   else if (missingImage) unsupportedReason = 'A local image could not be downloaded.';

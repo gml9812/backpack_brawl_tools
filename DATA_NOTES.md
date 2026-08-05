@@ -5,7 +5,7 @@
 - Game version: `6.0.1`
 - Verification date: `2026-08-05`
 - Runtime data: `optimizer-catalog.js` plus reviewed overrides in `optimizer-data.js`
-- Board model: 6 columns × 9 rows, all 54 cells active
+- Board model: 9 columns × 6 rows, all 54 cells active
 - Current board catalog: 940 items
 - Calculation-ready: 889 items
 - Review-required: 51 items — 32 Bags and 19 items with incomplete Star target wording
