@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-08-05T07:31:51.575Z",
+  "gameVersion": "6.0.1",
+  "itemCount": 940,
+  "selectableCount": 889,
+  "partialCount": 51,
+  "withStars": 490,
+  "partialItems": [
+    {
+      "id": "admiralty-anchor",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "armor-pack",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "bag-of-bargains",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "bag-of-lost-souls",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "bag-of-wilful-burden",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "barkweave-basket",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "berserker-sack",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "blast-furnace-bellows",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "bloody-backpack",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "bolstering-bag",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "bottom-trawl",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "briny-fish-basket",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "cast-iron-anchor",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "cast-net",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "critical-sack",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "cursed-idol",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "cutting-board-bag",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "dragonfang",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "dragonleaf-acorn",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "drift-net",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "dull-oyster-shucker",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "elven-blade",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "errant-lance",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "everdrift-anchor",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "evergreen-arc",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "fanny-pack",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "grab-bag",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "grapeshot-slinger",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "medium-bag",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "parts-satchel",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "planner-s-pack",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "predator-scales",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "pumpkin-patch",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "radiance-satchel",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "ranger-s-satchel",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "recharge-rucksack",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "reinforced-mining-bag",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "reptile-stalker",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "retiarius-net",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "rhongomiant",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "rolling-pin-nunchucks",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "shadow-armor",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "shadow-satchel",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "stalker-s-shiv",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "stamina-sack",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "stinger-collector",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "stone-golem",
+      "reason": "Star target wording could not be mapped safely."
+    },
+    {
+      "id": "tactical-knapsack",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "toolbox",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "warrior-backpack",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    },
+    {
+      "id": "wizard-s-pouch",
+      "reason": "Bag items are excluded from the fixed 6×9 board model."
+    }
+  ]
+}

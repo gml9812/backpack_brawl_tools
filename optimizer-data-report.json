@@ -1,0 +1,129 @@
+{
+    "schemaVersion":  1,
+    "gameVersion":  "6.0.1",
+    "fixtureBaseline":  "2026-08-05",
+    "generatedOn":  "2026-08-05T16:10:11.5112297+09:00",
+    "source":  "https://backpackbrawlpro.com/items",
+    "results":  [
+                    {
+                        "id":  "rock",
+                        "url":  "https://backpackbrawlpro.com/items/rock/",
+                        "expected":  "occupied:1,1",
+                        "actual":  "occupied:1,1",
+                        "matches":  true,
+                        "checkedOn":  "2026-08-05"
+                    },
+                    {
+                        "id":  "wooden-stick",
+                        "url":  "https://backpackbrawlpro.com/items/wooden-stick/",
+                        "expected":  "occupied:1,1;occupied:1,2",
+                        "actual":  "occupied:1,1;occupied:1,2",
+                        "matches":  true,
+                        "checkedOn":  "2026-08-05"
+                    },
+                    {
+                        "id":  "wooden-sword",
+                        "url":  "https://backpackbrawlpro.com/items/wooden-sword/",
+                        "expected":  "occupied:1,1;occupied:1,2",
+                        "actual":  "occupied:1,1;occupied:1,2",
+                        "matches":  true,
+                        "checkedOn":  "2026-08-05"
+                    },
+                    {
+                        "id":  "dagger",
+                        "url":  "https://backpackbrawlpro.com/items/dagger/",
+                        "expected":  "occupied:1,1;occupied:1,2",
+                        "actual":  "occupied:1,1;occupied:1,2",
+                        "matches":  true,
+                        "checkedOn":  "2026-08-05"
+                    },
+                    {
+                        "id":  "apple",
+                        "url":  "https://backpackbrawlpro.com/items/apple/",
+                        "expected":  "star:2,1;star:1,2;occupied:2,2;star:3,2;star:2,3",
+                        "actual":  "star:2,1;star:1,2;occupied:2,2;star:3,2;star:2,3",
+                        "matches":  true,
+                        "checkedOn":  "2026-08-05"
+                    },
+                    {
+                        "id":  "brown-rat",
+                        "url":  "https://backpackbrawlpro.com/items/brown-rat/",
+                        "expected":  "star:3,1;star:1,2;occupied:2,2;occupied:3,2;star:4,2;star:2,3",
+                        "actual":  "star:3,1;star:1,2;occupied:2,2;occupied:3,2;star:4,2;star:2,3",
+                        "matches":  true,
+                        "checkedOn":  "2026-08-05"
+                    },
+                    {
+                        "id":  "banana",
+                        "url":  "https://backpackbrawlpro.com/items/banana/",
+                        "expected":  "star:3,1;star:2,2;occupied:3,2;star:4,2;star:1,3;occupied:2,3;occupied:3,3;star:4,3;star:2,4;star:3,4",
+                        "actual":  "star:3,1;star:2,2;occupied:3,2;star:4,2;star:1,3;occupied:2,3;occupied:3,3;star:4,3;star:2,4;star:3,4",
+                        "matches":  true,
+                        "checkedOn":  "2026-08-05"
+                    },
+                    {
+                        "id":  "mana-strudel",
+                        "url":  "https://backpackbrawlpro.com/items/mana-strudel/",
+                        "expected":  "star:2,1;star:3,1;star:1,2;occupied:2,2;occupied:3,2;star:4,2;star:2,3;star:3,3",
+                        "actual":  "star:2,1;star:3,1;star:1,2;occupied:2,2;occupied:3,2;star:4,2;star:2,3;star:3,3",
+                        "matches":  true,
+                        "checkedOn":  "2026-08-05"
+                    },
+                    {
+                        "id":  "light-bow",
+                        "url":  "https://backpackbrawlpro.com/items/light-bow/",
+                        "expected":  "occupied:1,1;occupied:1,2",
+                        "actual":  "occupied:1,1;occupied:1,2",
+                        "matches":  true,
+                        "checkedOn":  "2026-08-05"
+                    },
+                    {
+                        "id":  "searing-wand",
+                        "url":  "https://backpackbrawlpro.com/items/searing-wand/",
+                        "expected":  "occupied:1,1;occupied:1,2",
+                        "actual":  "occupied:1,1;occupied:1,2",
+                        "matches":  true,
+                        "checkedOn":  "2026-08-05"
+                    },
+                    {
+                        "id":  "iron-bar",
+                        "url":  "https://backpackbrawlpro.com/items/iron-bar/",
+                        "expected":  "star:1,1;occupied:2,1;occupied:3,1;star:4,1",
+                        "actual":  "star:1,1;occupied:2,1;occupied:3,1;star:4,1",
+                        "matches":  true,
+                        "checkedOn":  "2026-08-05"
+                    },
+                    {
+                        "id":  "pet-collar",
+                        "url":  "https://backpackbrawlpro.com/items/pet-collar/",
+                        "expected":  "star:1,1;occupied:2,1;occupied:3,1;star:4,1;star:2,2;star:3,2",
+                        "actual":  "star:1,1;occupied:2,1;occupied:3,1;star:4,1;star:2,2;star:3,2",
+                        "matches":  true,
+                        "checkedOn":  "2026-08-05"
+                    },
+                    {
+                        "id":  "cauldron",
+                        "url":  "https://backpackbrawlpro.com/items/cauldron/",
+                        "expected":  "occupied:1,1;occupied:2,1;occupied:1,2;occupied:2,2",
+                        "actual":  "occupied:1,1;occupied:2,1;occupied:1,2;occupied:2,2",
+                        "matches":  true,
+                        "checkedOn":  "2026-08-05"
+                    },
+                    {
+                        "id":  "simple-quiver",
+                        "url":  "https://backpackbrawlpro.com/items/simple-quiver/",
+                        "expected":  "star:1,1;occupied:2,1;star:3,1;occupied:2,2;star:1,3;occupied:2,3;star:3,3",
+                        "actual":  "star:1,1;occupied:2,1;star:3,1;occupied:2,2;star:1,3;occupied:2,3;star:3,3",
+                        "matches":  true,
+                        "checkedOn":  "2026-08-05"
+                    },
+                    {
+                        "id":  "armor-pack",
+                        "url":  "https://backpackbrawlpro.com/items/armor-pack/",
+                        "expected":  "occupied:1,1;occupied:2,1;occupied:1,2;occupied:2,2",
+                        "actual":  "occupied:1,1;occupied:2,1;occupied:1,2;occupied:2,2",
+                        "matches":  true,
+                        "checkedOn":  "2026-08-05"
+                    }
+                ]
+}

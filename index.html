@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Backpack Brawl 상점에서 목표 아이템을 찾을 확률을 계산합니다.">
+  <title>Backpack Brawl Shop Odds</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#calculator">계산기로 바로가기</a>
+  <header class="site-header">
+    <div>
+      <nav class="tool-nav" aria-label="도구 선택">
+        <a href="index.html" aria-current="page">Shop Odds</a>
+        <a href="optimizer.html">Star Optimizer</a>
+      </nav>
+      <p class="eyebrow">OFFLINE CALCULATOR</p>
+      <h1>Backpack Brawl Shop Odds</h1>
+      <p class="subtitle">목표 아이템을 앞으로 몇 번의 새로고침 안에 만날 확률을 계산합니다.</p>
+    </div>
+    <div class="data-stamp" aria-label="데이터 기준">
+      <span>Game <strong id="dataVersion">—</strong></span>
+      <span>Verified <strong id="verifiedOn">—</strong></span>
+    </div>
+  </header>
+
+  <main id="calculator" class="app-grid">
+    <section class="panel controls-panel" aria-labelledby="inputHeading">
+      <div class="panel-heading">
+        <div>
+          <p class="step-label">STEP 1</p>
+          <h2 id="inputHeading">계산 조건</h2>
+        </div>
+        <button id="resetButton" class="button button-quiet" type="button">초기화</button>
+      </div>
+
+      <form id="calculatorForm" novalidate>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="heroSelect">영웅</label>
+            <select id="heroSelect" name="hero"></select>
+          </div>
+          <div class="field">
+            <label for="roundInput">라운드</label>
+            <input id="roundInput" name="round" type="number" min="1" max="20" value="1" inputmode="numeric">
+          </div>
+          <div class="field">
+            <label for="lockedSlotsInput">잠긴 슬롯</label>
+            <input id="lockedSlotsInput" name="lockedSlots" type="number" min="0" max="4" value="0" inputmode="numeric">
+          </div>
+        </div>
+
+        <div class="rarity-preview" aria-live="polite">
+          <span>라운드 레어도</span>
+          <div id="rarityPreview" class="rarity-chips"></div>
+        </div>
+
+        <fieldset class="basic-clover">
+              <legend>클로버</legend>
+              <div class="form-grid three-columns">
+                <div class="field">
+                  <label for="luckyCloverInput">Lucky Clover</label>
+                  <input id="luckyCloverInput" type="number" min="0" max="16" value="0" inputmode="numeric">
+                </div>
+                <div class="field">
+                  <label for="goldenCloverInput">Golden Clover</label>
+                  <input id="goldenCloverInput" type="number" min="0" max="12" value="0" inputmode="numeric">
+                </div>
+                <div class="field">
+                  <label for="cursedCloverInput">Cursed Clover</label>
+                  <input id="cursedCloverInput" type="number" min="0" max="16" value="0" inputmode="numeric">
+                </div>
+                <div class="field">
+                  <label for="upgradeChanceInput">등급 상승 합계 (%)</label>
+                  <input id="upgradeChanceInput" type="number" min="0" max="500" value="0" step="1" inputmode="decimal">
+                </div>
+                <div class="field">
+                  <label for="downgradeChanceInput">등급 하락 합계 (%)</label>
+                  <input id="downgradeChanceInput" type="number" min="0" max="500" value="0" step="1" inputmode="decimal">
+                </div>
+              </div>
+            </fieldset>
+
+        <details id="advancedDetails" class="advanced">
+          <summary>
+            <span>고급 설정</span>
+            <span id="activeSettingsCount" class="active-count">기본값</span>
+          </summary>
+          <div class="advanced-body">
+            <p class="help-text">목록에서 아이템을 클릭하거나 여기에서 직접 선택하면 상세 확률을 볼 수 있습니다.</p>
+            <div class="field full-field">
+                  <label for="itemPickerButton">상세 분석 아이템 (선택 사항)</label>
+              <button id="itemPickerButton" class="item-select" type="button" aria-haspopup="dialog">
+                <span class="item-placeholder" aria-hidden="true">?</span>
+                <span class="item-select-copy">
+                  <strong id="selectedItemName">아이템 선택</strong>
+                  <small id="selectedItemMeta">영문명으로 검색할 수 있습니다</small>
+                </span>
+                <span aria-hidden="true">›</span>
+              </button>
+              <p id="itemError" class="field-error" role="alert"></p>
+                </div>
+            <fieldset>
+              <legend>아이템 풀</legend>
+              <p class="help-text">선택한 영웅의 풀을 수정합니다. 목표 아이템은 제외할 수 없습니다.</p>
+              <button id="poolEditorButton" class="button button-secondary" type="button">아이템 풀 편집</button>
+              <span id="poolSummary" class="inline-status"></span>
+            </fieldset>
+
+
+            <fieldset>
+              <legend>상태 보정</legend>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="bagPityInput">마지막 가방 이후 비가방 수</label>
+                  <input id="bagPityInput" type="number" min="0" max="10" value="0" inputmode="numeric">
+                </div>
+                <div class="field">
+                  <label for="seenCountInput">목표 아이템을 본 횟수</label>
+                  <input id="seenCountInput" type="number" min="0" max="99" value="0" inputmode="numeric">
+                </div>
+                <div class="field">
+                  <label for="repeatMultiplierInput">회당 재등장 배율</label>
+                  <input id="repeatMultiplierInput" type="number" min="0.01" max="1" value="0.75" step="0.01" inputmode="decimal">
+                  <small>공개 수치가 없어 수정 가능한 추정값입니다.</small>
+                </div>
+                <div class="field">
+                  <label for="targetBoostInput">추가 출현 확률 (%)</label>
+                  <input id="targetBoostInput" type="number" min="0" max="100" value="0" step="0.1" inputmode="decimal">
+                </div>
+                <div class="field">
+                  <label for="targetWeightInput">목표 아이템 가중치</label>
+                  <input id="targetWeightInput" type="number" min="0.01" max="100" value="1" step="0.01" inputmode="decimal">
+                  <small>같은 레어도의 일반 아이템은 기본값 1입니다.</small>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>할인 조건</legend>
+              <label class="check-row">
+                <input id="saleOnlyInput" type="checkbox">
+                <span>할인 상태로 등장한 경우만 성공으로 계산</span>
+              </label>
+              <div class="field compact-field">
+                <label for="saleChanceInput">현재 할인 확률 (%)</label>
+                <input id="saleChanceInput" type="number" min="0" max="100" value="15" step="0.1" inputmode="decimal">
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>새로고침 비용</legend>
+              <div class="form-grid">
+            <div class="field">
+              <label for="rerollsInput">새로고침 횟수</label>
+              <input id="rerollsInput" name="rerolls" type="number" min="1" max="100" value="5" inputmode="numeric">
+            </div>
+                <div class="field">
+                  <label for="paidRerollsInput">이미 사용한 유료 새로고침</label>
+                  <input id="paidRerollsInput" type="number" min="0" max="99" value="0" inputmode="numeric">
+                </div>
+                <div class="field">
+                  <label for="freeRerollsInput">무료 새로고침</label>
+                  <input id="freeRerollsInput" type="number" min="0" max="99" value="0" inputmode="numeric">
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </details>
+
+        <p id="formError" class="form-error" role="alert"></p>
+        <button id="calculateButton" class="button button-primary calculate-button" type="submit">
+          <span>Calculate</span>
+          <span id="calculateStatus" class="button-status"></span>
+        </button>
+      </form>
+    </section>
+
+    <section class="panel results-panel" aria-labelledby="resultsHeading">
+      <div class="panel-heading">
+        <div>
+          <p class="step-label">STEP 2</p>
+          <h2 id="resultsHeading">결과</h2>
+        </div>
+        <span id="resultMethod" class="method-badge">—</span>
+      </div>
+
+      <div id="emptyResults" class="empty-results">
+        <span aria-hidden="true">%</span>
+        <p>조건을 설정한 뒤 Calculate를 누르면 다음 상점의 아이템별 확률을 표시합니다.</p>
+      </div>
+
+      <div id="shopCatalog" class="shop-catalog" hidden aria-live="polite">
+        <div id="catalogStaleNotice" class="notice warning-notice" hidden>입력값이 변경되었습니다. 다시 계산하세요.</div>
+        <div class="catalog-heading">
+          <div>
+            <h3>다음 상점에 등장 가능한 아이템</h3>
+            <p id="catalogSummary"></p>
+          </div>
+          <label class="catalog-search">
+            <span class="sr-only">결과 아이템 검색</span>
+            <input id="catalogSearchInput" type="search" placeholder="Search items">
+          </label>
+        </div>
+        <div id="catalogList" class="catalog-list"></div>
+      </div>
+
+      <div id="detailHeading" class="detail-heading" hidden>
+        <span>선택 아이템 상세 확률</span>
+        <strong id="detailItemName"></strong>
+      </div>
+
+      <div id="resultContent" class="result-content" hidden aria-live="polite">
+        <div id="staleNotice" class="notice warning-notice" hidden>입력값이 변경되었습니다. 다시 계산하세요.</div>
+        <div id="diagnosticNotice" class="notice" hidden></div>
+
+        <article class="hero-result">
+          <p>N회 안에 최소 한 번</p>
+          <strong id="cumulativeProbability">—</strong>
+          <span id="cumulativeOdds">—</span>
+          <small id="confidenceInterval"></small>
+        </article>
+
+        <div class="metric-grid">
+          <article class="metric-card">
+            <span>슬롯 1개당</span>
+            <strong id="slotProbability">—</strong>
+          </article>
+          <article class="metric-card">
+            <span>상점 1회당</span>
+            <strong id="shopProbability">—</strong>
+          </article>
+          <article class="metric-card">
+            <span>평균 필요 새로고침</span>
+            <strong id="expectedRerolls">—</strong>
+          </article>
+          <article class="metric-card">
+            <span>최대 시도 총비용</span>
+            <strong id="totalGold">—</strong>
+          </article>
+          <article class="metric-card wide-card">
+            <span>목표 발견 시 멈출 때 예상 소비</span>
+            <strong id="expectedGold">—</strong>
+          </article>
+        </div>
+
+        <p id="conditionSummary" class="condition-summary"></p>
+        <div class="assumption-box">
+          <strong>계산 상태</strong>
+          <ul id="assumptionList"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="panel info-panel">
+    <details>
+      <summary>데이터 출처 및 계산 가정</summary>
+      <div class="info-content">
+        <p>게임은 먼저 레어도를 고른 뒤 해당 레어도의 아이템을 고르는 것으로 모델링했습니다. 같은 레어도 안에서는 확인 가능한 별도 가중치가 없을 때 균등 확률을 사용합니다.</p>
+        <ul id="sourceList"></ul>
+        <p class="copyright-note">아이템 이미지는 식별을 위한 참고용이며 각 권리는 원저작자에게 있습니다. 이 도구는 비공식 팬 도구입니다.</p>
+      </div>
+    </details>
+  </section>
+
+  <dialog id="itemDialog" class="picker-dialog" aria-labelledby="itemDialogTitle">
+    <div class="dialog-header">
+      <div>
+        <p class="step-label">TARGET ITEM</p>
+        <h2 id="itemDialogTitle">아이템 선택</h2>
+      </div>
+      <button class="icon-button" type="button" data-close-dialog="itemDialog" aria-label="닫기">×</button>
+    </div>
+    <div class="dialog-tools">
+      <label class="search-field">
+        <span class="sr-only">아이템 영문명 검색</span>
+        <input id="itemSearchInput" type="search" placeholder="Search English item name" autocomplete="off">
+      </label>
+      <label>
+        <span class="sr-only">레어도 필터</span>
+        <select id="rarityFilter"><option value="all">All rarities</option></select>
+      </label>
+    </div>
+    <p id="itemResultCount" class="result-count"></p>
+    <div id="itemList" class="item-list" role="listbox" aria-label="아이템 목록"></div>
+    <details class="custom-item-details">
+      <summary>목록에 없는 아이템 직접 입력</summary>
+      <div class="custom-item-grid">
+        <label class="field">
+          <span>English name</span>
+          <input id="customItemName" type="text" placeholder="Item name">
+        </label>
+        <label class="field">
+          <span>Rarity</span>
+          <select id="customItemRarity"></select>
+        </label>
+        <button id="addCustomItemButton" class="button button-secondary" type="button">직접 입력 아이템 사용</button>
+      </div>
+      <p id="customItemError" class="field-error" role="alert"></p>
+    </details>
+  </dialog>
+
+  <dialog id="poolDialog" class="picker-dialog pool-dialog" aria-labelledby="poolDialogTitle">
+    <div class="dialog-header">
+      <div>
+        <p class="step-label">ADVANCED</p>
+        <h2 id="poolDialogTitle">아이템 풀 편집</h2>
+      </div>
+      <button class="icon-button" type="button" data-close-dialog="poolDialog" aria-label="닫기">×</button>
+    </div>
+    <p class="help-text">Available은 계산에 포함되고, Unavailable과 Banished는 제외됩니다.</p>
+    <div class="dialog-tools">
+      <label class="search-field">
+        <span class="sr-only">풀 아이템 검색</span>
+        <input id="poolSearchInput" type="search" placeholder="Search pool" autocomplete="off">
+      </label>
+      <button id="restorePoolButton" class="button button-secondary" type="button">모두 Available</button>
+    </div>
+    <div id="poolList" class="pool-list"></div>
+    <div class="dialog-footer">
+      <button class="button button-primary" type="button" data-close-dialog="poolDialog">완료</button>
+    </div>
+  </dialog>
+
+  <script src="data.js"></script>
+  <script src="catalog.js"></script>
+  <script src="calculator.js"></script>
+  <script src="app.js"></script>
+  <script src="app-v2.js"></script>
+</body>
+</html>
