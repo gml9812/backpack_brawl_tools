@@ -6,6 +6,38 @@
     url: `https://backpackbrawlpro.com/items/${slug}/`,
     verifiedOn
   });
+  const officialTargetSource = (slug) => ({
+    url: `https://www.backpackbrawl.com/items/${slug}`,
+    verifiedOn: '2026-08-06'
+  });
+  const reviewedStarSpecifications = {
+    'admiralty-anchor': [{ id: 'reef-knot', label: 'Star Reef Knot', offsets: [[1, -1]], target: { anyItemIds: ['reef-knot'] } }],
+    'blast-furnace-bellows': [
+      { id: 'lumps-of-coal', label: 'Star Lumps of Coal', offsets: [[-2, -1], [-3, 0], [-1, 0], [-2, 1]], target: { anyItemIds: ['lumps-of-coal'] } },
+      { id: 'lava-rock', label: 'Star Lava Rock', offsets: [[-2, -1], [-3, 0], [-1, 0], [-2, 1]], target: { anyItemIds: ['lava-rock'] } }
+    ],
+    'cast-iron-anchor': [{ id: 'reef-knot', label: 'Star Reef Knot', offsets: [[1, -1]], target: { anyItemIds: ['reef-knot'] } }],
+    dragonfang: [{ id: 'dragonleaf', label: 'Star Dragonleaf', offsets: [[-1, 0], [1, 0], [-1, 1], [1, 1]], target: { anyItemIds: ['dragonleaf'] } }],
+    'dragonleaf-acorn': [{ id: 'dragonleaf', label: 'Star Dragonleaf', offsets: [[-1, -1], [-1, 0], [1, 0], [1, 1]], target: { anyItemIds: ['dragonleaf'] } }],
+    'dull-oyster-shucker': [{ id: 'tidal-clam', label: 'Star Tidal Clam', offsets: [[-1, -1]], target: { anyItemIds: ['tidal-clam'] } }],
+    'elven-blade': [{ id: 'dragonleaf', label: 'Star Dragonleaf', offsets: [[-1, 0], [1, 0]], target: { anyItemIds: ['dragonleaf'] } }],
+    'errant-lance': [{ id: 'cactus', label: 'Star Cactus', offsets: [[0, -1], [-1, 1], [1, 1]], target: { anyItemIds: ['cactus'] } }],
+    'everdrift-anchor': [{ id: 'reef-knot', label: 'Star Reef Knot', offsets: [[1, -1]], target: { anyItemIds: ['reef-knot'] } }],
+    'evergreen-arc': [{ id: 'dragonleaf', label: 'Star Dragonleaf', offsets: [[-1, 0], [-1, 1], [-1, 2], [-1, 3]], target: { anyItemIds: ['dragonleaf'] } }],
+    'grapeshot-slinger': [{ id: 'grapes', label: 'Star Grapes', offsets: [[0, 1]], target: { anyItemIds: ['grapes'] } }],
+    'predator-scales': [{ id: 'dragonleaf', label: 'Star Dragonleaf', offsets: [[-2, 0], [-1, 0], [2, 0], [3, 0]], target: { anyItemIds: ['dragonleaf'] } }],
+    'reptile-stalker': [{ id: 'dragonleaf', label: 'Star Dragonleaf', offsets: [[0, -1], [-1, 0], [1, 0], [-1, 1], [1, 1]], target: { anyItemIds: ['dragonleaf'] } }],
+    rhongomiant: [{ id: 'cactus', label: 'Star Cactus', offsets: [[0, -1], [-1, 2], [1, 2]], target: { anyItemIds: ['cactus'] } }],
+    'rolling-pin-nunchucks': [{ id: 'flour-or-pie', label: 'Star Bag of Flour or Blind Bake Pie', offsets: [[1, -1], [-1, 2]], target: { anyItemIds: ['bag-of-flour', 'blind-bake-pie'] } }],
+    'shadow-armor': [{ id: 'dragonleaf', label: 'Star Dragonleaf', offsets: [[-1, 0], [2, 0]], target: { anyItemIds: ['dragonleaf'] } }],
+    'stalker-s-shiv': [{ id: 'dragonleaf', label: 'Star Dragonleaf', offsets: [[-1, 0], [1, 0]], target: { anyItemIds: ['dragonleaf'] } }]
+  };
+  const reviewedStarOverrides = new Map(Object.entries(reviewedStarSpecifications).map(([slug, starGroups]) => [slug, {
+    starGroups: starGroups.map((group) => ({ ...group, scoreMode: 'unique-target' })),
+    selectable: true,
+    dataStatus: 'verified',
+    targetSource: officialTargetSource(slug)
+  }]));
 
   root.BB_OPTIMIZER_DATA = {
     schemaVersion: 1,
@@ -163,7 +195,11 @@
     const generatedIds = new Set(generatedCatalog.items.map((item) => item.id));
     root.BB_OPTIMIZER_DATA.items = generatedCatalog.items.map((generated) => {
       const curated = curatedById.get(generated.id);
-      return curated ? { ...generated, ...curated, dataStatus: curated.dataStatus || 'verified' } : generated;
+      const reviewedStar = reviewedStarOverrides.get(generated.id);
+      const merged = { ...generated, ...(curated || {}), ...(reviewedStar || {}) };
+      merged.dataStatus = curated?.dataStatus || reviewedStar?.dataStatus || generated.dataStatus;
+      if (merged.selectable) delete merged.unsupportedReason;
+      return merged;
     });
     curatedItems.filter((item) => !generatedIds.has(item.id)).forEach((item) => root.BB_OPTIMIZER_DATA.items.push(item));
     root.BB_OPTIMIZER_DATA.items = root.BB_OPTIMIZER_DATA.items.map((item) => item.types?.includes('Bag')

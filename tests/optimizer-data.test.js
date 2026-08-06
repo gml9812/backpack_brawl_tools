@@ -16,8 +16,8 @@ assert.equal(data.version, '6.0.1');
 assert.match(data.verifiedOn, /^\d{4}-\d{2}-\d{2}$/);
 assert.deepEqual(data.board, { columns: 9, rows: 6 });
 assert.equal(data.items.length, 940, 'The current board-item catalog must be complete');
-assert.equal(data.catalog.selectable, 889);
-assert.equal(data.catalog.reviewRequired, 51);
+assert.equal(data.catalog.selectable, 906);
+assert.equal(data.catalog.reviewRequired, 34);
 assert.equal(new Set(data.items.map((item) => item.id)).size, data.items.length);
 assert.equal(new Set(data.items.map((item) => item.name)).size, data.items.length);
 
@@ -43,6 +43,42 @@ for (const item of data.items) {
   if (item.footprint.length) core.uniqueRotations(item).forEach((rotation) => assert.equal(rotation.footprint.length, item.footprint.length));
   if (item.selectable) assert.ok(['verified', 'generated'].includes(item.dataStatus), `${item.id} invalid selectable status`);
 }
+
+const restoredStarTargets = {
+  'admiralty-anchor': [['reef-knot']],
+  'blast-furnace-bellows': [['lumps-of-coal'], ['lava-rock']],
+  'cast-iron-anchor': [['reef-knot']],
+  dragonfang: [['dragonleaf']],
+  'dragonleaf-acorn': [['dragonleaf']],
+  'dull-oyster-shucker': [['tidal-clam']],
+  'elven-blade': [['dragonleaf']],
+  'errant-lance': [['cactus']],
+  'everdrift-anchor': [['reef-knot']],
+  'evergreen-arc': [['dragonleaf']],
+  'grapeshot-slinger': [['grapes']],
+  'predator-scales': [['dragonleaf']],
+  'reptile-stalker': [['dragonleaf']],
+  rhongomiant: [['cactus']],
+  'rolling-pin-nunchucks': [['bag-of-flour', 'blind-bake-pie']],
+  'shadow-armor': [['dragonleaf']],
+  'stalker-s-shiv': [['dragonleaf']]
+};
+assert.equal(Object.keys(restoredStarTargets).length, 17);
+
+for (const [id, expectedTargets] of Object.entries(restoredStarTargets)) {
+  const item = data.items.find((candidate) => candidate.id === id);
+  assert.ok(item, `Missing restored item: ${id}`);
+  assert.equal(item.dataStatus, 'verified');
+  assert.equal(item.unsupportedReason, undefined);
+  assert.equal(item.targetSource.url, `https://www.backpackbrawl.com/items/${id}`);
+  assert.deepEqual(item.starGroups.map((group) => group.target.anyItemIds), expectedTargets);
+}
+
+const remainingUnmapped = data.items
+  .filter((item) => item.unsupportedReason === 'Star target wording could not be mapped safely.')
+  .map((item) => item.id)
+  .sort();
+assert.deepEqual(remainingUnmapped, ['cursed-idol', 'stone-golem']);
 
 const bag = data.items.find((item) => item.id === 'armor-pack');
 assert.equal(bag.selectable, false);
