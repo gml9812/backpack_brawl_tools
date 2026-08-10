@@ -25,6 +25,10 @@ assert.deepEqual(core.rotateDefinition(withStar, 360).footprint, withStar.footpr
 const board = { columns: 3, rows: 3 };
 assert.equal(core.cellIndex(2, 2, board), 8);
 assert.equal(core.cellMask(2, 2, board), 256n);
+const manual180 = core.buildPlacementAt({ instanceId: 'domino#1' }, { ...domino, id: 'domino' }, board, 0, 0, 180);
+assert.equal(manual180.rotation, 180, 'manual placement preserves symmetric 180-degree rotation');
+assert.deepEqual(manual180.footprint, [[0, 0], [0, 1]]);
+assert.match(manual180.canonicalKey, /:180:/);
 assert.equal(core.pointsToMask([[0, 0], [1, 0]], board, 1, 1), (1n << 4n) | (1n << 5n));
 assert.equal(core.pointsToMask([[0, 0], [1, 0]], board, 2, 1), null);
 assert.equal(core.masksOverlap(3n, 2n), true);
@@ -60,6 +64,17 @@ assert.equal(evaluation.score.validConnections, 1, 'same target on multiple grou
 assert.equal(core.targetMatches(items.source, items.food, { anyTypes: ['Food'], allTypes: ['Food'], excludedTypes: ['Pet'] }), true);
 assert.equal(core.targetMatches(items.source, items.food, { excludedItemIds: ['food'], any: true }), false);
 
+const doubleFood = { id: 'double-food', types: ['Accessory'], countsAs: [{ itemId: 'food', count: 2 }] };
+const itemGroup = { id: 'food-item', label: 'Food item', offsets: [[1, 0]], target: { anyItemIds: ['food'] } };
+assert.equal(core.targetMatchWeight(items.source, doubleFood, itemGroup.target), 2);
+assert.equal(core.targetMatches(items.source, doubleFood, itemGroup.target), true);
+evaluation = core.evaluateLayout([
+  placed('source#1', 'source', 1n, 2n, itemGroup),
+  placed('double-food#1', 'double-food', 2n, 0n)
+], { ...items, 'double-food': doubleFood });
+assert.equal(evaluation.connections.length, 1, 'counts-as keeps one physical target connection');
+assert.equal(evaluation.connections[0].weight, 2);
+assert.equal(evaluation.score.validConnections, 2, 'counts-as weight contributes to the placement score');
 const solutionA = { score: { validConnections: 2, activeGroups: 1, contributingTargets: 1 }, layout: [placed('a', 'source', 1n, 0n)] };
 const solutionB = { score: { validConnections: 1, activeGroups: 9, contributingTargets: 9 }, layout: [placed('b', 'source', 1n, 0n)] };
 assert.equal(core.compareSolutions(solutionA, solutionB), 1);

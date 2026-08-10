@@ -67,24 +67,43 @@ async function mapConcurrent(values, worker) {
 
 function parseOfficialItems(html) {
   const items = [];
-  const pattern = /<a href="\/items\/(?<slug>[^"]+)"[^>]+data-card="card-(?<category>.+?)-\d+" data-search="(?<search>[^"]*)" data-rarity="(?<rarity>[^"]+)">(?<body>[\s\S]*?)<\/a>/g;
+  const pattern = /<a href="\/items\/(?<slug>[^"]+)"[^>]+data-card="(?<card>card-(?<category>.+?)-\d+)" data-search="(?<search>[^"]*)" data-rarity="(?<rarity>[^"]+)">(?<body>[\s\S]*?)<\/a>/g;
   for (const match of html.matchAll(pattern)) {
     const category = match.groups.category;
     if (category === 'boons' || category === 'boons-past') continue;
     const body = match.groups.body;
     const image = body.match(/<img src="(?<src>[^"]+)"[^>]*class="mt-3/)?.groups?.src;
     const name = body.match(/<span class="mt-1\.5[^>]*>(?<name>[^<]+)<\/span>/)?.groups?.name;
+    const templateStart = html.indexOf(`<template id="${match.groups.card}"`, match.index);
+    const templateEnd = templateStart >= 0 ? html.indexOf('</template>', templateStart) : -1;
+    const template = templateEnd >= 0 ? html.slice(templateStart, templateEnd) : '';
+    const countsAsHtml = template.match(/\bcounts as(?:\s+(?:a|an))?\s*<strong[^>]*>(?<value>[\s\S]*?)<\/strong>/i)?.groups?.value;
     items.push({
       slug: match.groups.slug.replace(/\/$/, ''),
       name: decodeHtml(name || match.groups.slug),
       rarity: match.groups.rarity,
       category,
       search: decodeHtml(match.groups.search),
+      countsAsText: countsAsHtml ? stripTags(countsAsHtml) : '',
       sourceImage: image ? `${officialBase}${image}` : null,
       official: true
     });
   }
   return items;
+}
+
+function resolveCountsAs(text, knownNames) {
+  if (!text) return [];
+  const match = text.trim().match(/^(?:(\d+)\s+)?(.+?)$/);
+  if (!match) return [];
+  const count = Number(match[1] || 1);
+  const targetName = match[2].trim().toLowerCase();
+  const target = knownNames.find((candidate) => {
+    const name = candidate.name.toLowerCase();
+    return targetName === name || targetName === `${name}s`;
+  });
+  if (!target || !Number.isInteger(count) || count < 1) return [];
+  return [{ itemId: target.id, count }];
 }
 
 function parseGalleryCards(html, category) {
@@ -213,14 +232,27 @@ const officialHtml = await fetchText(`${officialBase}/items/`);
 const officialItems = parseOfficialItems(officialHtml);
 if (officialItems.length < 850) throw new Error(`Official extraction returned only ${officialItems.length} board items.`);
 
-console.log('Adding Skara, which is present in game 6.0.1 but absent from the official library page…');
+console.log('Cross-checking the official catalog against the Backpack Brawl Pro Skara listing…');
 const skaraUrl = `${proBase}/items?hero=skara&rarity=Common&rarity=Rare&rarity=Epic&rarity=Legendary&rarity=Mythic&rarity=Unique&rarity=Relic&hideUnavailable=1`;
 const skaraItems = parseGalleryCards(await fetchText(skaraUrl), 'skara');
 if (skaraItems.length < 30) throw new Error(`Skara extraction returned only ${skaraItems.length} items.`);
 
 const seedsBySlug = new Map();
-for (const item of [...officialItems, ...skaraItems]) seedsBySlug.set(item.slug, item);
+for (const item of [...officialItems, ...skaraItems]) {
+  const existing = seedsBySlug.get(item.slug);
+  seedsBySlug.set(item.slug, existing
+    ? { ...existing, ...item, countsAsText: item.countsAsText || existing.countsAsText }
+    : item);
+}
 const seeds = [...seedsBySlug.values()].sort((a, b) => a.name.localeCompare(b.name));
+const knownNames = seeds.map((seed) => ({ id: seed.slug, name: seed.name })).sort((a, b) => b.name.length - a.name.length);
+for (const seed of seeds) {
+  seed.countsAs = resolveCountsAs(seed.countsAsText, knownNames);
+  if (seed.countsAsText && !seed.countsAs.length) {
+    throw new Error(`Could not map counts-as identity for ${seed.slug}: ${seed.countsAsText}`);
+  }
+}
+
 console.log(`Fetching ${seeds.length} structured item pages with concurrency ${concurrency}…`);
 let completed = 0;
 const pageRecords = await mapConcurrent(seeds, async (seed) => {
@@ -237,7 +269,6 @@ const pageRecords = await mapConcurrent(seeds, async (seed) => {
 
 const knownTypes = [...new Set(pageRecords.flatMap((record) => record.types))]
   .sort((a, b) => b.length - a.length || a.localeCompare(b));
-const knownNames = seeds.map((seed) => ({ id: seed.slug, name: seed.name })).sort((a, b) => b.name.length - a.name.length);
 
 console.log('Downloading missing local images…');
 completed = 0;
@@ -273,6 +304,7 @@ const items = pageRecords.map((record, index) => {
     rotations: [0, 90, 180, 270],
     starGroups,
     selectable,
+    countsAs: record.seed.countsAs,
     dataStatus: selectable ? 'generated' : 'partial',
     unsupportedReason: unsupportedReason || undefined,
     source: { url: `${proBase}/items/${record.seed.slug}/`, verifiedOn }

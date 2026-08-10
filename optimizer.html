@@ -15,6 +15,8 @@
       <nav class="tool-nav" aria-label="도구 선택">
         <a href="index.html">Shop Odds</a>
         <a href="optimizer.html" aria-current="page">Star Optimizer</a>
+        <a href="simulator.html">Saved & Combat</a>
+        <a href="econ.html">Econ Items</a>
       </nav>
       <p class="eyebrow">OFFLINE PLACEMENT TOOL</p>
       <h1>Backpack Brawl Star Optimizer</h1>
@@ -37,6 +39,17 @@
       </div>
 
       <div class="optimizer-assumption" role="note">
+        <div class="optimizer-board-size" aria-label="Bag size">
+          <label class="field">
+            <span>Columns</span>
+            <input id="optimizerBoardColumns" type="number" min="1" max="9" step="1" value="9" inputmode="numeric">
+          </label>
+          <span class="optimizer-size-separator" aria-hidden="true">x</span>
+          <label class="field">
+            <span>Rows</span>
+            <input id="optimizerBoardRows" type="number" min="1" max="6" step="1" value="6" inputmode="numeric">
+          </label>
+        </div>
         <strong>9 columns × 6 rows</strong>
         <span>전체 54칸이 활성화된 고정 보드입니다. Bag 효과와 전투 성능은 계산하지 않습니다.</span>
       </div>
@@ -87,33 +100,86 @@
           <p class="step-label">STEP 2</p>
           <h2 id="optimizerResultsHeading">최적 배치</h2>
         </div>
-        <button id="optimizerCopyLinkButton" class="button button-quiet" type="button">Copy input link</button>
+        <div class="optimizer-result-actions">
+          <input id="savedLayoutName" type="text" maxlength="60" placeholder="배치 이름" aria-label="저장할 배치 이름">
+          <button id="saveLayoutButton" class="button button-primary" type="button" disabled>현재 배치 저장</button>
+          <a class="button button-secondary" href="simulator.html">Saved & Combat</a>
+          <button id="optimizerCopyLinkButton" class="button button-quiet" type="button">Copy input link</button>
+        </div>
       </div>
 
       <div id="optimizerProgress" class="optimizer-progress" aria-live="polite">
         아이템을 추가한 뒤 Calculate를 누르세요.
       </div>
+      <p id="savedLayoutStatus" class="saved-layout-status" aria-live="polite"></p>
       <p id="optimizerResultError" class="form-error" role="alert"></p>
 
       <div id="optimizerResultContent" hidden>
         <div class="optimizer-summary" aria-label="최적화 결과 요약">
           <article><strong id="optimizerStatus">—</strong><span>search status</span></article>
-          <article><strong id="optimizerConnectionScore">0</strong><span>valid connections</span></article>
+          <article><strong id="optimizerConnectionScore">0</strong><span>effective Star value</span></article>
           <article><strong id="optimizerGroupScore">0 / 0</strong><span>active groups</span></article>
           <article><strong id="optimizerContributingScore">0 / 0</strong><span>items contributing</span></article>
           <article><strong id="optimizerElapsed">0.0s</strong><span>elapsed</span></article>
           <article><strong id="optimizerExplored">0</strong><span>states explored</span></article>
         </div>
 
-        <p class="board-help">배치 아이템을 선택하면 source와 연결 target을 강조합니다.</p>
+        <div class="board-toolbar">
+          <p class="board-help">배치 아이템을 선택하면 source와 연결 target을 강조합니다.</p>
+          <button id="manualEditToggle" class="button button-secondary" type="button" disabled hidden aria-hidden="true">수동 편집</button>
+        </div>
         <div id="optimizerBoard" class="optimizer-board" role="group" aria-label="9열 6행 최적 배치 보드"></div>
+        <div id="manualEditControls" class="manual-edit-controls" hidden>
+          <strong id="manualEditSelection">편집할 아이템을 선택하세요</strong>
+          <div class="manual-edit-buttons" aria-label="선택한 아이템 회전">
+            <button id="manualRotate" class="button button-secondary" type="button">90° 회전</button>
+          </div>
+          <span id="manualEditStatus" aria-live="polite">아이템을 직접 드래그하거나 회전할 수 있습니다.</span>
+        </div>
 
         <div class="optimizer-detail-heading">
           <h3>Star 연결 상세</h3>
           <span id="optimizerSelectedPlacement">모든 아이템</span>
         </div>
         <div id="optimizerConnectionDetails" class="optimizer-connection-details"></div>
+
+        <section class="combat-simulator" aria-labelledby="combatSimulatorHeading" hidden aria-hidden="true">
+          <div class="optimizer-detail-heading">
+            <div>
+              <p class="step-label">DRAFT</p>
+              <h3 id="combatSimulatorHeading">훈련용 상대 전투 시뮬레이터</h3>
+            </div>
+            <span>기댓값 모델</span>
+          </div>
+          <p class="combat-simulator-note">현재 배치의 기본 공격과 단순 발동 효과를 계산합니다. 실제 게임의 스태미나, 지속 피해 tick, 동적 Haste 및 복잡한 조건 효과는 아직 반영하지 않습니다.</p>
+          <div class="combat-simulator-controls">
+            <label><span>전투 시간</span><input id="combatDuration" type="number" min="1" max="300" step="1" value="10"><small>초</small></label>
+            <label><span>상대 Armor</span><input id="combatDummyArmor" type="number" min="0" max="99999" step="1" value="0"></label>
+            <label><span>피해 감소</span><input id="combatDummyReduction" type="number" min="0" max="95" step="1" value="0"><small>%</small></label>
+            <label><span>상대 Dodge</span><input id="combatDummyDodge" type="number" min="0" max="95" step="1" value="0"><small>%</small></label>
+            <button id="combatSimulateButton" class="button button-primary" type="button">전투 계산</button>
+          </div>
+          <div id="combatSimulationResult" class="combat-simulation-result" aria-live="polite" hidden>
+            <div class="combat-summary">
+              <article><strong id="combatTotalDamage">0</strong><span>예상 피해량</span></article>
+              <article><strong id="combatDps">0</strong><span>예상 DPS</span></article>
+              <article><strong id="combatExpectedHits">0</strong><span>예상 명중</span></article>
+              <article><strong id="combatExpectedCrits">0</strong><span>예상 치명타</span></article>
+            </div>
+            <div class="combat-result-columns">
+              <section><h4>내가 획득한 버프</h4><ul id="combatBuffList"></ul></section>
+              <section><h4>상대에게 부여한 디버프</h4><ul id="combatDebuffList"></ul></section>
+              <section><h4>아이템별 원시 피해</h4><ol id="combatContributionList"></ol></section>
+            </div>
+            <p id="combatCoverage" class="combat-coverage"></p>
+          </div>
+        </section>
       </div>
+
+      <section class="saved-layouts" aria-labelledby="savedLayoutsHeading" hidden aria-hidden="true">
+        <h3 id="savedLayoutsHeading">저장된 배치</h3>
+        <div id="savedLayoutList" class="saved-layout-list"></div>
+      </section>
 
       <details class="optimizer-data-notes">
         <summary>지원 범위와 데이터 출처</summary>
@@ -125,11 +191,16 @@
       </details>
     </section>
   </main>
+  <aside id="optimizerItemInspector" class="item-inspector" aria-live="polite" hidden></aside>
 
-  <script src="optimizer-catalog.js"></script>
-  <script src="optimizer-data.js"></script>
-  <script src="optimizer-core.js"></script>
-  <script src="optimizer-solver.js"></script>
-  <script src="optimizer-app.js"></script>
+
+  <script charset="utf-8" src="optimizer-catalog.js"></script>
+  <script charset="utf-8" src="optimizer-combat-stats.js"></script>
+  <script charset="utf-8" src="optimizer-data.js"></script>
+  <script charset="utf-8" src="optimizer-core.js"></script>
+  <script charset="utf-8" src="optimizer-solver.js"></script>
+  <script charset="utf-8" src="optimizer-combat.js"></script>
+  <script charset="utf-8" src="optimizer-storage.js"></script>
+  <script charset="utf-8" src="optimizer-app.js"></script>
 </body>
 </html>

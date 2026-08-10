@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Backpack Brawl 경제 아이템의 효과, 가격, 생성 후보와 최저 등급 기준 Gold 가치를 비교합니다.">
+  <title>Backpack Brawl Econ Items</title>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="optimizer.css"><link rel="stylesheet" href="econ.css">
+</head>
+<body class="optimizer-page econ-page">
+  <a class="skip-link" href="#econ">Econ 아이템 목록으로 바로가기</a>
+  <header class="site-header optimizer-header"><div><nav class="tool-nav" aria-label="도구 선택"><a href="index.html">Shop Odds</a><a href="optimizer.html">Star Optimizer</a><a href="simulator.html">Saved &amp; Combat</a><a href="econ.html" aria-current="page">Econ Items</a></nav><p class="eyebrow">ECONOMY REFERENCE</p><h1>Backpack Brawl Econ Items</h1><p class="subtitle">실제 생성 풀 후보와 최저 등급 후보의 평균 판매가를 기준으로 경제 가치를 비교합니다.</p></div><div class="data-stamp"><span>Game <strong id="econDataVersion">—</strong></span><span>Verified <strong id="econVerifiedOn">—</strong></span></div></header>
+  <main id="econ" class="econ-layout">
+    <section class="panel econ-controls" aria-labelledby="econControlsHeading"><div class="panel-heading"><div><p class="step-label">ASSUMPTIONS</p><h2 id="econControlsHeading">계산 조건</h2></div><button id="econReset" class="button button-quiet" type="button">초기화</button></div><div class="econ-assumption-grid"><div class="field"><label for="econStarCount">조건을 만족하는 Star 수</label><input id="econStarCount" type="number" min="0" max="20" value="1"></div><div class="field"><label for="econEmptySlots">빈 가방 슬롯 수</label><input id="econEmptySlots" type="number" min="0" max="20" value="1"></div><div class="field"><label for="econWinRate">승률 (%)</label><input id="econWinRate" type="number" min="0" max="100" value="50"></div></div><p class="econ-rule-note">판매가는 구매가의 절반을 올림합니다. 생성 풀의 내부 가중치가 공개되지 않았으므로, 같은 풀에서 가장 낮은 등급 후보들의 평균 판매가만 계산해 <b>기초값+a</b>로 표시합니다. a는 상위 등급 생성으로 더해지는 미확정 가치입니다.</p></section>
+    <section class="econ-summary"><div class="panel"><span>기초값 계산 가능</span><strong id="econKnownCount">—</strong></div><div class="panel"><span>전체 평균 기초값</span><strong><span id="econAverageYield">—</span> Gold</strong></div><div class="panel"><span>현재 표시</span><strong id="econResultCount">—</strong></div></section>
+    <section class="panel econ-catalog" aria-labelledby="econCatalogHeading"><div class="econ-catalog-heading"><div><p class="step-label">CATALOG</p><h2 id="econCatalogHeading">Econ 아이템</h2></div><div class="econ-filters"><div class="field"><label for="econSearch">검색</label><input id="econSearch" type="search" placeholder="아이템·효과·생성 후보 검색"></div><div class="field"><label for="econHero">영웅</label><select id="econHero"></select></div><div class="field"><label for="econCategory">유형</label><select id="econCategory"><option value="all">모든 유형</option><option value="gold">Gold 생성</option><option value="item">아이템 생성</option><option value="hybrid">혼합 생성</option></select></div><div class="field"><label for="econSort">정렬</label><select id="econSort"><option value="expected-desc">기초값 높은 순</option><option value="expected-asc">기초값 낮은 순</option><option value="price-asc">가격 낮은 순</option><option value="name">이름순</option></select></div></div></div><div id="econResults" class="econ-results" aria-live="polite"></div><p id="econEmpty" class="econ-empty" hidden>조건에 맞는 아이템이 없습니다.</p></section>
+  </main>
+  <script src="optimizer-catalog.js"></script><script src="optimizer-combat-stats.js"></script><script src="econ-pools.js"></script><script src="econ-core-v2.js?v=20260810-pet-rock"></script><script src="econ-official-overrides.js"></script><script src="econ-app-v2.js"></script>
+</body></html>

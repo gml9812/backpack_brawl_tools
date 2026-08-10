@@ -1,0 +1,46 @@
+.econ-layout { width: min(1240px, calc(100% - 2rem)); margin: 0 auto 3rem; display: grid; gap: 1rem; }
+.econ-controls, .econ-catalog { padding: 1.25rem; }
+.econ-assumption-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8rem; }
+.econ-rule-note { margin: 1rem 0 0; padding: .8rem 1rem; border-radius: 10px; background: var(--primary-soft); color: #344054; font-size: .86rem; }
+.econ-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.econ-summary .panel { display: grid; gap: .25rem; padding: 1rem 1.15rem; }
+.econ-summary span { color: var(--muted); font-size: .78rem; font-weight: 700; }
+.econ-summary strong { font-size: 1.25rem; }
+.econ-catalog-heading { display: grid; grid-template-columns: auto minmax(560px, 1fr); gap: 1.25rem; align-items: end; margin-bottom: 1rem; }
+.econ-catalog-heading h2 { margin: 0; }
+.econ-filters { display: grid; grid-template-columns: minmax(190px, 1.3fr) repeat(3, minmax(125px, .7fr)); gap: .65rem; }
+.econ-results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; }
+.econ-card { display: grid; gap: .85rem; padding: 1rem; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+.econ-card-top { display: grid; grid-template-columns: 72px minmax(0, 1fr) auto; gap: .8rem; align-items: center; }
+.econ-card-top img { width: 72px; height: 72px; object-fit: contain; border-radius: 10px; background: #f4f6f9; }
+.econ-card-title { min-width: 0; }
+.econ-card-title h2 { margin: .3rem 0 .15rem; overflow-wrap: anywhere; }
+.econ-card-title p { margin: 0; color: var(--muted); font-size: .8rem; }
+.econ-badges { display: flex; flex-wrap: wrap; gap: .35rem; color: var(--muted); font-size: .68rem; font-weight: 800; }
+.econ-badges > span:not(.rarity-badge) { padding: .18rem .45rem; border-radius: 999px; background: #f0f2f5; }
+.econ-yield { min-width: 82px; text-align: right; }
+.econ-yield span, .econ-yield small { display: block; color: var(--muted); font-size: .65rem; font-weight: 750; }
+.econ-yield strong { display: block; color: var(--success); font-size: 1.55rem; line-height: 1.1; }
+.econ-effect { margin: 0; color: #344054; font-size: .85rem; line-height: 1.55; }
+.econ-card-bottom { display: flex; align-items: flex-end; justify-content: space-between; gap: .8rem; padding-top: .7rem; border-top: 1px solid var(--line); }
+.econ-card-bottom > div:first-child { min-width: 0; }
+.econ-quality { display: inline-block; margin-right: .45rem; padding: .18rem .45rem; border-radius: 999px; font-size: .67rem; font-weight: 850; }
+.econ-quality-exact { color: var(--success); background: #ecfdf3; }
+.econ-quality-estimated, .econ-quality-partial { color: var(--warning); background: #fffaeb; }
+.econ-quality-unknown { color: var(--muted); background: #f2f4f7; }
+.econ-formula { color: var(--muted); font-size: .7rem; }
+.econ-payback { flex: none; color: var(--primary); font-size: .72rem; font-weight: 800; }
+.econ-empty { padding: 3rem 1rem; text-align: center; color: var(--muted); }
+@media (max-width: 950px) {
+  .econ-catalog-heading { grid-template-columns: 1fr; }
+  .econ-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .econ-results { grid-template-columns: 1fr; }
+}
+@media (max-width: 650px) {
+  .econ-assumption-grid, .econ-summary, .econ-filters { grid-template-columns: 1fr; }
+  .econ-card-top { grid-template-columns: 60px minmax(0, 1fr); }
+  .econ-card-top img { width: 60px; height: 60px; }
+  .econ-yield { grid-column: 1 / -1; display: flex; align-items: baseline; justify-content: space-between; padding: .65rem .8rem; border-radius: 10px; background: #f6fef9; text-align: left; }
+  .econ-yield strong { margin-left: auto; margin-right: .25rem; }
+  .econ-card-bottom { align-items: flex-start; flex-direction: column; }
+}

@@ -66,17 +66,17 @@
       let outgoingPotential = 0;
       let incomingPotential = 0;
       for (const group of sourceItem.starGroups) {
-        const matchingTargets = prepared.reduce((count, target, targetIndex) => {
-          if (sourceIndex === targetIndex) return count;
-          return count + Number(core.targetMatches(sourceItem, itemById[target.itemId], group.target));
-        }, 0);
-        outgoingPotential += Math.min(new Set(group.offsets.map((point) => point.join(','))).size, matchingTargets);
+        const matchingWeights = prepared.flatMap((target, targetIndex) => sourceIndex === targetIndex
+          ? [] : [core.targetMatchWeight(sourceItem, itemById[target.itemId], group.target)]).filter(Boolean);
+        const starCapacity = new Set(group.offsets.map((point) => point.join(','))).size;
+        outgoingPotential += matchingWeights.sort((a, b) => b - a).slice(0, starCapacity)
+          .reduce((sum, weight) => sum + weight, 0);
       }
       prepared.forEach((source, otherSourceIndex) => {
         if (sourceIndex === otherSourceIndex) return;
         const otherSourceItem = itemById[source.itemId];
         incomingPotential += otherSourceItem.starGroups.reduce((count, group) =>
-          count + Number(core.targetMatches(otherSourceItem, sourceItem, group.target)), 0);
+          count + core.targetMatchWeight(otherSourceItem, sourceItem, group.target), 0);
       });
       instance.connectionPotential = outgoingPotential + incomingPotential;
     });
@@ -93,13 +93,15 @@
         const matchingTargets = [];
         prepared.forEach((target, targetIndex) => {
           if (sourceIndex === targetIndex) return;
-          if (core.targetMatches(sourceItem, itemById[target.itemId], group.target)) {
-            matchingTargets.push(target.instanceId);
+          const weight = core.targetMatchWeight(sourceItem, itemById[target.itemId], group.target);
+          if (weight) {
+            matchingTargets.push({ instanceId: target.instanceId, weight });
             eligibleTargets.add(target.instanceId);
           }
         });
         const distinctStarCells = new Set(group.offsets.map((point) => point.join(','))).size;
-        const groupMaximum = Math.min(distinctStarCells, matchingTargets.length);
+        const groupMaximum = matchingTargets.sort((a, b) => b.weight - a.weight)
+          .slice(0, distinctStarCells).reduce((sum, target) => sum + target.weight, 0);
         validConnections += groupMaximum;
         if (groupMaximum) activeGroups += 1;
       }

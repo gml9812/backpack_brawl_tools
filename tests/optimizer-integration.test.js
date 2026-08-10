@@ -40,4 +40,19 @@ for (const placement of result.layout) {
   }
 }
 assert.equal(result.evaluation.connections.length, result.score.validConnections);
+const compactBoard = { columns: 5, rows: 6 };
+const compactIds = ['apple', 'banana', 'brown-rat', 'iron-bar'];
+const compactResult = solver.solve({
+  instances: compactIds.map((itemId) => ({ itemId })),
+  items: data.items,
+  board: compactBoard,
+  options: { timeLimitMs: 700, restarts: 3, seed: 'compact-integration' }
+});
+assert.equal(compactResult.layout.length, compactIds.length);
+for (const placement of compactResult.layout) {
+  for (const [dx, dy] of placement.footprint) {
+    assert.ok(placement.x + dx >= 0 && placement.x + dx < compactBoard.columns);
+    assert.ok(placement.y + dy >= 0 && placement.y + dy < compactBoard.rows);
+  }
+}
 console.log('optimizer-integration.test.js passed');

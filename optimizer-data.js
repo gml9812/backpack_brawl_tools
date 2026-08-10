@@ -1,7 +1,7 @@
 (function (root) {
   'use strict';
 
-  const verifiedOn = '2026-08-05';
+  const verifiedOn = '2026-08-07';
   const source = (slug) => ({
     url: `https://backpackbrawlpro.com/items/${slug}/`,
     verifiedOn
@@ -19,6 +19,10 @@
     'cast-iron-anchor': [{ id: 'reef-knot', label: 'Star Reef Knot', offsets: [[1, -1]], target: { anyItemIds: ['reef-knot'] } }],
     dragonfang: [{ id: 'dragonleaf', label: 'Star Dragonleaf', offsets: [[-1, 0], [1, 0], [-1, 1], [1, 1]], target: { anyItemIds: ['dragonleaf'] } }],
     'dragonleaf-acorn': [{ id: 'dragonleaf', label: 'Star Dragonleaf', offsets: [[-1, -1], [-1, 0], [1, 0], [1, 1]], target: { anyItemIds: ['dragonleaf'] } }],
+    'dragonscale-cuirass': [
+      { id: 'melee', label: 'Star Melee', offsets: [[-1, 0], [2, 0], [-2, 1], [3, 1]], target: { anyTypes: ['Melee'] } },
+      { id: 'melee-pet-ranged', label: 'Star Melee Ranged Pet', offsets: [[-1, 0], [2, 0], [-2, 1], [3, 1]], target: { anyTypes: ['Melee', 'Pet', 'Ranged'] } }
+    ],
     'dull-oyster-shucker': [{ id: 'tidal-clam', label: 'Star Tidal Clam', offsets: [[-1, -1]], target: { anyItemIds: ['tidal-clam'] } }],
     'elven-blade': [{ id: 'dragonleaf', label: 'Star Dragonleaf', offsets: [[-1, 0], [1, 0]], target: { anyItemIds: ['dragonleaf'] } }],
     'errant-lance': [{ id: 'cactus', label: 'Star Cactus', offsets: [[0, -1], [-1, 1], [1, 1]], target: { anyItemIds: ['cactus'] } }],
@@ -189,6 +193,7 @@
     ]
   };
   const generatedCatalog = root.BB_OPTIMIZER_CATALOG;
+  const combatCatalog = root.BB_OPTIMIZER_COMBAT_STATS;
   if (generatedCatalog && Array.isArray(generatedCatalog.items)) {
     const curatedItems = root.BB_OPTIMIZER_DATA.items;
     const curatedById = new Map(curatedItems.map((item) => [item.id, item]));
@@ -196,7 +201,8 @@
     root.BB_OPTIMIZER_DATA.items = generatedCatalog.items.map((generated) => {
       const curated = curatedById.get(generated.id);
       const reviewedStar = reviewedStarOverrides.get(generated.id);
-      const merged = { ...generated, ...(curated || {}), ...(reviewedStar || {}) };
+      const combat = combatCatalog?.items?.[generated.id];
+      const merged = { ...generated, ...(combat ? { combat } : {}), ...(curated || {}), ...(reviewedStar || {}) };
       merged.dataStatus = curated?.dataStatus || reviewedStar?.dataStatus || generated.dataStatus;
       if (merged.selectable) delete merged.unsupportedReason;
       return merged;
@@ -212,6 +218,7 @@
       total: root.BB_OPTIMIZER_DATA.items.length,
       selectable: root.BB_OPTIMIZER_DATA.items.filter((item) => item.selectable).length,
       reviewRequired: root.BB_OPTIMIZER_DATA.items.filter((item) => !item.selectable).length,
-      generatedOn: generatedCatalog.verifiedOn
+      generatedOn: generatedCatalog.verifiedOn,
+      combatVerifiedOn: combatCatalog?.verifiedOn
     };
   }})(typeof globalThis !== 'undefined' ? globalThis : this);

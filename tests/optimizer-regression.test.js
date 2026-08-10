@@ -46,4 +46,12 @@ for (const placement of result.layout) {
   occupied |= placement.occupancyMask;
 }
 
+const aliasIds = ['dragonleaf-sapling', 'dragonleaf-sapling', 'dragonflower', 'dragonflower'];
+const aliasInstances = aliasIds.map((itemId, index) => ({ itemId, instanceId: `${itemId}#${index + 1}` }));
+const aliasPrepared = solver.prepare(aliasInstances, data.items, data.board);
+assert.deepEqual(solver.scoreUpperBound(aliasPrepared.prepared, aliasPrepared.itemById), { validConnections: 8, activeGroups: 2, contributingTargets: 4 });
+const aliasResult = solver.solve({ instances: aliasInstances, items: data.items, board: data.board, options: { timeLimitMs: 1000, seed: 'counts-as-regression', restarts: 3 } });
+assert.equal(aliasResult.status, 'optimal');
+assert.deepEqual(aliasResult.score, { validConnections: 8, activeGroups: 2, contributingTargets: 4 });
+
 console.log('optimizer-regression.test.js passed');

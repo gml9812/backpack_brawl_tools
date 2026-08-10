@@ -1,0 +1,17 @@
+'use strict';
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const vm = require('node:vm');
+const root = path.resolve(__dirname, '..');
+const context = { globalThis: null }; context.globalThis = context; vm.createContext(context);
+for (const file of ['optimizer-catalog.js', 'optimizer-combat-stats.js', 'econ-pools.js', 'econ-core-v2.js', 'econ-official-overrides.js']) vm.runInContext(fs.readFileSync(path.join(root, file), 'utf8'), context);
+const items = context.BB_ECON_CORE.buildEconomyItems(context.BB_OPTIMIZER_CATALOG, context.BB_OPTIMIZER_COMBAT_STATS, { starCount: 1, emptySlots: 1, winRate: 50 });
+const goldenSkull = items.find((item) => item.id === 'golden-skull');
+assert.match(goldenSkull.effect, /Gain 0-3 Gold/);
+assert.equal(goldenSkull.directGold, 1.5);
+assert.equal(goldenSkull.displayGold, '1.5');
+const petRock = items.find((item) => item.id === 'pet-rock');
+assert.deepEqual(Array.from(petRock.pools[0].candidates, (candidate) => candidate.name), ['Rock', 'Boulder', 'Pet Rock']);
+assert.match(goldenSkull.formula, /공식 직접 Gold 평균 1.5/);
+console.log('econ-official.test.js passed');

@@ -7,6 +7,7 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 require(path.join(root, 'optimizer-core.js'));
 require(path.join(root, 'optimizer-catalog.js'));
+require(path.join(root, 'optimizer-combat-stats.js'));
 require(path.join(root, 'optimizer-data.js'));
 const data = global.BB_OPTIMIZER_DATA;
 const core = global.BBOptimizerCore;
@@ -15,14 +16,52 @@ assert.equal(data.schemaVersion, 1);
 assert.equal(data.version, '6.0.1');
 assert.match(data.verifiedOn, /^\d{4}-\d{2}-\d{2}$/);
 assert.deepEqual(data.board, { columns: 9, rows: 6 });
-assert.equal(data.items.length, 940, 'The current board-item catalog must be complete');
-assert.equal(data.catalog.selectable, 906);
+assert.equal(data.items.length, 956, 'The current board-item catalog must be complete');
+assert.equal(data.catalog.selectable, 922);
+assert.match(data.catalog.combatVerifiedOn, /^\d{4}-\d{2}-\d{2}$/);
+const woodenSword = data.items.find((item) => item.id === 'wooden-sword');
+assert.equal(woodenSword.combat.price, '3');
+const woodenSwordDamage = woodenSword.combat.baseStats.find((stat) => stat.label === 'Damage');
+assert.match(woodenSwordDamage.value, /^3.4$/);
+assert.ok(woodenSword.combat.baseStats.some((stat) => stat.label === 'Cooldown'));
+assert.equal(woodenSword.combat.levels.length, 0, 'Official Item Library does not publish level tables');
 assert.equal(data.catalog.reviewRequired, 34);
 assert.equal(new Set(data.items.map((item) => item.id)).size, data.items.length);
+const newlyPublishedItemIds = [
+  'black-dragon-whelpling',
+  'blooddrinker',
+  'blue-dragon-whelpling',
+  'cemetery-sweeper',
+  'deathtouch-jelly',
+  'firebug',
+  'firestarter',
+  'green-dragon-whelpling',
+  'ivory-knife',
+  'kiritsuke-knife',
+  'prismatic-dragon-whelpling',
+  'red-dragon-whelpling',
+  'rod-of-memories',
+  'searing-shears',
+  'soul-cleaver',
+  'sturdy-targe'
+];
+for (const id of newlyPublishedItemIds) {
+  const item = data.items.find((candidate) => candidate.id === id);
+  assert.ok(item, `Missing newly published item: ${id}`);
+  assert.equal(item.selectable, true, `${id} should be calculation-ready`);
+  assert.ok(item.combat.effects.length > 0, `${id} missing combat effects`);
+}
 assert.equal(new Set(data.items.map((item) => item.name)).size, data.items.length);
 
+const expectedCountsAs = { 'bloodsoaked-bandage': ['bandage', 1], cactrio: ['cactus', 3], dragonfang: ['dragonleaf', 2], dragonflower: ['dragonleaf', 1], 'dragonleaf-acorn': ['dragonleaf', 1], 'dragonleaf-sapling': ['dragonleaf', 2], 'elven-blade': ['dragonleaf', 1], 'evergreen-arc': ['dragonleaf', 2], 'leafbound-striders': ['dragonleaf', 2], 'potent-poultice': ['bandage', 1], 'prickly-potion': ['cactus', 2], 'spinegrowth-breastplate': ['cactus', 3], 'stalker-s-shiv': ['dragonleaf', 2], 'starlight-potion': ['starbloom', 1], thornwall: ['cactus', 2], 'wilderness-potion': ['dragonleaf', 1] };
+assert.equal(data.items.filter((item) => item.countsAs.length).length, Object.keys(expectedCountsAs).length);
+for (const [id, [itemId, count]] of Object.entries(expectedCountsAs)) {
+  const item = data.items.find((candidate) => candidate.id === id);
+  assert.deepEqual(item.countsAs, [{ itemId, count }], `${id} counts-as identity mismatch`);
+}
+
 for (const item of data.items) {
-  for (const field of ['id', 'name', 'hero', 'rarity', 'types', 'image', 'footprint', 'rotations', 'starGroups', 'dataStatus', 'source']) {
+  for (const field of ['id', 'name', 'hero', 'rarity', 'types', 'image', 'footprint', 'rotations', 'starGroups', 'countsAs', 'dataStatus', 'source']) {
     assert.notEqual(item[field], undefined, `${item.id} missing ${field}`);
   }
   assert.ok(fs.existsSync(path.join(root, item.image)), `Missing local image: ${item.image}`);
@@ -74,8 +113,12 @@ for (const [id, expectedTargets] of Object.entries(restoredStarTargets)) {
   assert.deepEqual(item.starGroups.map((group) => group.target.anyItemIds), expectedTargets);
 }
 
+const dragonscaleCuirass = data.items.find((item) => item.id === 'dragonscale-cuirass');
+assert.equal(dragonscaleCuirass.dataStatus, 'verified');
+assert.deepEqual(dragonscaleCuirass.starGroups.map((group) => group.target.anyTypes), [['Melee'], ['Melee', 'Pet', 'Ranged']]);
+
 const remainingUnmapped = data.items
-  .filter((item) => item.unsupportedReason === 'Star target wording could not be mapped safely.')
+  .filter((item) => /Star target wording could not be mapped safely\./.test(item.unsupportedReason || ''))
   .map((item) => item.id)
   .sort();
 assert.deepEqual(remainingUnmapped, ['cursed-idol', 'stone-golem']);

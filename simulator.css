@@ -1,0 +1,31 @@
+.simulator-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 340px) minmax(0, 1fr);
+  gap: 1rem;
+  width: min(1380px, calc(100% - 2rem));
+  margin: 1rem auto 2rem;
+  align-items: start;
+}
+
+.simulator-saved-panel { position: sticky; top: 1rem; }
+.simulator-help { color: var(--muted); font-size: .85rem; line-height: 1.5; }
+.simulator-current-heading { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; margin-bottom: .75rem; }
+.simulator-current-heading strong,
+.simulator-current-heading small { display: block; }
+.simulator-current-heading small,
+.simulator-current-heading > span { color: var(--muted); font-size: .78rem; }
+.simulator-workspace .optimizer-summary { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.simulator-workspace .optimizer-board { margin-top: .8rem; }
+.simulator-rotate-control { justify-content: flex-start; }
+.simulator-rotate-control > strong { flex: 1 1 220px; }
+.simulator-saved-panel .saved-layout-card.is-current { border-color: #b98600; box-shadow: 0 0 0 2px #ffe58a inset; }
+
+@media (max-width: 900px) {
+  .simulator-layout { grid-template-columns: 1fr; width: min(760px, calc(100% - 1rem)); }
+  .simulator-saved-panel { position: static; }
+}
+
+@media (max-width: 560px) {
+  .simulator-current-heading { align-items: flex-start; flex-direction: column; }
+  .simulator-workspace .optimizer-summary { grid-template-columns: 1fr; }
+}

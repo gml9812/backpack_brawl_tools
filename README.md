@@ -72,7 +72,7 @@ node .\tests\calculator.test.js
 
 대표 점수는 고유한 `(source instance, Star group, target instance)` 연결 수입니다. 한 target이 같은 그룹의 Star 여러 칸을 덮어도 1회만 계산합니다. 동점은 활성 그룹 수, 기여 target 수, 작은 bounding box, 위·왼쪽 밀집, 결정적 배치 key 순으로 해소합니다. 탐색을 완전히 끝낸 경우에만 `Optimal`을 표시하며, 시간 제한 결과는 `Best found`로 구분합니다.
 
-현재 optimizer 데이터 기준은 게임 `6.0.1`, 기본 검증일 `2026-08-05`, Star 대상 보완 검증일 `2026-08-06`입니다. 현재 보드 아이템 940개 전체를 검색 목록에 포함하며 이미지·데이터는 모두 로컬입니다. 이 중 구조화된 footprint와 명시적인 Star 대상 조건을 확보한 906개는 계산할 수 있습니다. 고정 전체 보드 모델과 충돌하는 Bag 32개와 대상을 아직 안전하게 확정하지 못한 `Cursed Idol`, `Stone Golem` 2개는 목록에는 표시하되 이유와 함께 선택을 차단합니다. 기존 15개 수동 검증 fixture와 공식 아이템 라이브러리로 대상을 재검증한 17개 오버라이드는 생성 데이터보다 우선 적용됩니다. 지원 범위, 출처, 확인 결과는 [`DATA_NOTES.md`](DATA_NOTES.md)에 기록했습니다.
+현재 optimizer 데이터 기준은 게임 `6.0.1`, 기본 검증일 `2026-08-07`, Star 대상 보완 검증일 `2026-08-06`입니다. 현재 보드 아이템 956개 전체를 검색 목록에 포함하며 이미지·데이터는 모두 로컬입니다. 이 중 구조화된 footprint와 명시적인 Star 대상 조건을 확보한 922개는 계산할 수 있습니다. 고정 전체 보드 모델과 충돌하는 Bag 32개와 대상을 아직 안전하게 확정하지 못한 `Cursed Idol`, `Stone Golem` 2개는 목록에는 표시하되 이유와 함께 선택을 차단합니다. 기존 15개 수동 검증 fixture와 공식 아이템 라이브러리로 대상을 재검증한 17개 오버라이드는 생성 데이터보다 우선 적용됩니다. 지원 범위, 출처, 확인 결과는 [`DATA_NOTES.md`](DATA_NOTES.md)에 기록했습니다.
 
 이 기능은 Star 연결 배치를 최적화하며 전투 피해량, 생존력 또는 승률을 계산하지 않습니다.
 
@@ -92,7 +92,7 @@ node .\tests\optimizer-performance.test.js
 node .\scripts\build-full-optimizer-catalog.mjs
 ```
 
-공식 현재 라이브러리와 Skara 보완 목록을 읽고 940개 로컬 카탈로그, 누락 이미지, 검토 보고서를 생성합니다. 명시적인 `Star <type/item>` 문구만 구조화하며 불완전한 문구는 자동으로 비활성 처리합니다.
+공식 현재 라이브러리와 Skara 교차 확인 목록을 읽고 956개 로컬 카탈로그, 누락 이미지, 검토 보고서를 생성합니다. 명시적인 `Star <type/item>` 문구만 구조화하며 불완전한 문구는 자동으로 비활성 처리합니다.
 
 대표 수동 fixture 재검증:
 
@@ -101,3 +101,18 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-optimizer-da
 ```
 
 소스 레이아웃이 달라지면 스크립트는 runtime 데이터를 덮어쓰지 않고 실패하여 수동 검토를 요구합니다.
+
+## Cloudflare Pages 배포
+
+루트의 `wrangler.toml`이 Cloudflare Pages 프로젝트 이름과 정적 파일 디렉터리를 정의합니다.
+
+- Framework preset: `None`
+- Build command: `exit 0`
+- Build output directory: `.`
+- Root directory: `/`
+
+Wrangler CLI로 직접 배포할 때는 저장소 루트에서 다음 명령을 실행합니다.
+
+```powershell
+npx wrangler pages deploy
+```

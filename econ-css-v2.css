@@ -1,0 +1,16 @@
+.econ-pool-details { border-top: 1px solid var(--line); padding-top: .7rem; }
+.econ-pool-details summary { cursor: pointer; color: var(--primary); font-size: .78rem; font-weight: 850; }
+.econ-pool-details summary span { color: var(--muted); font-weight: 700; }
+.econ-pool { margin-top: .8rem; padding: .75rem; border-radius: 10px; background: #f8fafc; }
+.econ-pool-heading { display: flex; justify-content: space-between; gap: .5rem; }
+.econ-pool-heading span, .econ-pool-source { color: var(--muted); font-size: .68rem; }
+.econ-pool-baseline { margin: .45rem 0; font-size: .76rem; color: #344054; }
+.econ-candidates { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .3rem; margin: .55rem 0; padding: 0; list-style: none; }
+.econ-candidate { display: grid; grid-template-columns: 34px minmax(90px, 1fr) auto; gap: .4rem; align-items: center; padding: .35rem; border: 1px solid #e5e7eb; border-radius: 8px; background: white; }
+.econ-candidate.is-lowest { border-color: #f4b740; background: #fffbeb; }
+.econ-candidate img, .candidate-placeholder { width: 34px; height: 34px; object-fit: contain; border-radius: 6px; background: #f2f4f7; }
+.candidate-name { min-width: 0; font-size: .72rem; font-weight: 750; overflow-wrap: anywhere; }
+.candidate-name em { display: block; color: var(--warning); font-size: .6rem; }
+.candidate-price { grid-column: 2 / -1; color: var(--muted); font-size: .64rem; }
+.econ-quality-lower-bound { color: #9a6700; background: #fff3cd; }
+@media (max-width: 650px) { .econ-candidates { grid-template-columns: 1fr; } }

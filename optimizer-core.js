@@ -81,6 +81,37 @@
 
   function masksOverlap(a, b) { return (a & b) !== 0n; }
 
+  function buildPlacementAt(instance, item, board, x, y, degrees) {
+    if (!Number.isInteger(x) || !Number.isInteger(y)) return null;
+    const rotation = rotateDefinition(item, degrees);
+    const occupancyMask = pointsToMask(rotation.footprint, board, x, y);
+    if (occupancyMask == null) return null;
+    const starMasksByGroup = rotation.starGroups.map((group) => {
+      let mask = 0n;
+      for (const [dx, dy] of group.offsets) {
+        const starX = x + dx;
+        const starY = y + dy;
+        if (starX >= 0 && starY >= 0 && starX < board.columns && starY < board.rows) {
+          mask |= cellMask(starX, starY, board);
+        }
+      }
+      return mask;
+    });
+    return {
+      instanceId: instance.instanceId,
+      itemId: item.id,
+      x, y,
+      rotation: rotation.rotation,
+      footprint: rotation.footprint,
+      width: rotation.width,
+      height: rotation.height,
+      occupancyMask,
+      starGroups: rotation.starGroups,
+      starMasksByGroup,
+      canonicalKey: `${item.id}:${rotation.rotation}:${y}:${x}`
+    };
+  }
+
   function buildPlacementCandidates(instance, item, board) {
     const placements = [];
     for (const rotation of uniqueRotations(item)) {
@@ -117,16 +148,24 @@
     return placements;
   }
 
-  function targetMatches(sourceItem, targetItem, condition) {
+  function targetMatchWeight(sourceItem, targetItem, condition) {
     const rule = condition || {};
-    if (rule.any !== true && !rule.anyTypes?.length && !rule.allTypes?.length && !rule.anyItemIds?.length) return false;
-    if (rule.excludedItemIds?.includes(targetItem.id)) return false;
-    if (rule.anyItemIds?.length && !rule.anyItemIds.includes(targetItem.id)) return false;
-    if (rule.anyTypes?.length && !rule.anyTypes.some((type) => targetItem.types.includes(type))) return false;
-    if (rule.allTypes?.length && !rule.allTypes.every((type) => targetItem.types.includes(type))) return false;
-    if (rule.excludedTypes?.some((type) => targetItem.types.includes(type))) return false;
-    if (rule.anyHeroIds?.length && !rule.anyHeroIds.includes(targetItem.hero)) return false;
-    return sourceItem.id !== undefined;
+    if (rule.any !== true && !rule.anyTypes?.length && !rule.allTypes?.length && !rule.anyItemIds?.length) return 0;
+    if (rule.excludedItemIds?.includes(targetItem.id)) return 0;
+    if (rule.anyTypes?.length && !rule.anyTypes.some((type) => targetItem.types.includes(type))) return 0;
+    if (rule.allTypes?.length && !rule.allTypes.every((type) => targetItem.types.includes(type))) return 0;
+    if (rule.excludedTypes?.some((type) => targetItem.types.includes(type))) return 0;
+    if (rule.anyHeroIds?.length && !rule.anyHeroIds.includes(targetItem.hero)) return 0;
+    if (rule.anyItemIds?.length) {
+      if (rule.anyItemIds.includes(targetItem.id)) return 1;
+      const aliases = (targetItem.countsAs || []).filter((entry) => rule.anyItemIds.includes(entry.itemId));
+      return aliases.reduce((maximum, entry) => Math.max(maximum, Number(entry.count) || 0), 0);
+    }
+    return sourceItem.id !== undefined ? 1 : 0;
+  }
+
+  function targetMatches(sourceItem, targetItem, condition) {
+    return targetMatchWeight(sourceItem, targetItem, condition) > 0;
   }
 
   function evaluateLayout(layout, itemById) {
@@ -144,9 +183,10 @@
         for (const target of layout) {
           if (target.instanceId === source.instanceId) continue;
           const targetItem = itemById[target.itemId];
-          if (!targetMatches(sourceItem, targetItem, group.target)) continue;
+          const weight = targetMatchWeight(sourceItem, targetItem, group.target);
+          if (!weight) continue;
           if (masksOverlap(source.starMasksByGroup[groupIndex], target.occupancyMask)) {
-            targets.push(target.instanceId);
+            targets.push(weight > 1 ? `${target.instanceId} x${weight}` : target.instanceId);
             connections.push({
               key: `${source.instanceId}|${group.id}|${target.instanceId}`,
               sourceInstanceId: source.instanceId,
@@ -154,7 +194,8 @@
               groupId: group.id,
               groupLabel: group.label,
               targetInstanceId: target.instanceId,
-              targetItemId: target.itemId
+              targetItemId: target.itemId,
+              weight
             });
             contributingTargets.add(target.instanceId);
           }
@@ -165,7 +206,7 @@
       details.push(sourceDetails);
     }
     const score = {
-      validConnections: connections.length,
+      validConnections: connections.reduce((sum, connection) => sum + connection.weight, 0),
       activeGroups: activeGroupKeys.size,
       contributingTargets: contributingTargets.size
     };
@@ -216,8 +257,8 @@
 
   const api = {
     normalizePoints, rotatePoint, rotateDefinition, uniqueRotations,
-    cellIndex, cellMask, pointsToMask, masksOverlap, buildPlacementCandidates,
-    targetMatches, evaluateLayout, compareSolutions, boundingBoxArea, layoutTieKey
+    cellIndex, cellMask, pointsToMask, masksOverlap, buildPlacementAt, buildPlacementCandidates,
+    targetMatchWeight, targetMatches, evaluateLayout, compareSolutions, boundingBoxArea, layoutTieKey
   };
   root.BBOptimizerCore = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;

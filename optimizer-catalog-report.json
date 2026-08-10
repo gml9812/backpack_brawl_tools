@@ -1,16 +1,14 @@
 {
-  "schemaVersion": 1,
-  "generatedOn": "2026-08-05T07:31:51.575Z",
+  "schemaVersion": 2,
+  "generatedOn": "2026-08-10T05:56:41.509Z",
+  "source": "https://www.backpackbrawl.com/items/",
+  "sourceLastModified": "Thu, 06 Aug 2026 10:46:41 GMT",
   "gameVersion": "6.0.1",
-  "itemCount": 940,
-  "selectableCount": 889,
-  "partialCount": 51,
-  "withStars": 490,
+  "itemCount": 956,
+  "selectableCount": 921,
+  "partialCount": 35,
+  "withStars": 508,
   "partialItems": [
-    {
-      "id": "admiralty-anchor",
-      "reason": "Star target wording could not be mapped safely."
-    },
     {
       "id": "armor-pack",
       "reason": "Bag items are excluded from the fixed 9×6 board model."
@@ -36,10 +34,6 @@
       "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
-      "id": "blast-furnace-bellows",
-      "reason": "Star target wording could not be mapped safely."
-    },
-    {
       "id": "bloody-backpack",
       "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
@@ -56,10 +50,6 @@
       "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
-      "id": "cast-iron-anchor",
-      "reason": "Star target wording could not be mapped safely."
-    },
-    {
       "id": "cast-net",
       "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
@@ -69,43 +59,19 @@
     },
     {
       "id": "cursed-idol",
-      "reason": "Star target wording could not be mapped safely."
+      "reason": "Official Star target wording could not be mapped safely."
     },
     {
       "id": "cutting-board-bag",
       "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
-      "id": "dragonfang",
-      "reason": "Star target wording could not be mapped safely."
-    },
-    {
-      "id": "dragonleaf-acorn",
-      "reason": "Star target wording could not be mapped safely."
+      "id": "dragonscale-cuirass",
+      "reason": "Official Star target wording could not be mapped safely."
     },
     {
       "id": "drift-net",
       "reason": "Bag items are excluded from the fixed 9×6 board model."
-    },
-    {
-      "id": "dull-oyster-shucker",
-      "reason": "Star target wording could not be mapped safely."
-    },
-    {
-      "id": "elven-blade",
-      "reason": "Star target wording could not be mapped safely."
-    },
-    {
-      "id": "errant-lance",
-      "reason": "Star target wording could not be mapped safely."
-    },
-    {
-      "id": "everdrift-anchor",
-      "reason": "Star target wording could not be mapped safely."
-    },
-    {
-      "id": "evergreen-arc",
-      "reason": "Star target wording could not be mapped safely."
     },
     {
       "id": "fanny-pack",
@@ -114,10 +80,6 @@
     {
       "id": "grab-bag",
       "reason": "Bag items are excluded from the fixed 9×6 board model."
-    },
-    {
-      "id": "grapeshot-slinger",
-      "reason": "Star target wording could not be mapped safely."
     },
     {
       "id": "medium-bag",
@@ -130,10 +92,6 @@
     {
       "id": "planner-s-pack",
       "reason": "Bag items are excluded from the fixed 9×6 board model."
-    },
-    {
-      "id": "predator-scales",
-      "reason": "Star target wording could not be mapped safely."
     },
     {
       "id": "pumpkin-patch",
@@ -156,32 +114,12 @@
       "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
-      "id": "reptile-stalker",
-      "reason": "Star target wording could not be mapped safely."
-    },
-    {
       "id": "retiarius-net",
       "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
-      "id": "rhongomiant",
-      "reason": "Star target wording could not be mapped safely."
-    },
-    {
-      "id": "rolling-pin-nunchucks",
-      "reason": "Star target wording could not be mapped safely."
-    },
-    {
-      "id": "shadow-armor",
-      "reason": "Star target wording could not be mapped safely."
-    },
-    {
       "id": "shadow-satchel",
       "reason": "Bag items are excluded from the fixed 9×6 board model."
-    },
-    {
-      "id": "stalker-s-shiv",
-      "reason": "Star target wording could not be mapped safely."
     },
     {
       "id": "stamina-sack",
@@ -193,7 +131,7 @@
     },
     {
       "id": "stone-golem",
-      "reason": "Star target wording could not be mapped safely."
+      "reason": "Official Star target wording could not be mapped safely."
     },
     {
       "id": "tactical-knapsack",
