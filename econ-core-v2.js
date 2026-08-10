@@ -60,7 +60,7 @@
     return rule ? lookup.dynamic(rule[1], (item) => item.types.includes(rule[1]) && excludes(item, rule[2]) && allowedHero(item, generator)) : null;
   }
   function probabilityBefore(text, index, assumptions) {
-    const context = text.slice(Math.max(0, index - 110), index); const percentages = [...context.matchAll(/(\d+(?:\.\d+)?)%/g)]; const decimals = [...context.matchAll(/\b(0\.\d+) chance/gi)];
+    const before = text.slice(0, index); const context = before.slice(before.lastIndexOf('\n') + 1); const percentages = [...context.matchAll(/(\d+(?:\.\d+)?)%/g)]; const decimals = [...context.matchAll(/\b(0\.\d+) chance/gi)];
     let probability = percentages.length ? number(percentages.at(-1)[1]) / 100 : decimals.length ? number(decimals.at(-1)[1]) : 1;
     if (/per Star/i.test(context)) probability *= assumptions.starCount; if (/per empty (?:bag )?slot/i.test(context)) probability *= assumptions.emptySlots; return Math.min(1, probability);
   }
