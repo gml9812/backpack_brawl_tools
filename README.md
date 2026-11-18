@@ -102,6 +102,40 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-optimizer-da
 
 소스 레이아웃이 달라지면 스크립트는 runtime 데이터를 덮어쓰지 않고 실패하여 수동 검토를 요구합니다.
 
+## 전투 시뮬레이터
+
+`battle.html`은 양측 빌드로 전투를 시간 순서대로 진행해 승률, 전투 시간, 전투 로그를 보여 줍니다. 저장된 배치의 기댓값을 계산하는 `simulator.html`과 별개의 도구입니다.
+
+1. 라운드, 영웅, 영웅 레벨, 플레이어 레벨 체력 보너스를 정합니다.
+2. 아이템(가방 포함)을 추가하고 레벨과 수량을 입력합니다.
+3. 아이템별로 활성화된 별과 겹쳐진 Fanny Pack, Ranger's Satchel 수를 입력합니다. 아이템 좌표는 사용하지 않습니다.
+4. `전투 실행`을 누릅니다. 시드가 같으면 결과도 같습니다.
+
+지원 아이템은 실제 전투 로그에 등장한 37종입니다. 입력은 이 브라우저에 저장되며 JSON으로 가져오거나 내보낼 수 있습니다.
+
+### 전투 모델의 한계
+
+실제 전투 로그 한 판에 맞춘 모델이므로 결과는 참고용입니다.
+
+- 피로 피해는 공개된 수식이 없어 임시 모델을 씁니다. 30초를 넘는 전투 결과는 믿기 어렵습니다.
+- 치명타 추가 피해 공식, 스태미나 부족 처리, Fanny Pack과 Haste의 결합 방식, 기절 시간, 동시 발동 순서는 추정값입니다.
+- 영웅 레벨 10·16의 전투 시작 스탯은 Harkon과 Nymphedora만 확인했습니다.
+- 예시 빌드의 아이템 레벨, Fanny Pack 수, 일부 별 대상은 로그에서 역산했습니다.
+
+전투 시뮬레이터 검증:
+
+```powershell
+node .\tests\battle-engine.test.js
+node .\tests\battle-structure.test.js
+node .\tests\official-item-levels.test.mjs
+```
+
+공식 개별 아이템 페이지의 레벨 표는 별도 수집기로 `raw/official-item-levels.json`에 저장합니다. 페이지를 하나씩 요청하므로 15~20분 정도 걸립니다.
+
+```powershell
+node .\scripts\build-official-level-data.mjs
+```
+
 ## Cloudflare Pages 배포
 
 루트의 `wrangler.toml`이 Cloudflare Pages 프로젝트 이름과 정적 파일 디렉터리를 정의합니다.

@@ -4,6 +4,7 @@
 
 .tool-nav {
   display: flex;
+  flex-wrap: wrap;
   gap: .45rem;
   margin-bottom: 1rem;
 }
@@ -582,7 +583,7 @@
 @media (max-width: 560px) {
   .optimizer-header { align-items: flex-start; }
   .tool-nav { width: 100%; }
-  .tool-nav a { flex: 1; justify-content: center; padding-inline: .55rem; }
+  .tool-nav a { flex: 1 1 auto; justify-content: center; padding-inline: .55rem; white-space: nowrap; }
   .optimizer-filters { grid-template-columns: 1fr 1fr; }
   .optimizer-search { grid-column: 1 / -1; }
   .optimizer-catalog { max-height: 310px; }

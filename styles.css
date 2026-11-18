@@ -403,6 +403,7 @@ fieldset + fieldset { padding-top: 15px; border-top: 1px solid var(--line); }
 /* Shared navigation between the two offline tools. */
 .tool-nav {
   display: flex;
+  flex-wrap: wrap;
   gap: .45rem;
   margin-bottom: 1rem;
 }

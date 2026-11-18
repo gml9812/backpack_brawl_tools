@@ -1,0 +1,634 @@
+Harkon (Heroic)  vs Nymphedora (Heroic)
+
+0.0s	[Harkon]	Harkon gained 1 :Empower:
+  -	[Harkon]	Harkon gained 1 :Empower:
+  -	[Harkon]	Armor Pack added 6 :Armor:
+  -	[Harkon]	Armor Pack added 14 :Armor:
+  -	[Harkon]	Armor Pack added 6 :Armor:
+  -	[Harkon]	Armor Pack added 14 :Armor:
+  -	[Harkon]	Giant's Belt gained 2 :Luck:
+  -	[Harkon]	Giant's Belt gained 2 :Regeneration:
+  -	[Harkon]	Giant's Belt gained 2 :Luck:
+  -	[Harkon]	Giant's Belt gained 2 :Regeneration:
+  -	[Harkon]	Magic Belt gained 3 :Luck:
+  -	[Harkon]	Magic Belt gained 6 :Mana:
+  -	[Harkon]	Giant's Belt gained 2 :Luck:
+  -	[Harkon]	Giant's Belt gained 2 :Regeneration:
+  -	[Harkon]	Giant's Belt gained 2 :Luck:
+  -	[Harkon]	Giant's Belt gained 2 :Regeneration:
+  -	[Harkon]	Magic Belt gained 3 :Luck:
+  -	[Harkon]	Magic Belt gained 6 :Mana:
+  -	[Harkon]	Gloves of Power added 25 :Armor:
+  -	[Harkon]	Amethyst Pendant gained 2 :Lifesteal:
+  -	[Harkon]	Fur Boots added 35 :Armor:
+  -	[Harkon]	Fur Boots gained 2 :Empower:
+  -	[Harkon]	Harkon gained 30 :Armor:
+  -	[Nymphedora]	Nymphedora gained 3 :Haste:
+  -	[Nymphedora]	Nymphedora gained 3 :Haste:
+  -	[Nymphedora]	Ranger's Satchel inflicted 2 :Blind: to [Harkon]
+  -	[Nymphedora]	Armor Pack added 6 :Armor:
+  -	[Nymphedora]	Armor Pack added 7 :Armor:
+  -	[Nymphedora]	Armor Pack added 6 :Armor:
+  -	[Nymphedora]	Armor Pack added 7 :Armor:
+  -	[Nymphedora]	Armor Pack added 6 :Armor:
+  -	[Nymphedora]	Armor Pack added 7 :Armor:
+  -	[Nymphedora]	Armor Pack added 6 :Armor:
+  -	[Nymphedora]	Armor Pack added 7 :Armor:
+  -	[Nymphedora]	Armor Pack added 6 :Armor:
+  -	[Nymphedora]	Armor Pack added 7 :Armor:
+  -	[Nymphedora]	Dragonleaf gained 3 :Haste:
+  -	[Nymphedora]	Predator Scales added 150 :Armor:
+  -	[Nymphedora]	Predator Scales gained 10 :Resist:
+  -	[Nymphedora]	Speed Essence gained 1 :Haste:
+  -	[Nymphedora]	Predator Scales added 144 :Armor:
+  -	[Nymphedora]	Dragonleaf gained 3 :Haste:
+  -	[Nymphedora]	Man-o-lorian Helmet added 55 :Armor:
+  -	[Nymphedora]	Heavenly Skull gained 5 :Regeneration:
+  -	[Nymphedora]	Leafbound Striders added 30 :Armor:
+  -	[Nymphedora]	Leafbound Striders gained 5 :Haste:
+  -	[Nymphedora]	Dragonleaf gained 3 :Haste:
+  -	[Nymphedora]	Nymphedora gained 30 :Armor:
+1.9s	[Harkon]	World's End used 1 :Stamina: to make a Charged Strike (150% :Damage:)
+  -	[Nymphedora]	Damage reduced by 30% (13 :Damage:)
+  -	[Harkon]	World's End 32 :Damage:(-32 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 2 :Health:
+  -	[Harkon]	World's End gained 2 :Empower:
+  -	[Harkon]	World's End gained 3 :Regeneration:
+  -	[Harkon]	World's End gained 1 :Lifesteal:
+  -	[Harkon]	World's End gained 1 :Empower:
+2.0s	[Nymphedora]	Dragonfang missed
+2.0s	[Harkon]	:Regeneration: overhealed 11 :Health:
+2.0s	[Nymphedora]	:Regeneration: overhealed 5 :Health:
+2.1s	[Nymphedora]	Damage reduced by 30% (6 :Damage:)
+  -	[Harkon]	Royal Seax 14 :Damage:(-14 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 3 :Health:
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Royal Seax stole 5 :MaxHealth:
+  -	[Harkon]	Amethyst Pendant gained 1 :Mana:
+  -	[Harkon]	Amethyst Pendant gained 1 :Mana:
+2.2s	[Nymphedora]	Damage reduced by 30% (4 :Damage:)
+  -	[Harkon]	Mallet 10 :Damage:(-10 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 4 :Health:
+2.3s	[Nymphedora]	Critical damage reduced by 30% (3 :CritDamage:)
+  -	[Nymphedora]	Damage reduced by 30% (8 :Damage:)
+  -	[Harkon]	Royal Seax 19 :CritDamage: (-19 :Armor:)(Critical)
+  -	[Harkon]	:Lifesteal: overhealed 4 :Health:
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Royal Seax stole 5 :MaxHealth:
+2.3s	[Nymphedora]	Vampire Bat 14 :Damage:(-14 :Armor:) to [Harkon]
+  -	[Nymphedora]	Vampire Bat overhealed 10 :Health:
+  -	[Nymphedora]	Vampire Bat stole 10 :Health:
+  -	[Nymphedora]	Vampire Bat gained 2 :Lifesteal:
+2.4s	[Nymphedora]	Damage reduced by 30% (4 :Damage:)
+  -	[Harkon]	Hooked Dagger 12 :Damage:(-12 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: healed 5 :Health:
+  -	[Nymphedora]	Predator Scales resisted 2 :Bleed: from Hooked Dagger to [Harkon]
+2.5s	[Nymphedora]	Frost Emblem inflicted 1 :Chill: to [Harkon]
+2.5s	[Nymphedora]	Speed Essence gained 1 :Haste:
+2.5s	[Nymphedora]	Damage reduced by 30% (5 :Damage:)
+  -	[Harkon]	Royal Seax 13 :Damage:(-13 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: healed 5 :Health:
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+2.5s	[Nymphedora]	Damage reduced by 30% (4 :Damage:)
+  -	[Harkon]	Royal Seax 12 :Damage:(-12 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 6 :Health:
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Royal Seax stole 5 :MaxHealth:
+  -	[Harkon]	Amethyst Pendant gained 1 :Mana:
+2.5s	[Nymphedora]	Rod of Memories missed
+2.6s	[Nymphedora]	Damage reduced by 30% (7 :Damage:)
+  -	[Harkon]	Skullsmasher 19 :Damage:(-19 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 7 :Health:
+  -	[Harkon]	Skullsmasher stunned Nymphedora (0.47s) to [Nymphedora]
+  -	[Nymphedora]	Critical damage reduced by 30% (3 :CritDamage:)
+  -	[Nymphedora]	Damage reduced by 30% (7 :Damage:)
+  -	[Harkon]	Hooked Dagger (Extra Attack) 18 :CritDamage: (-18 :Armor:)(Critical)
+  -	[Harkon]	:Lifesteal: overhealed 7 :Health:
+  -	[Nymphedora]	Predator Scales resisted 2 :Bleed: from Hooked Dagger to [Harkon]
+  -	[Nymphedora]	Predator Scales resisted 1 :Bleed: from Hooked Dagger to [Harkon]
+  -	[Nymphedora]	Critical damage reduced by 30% (3 :CritDamage:)
+  -	[Nymphedora]	Damage reduced by 30% (7 :Damage:)
+  -	[Harkon]	Royal Seax (Extra Attack) 17 :CritDamage: (-17 :Armor:)(Critical)
+  -	[Harkon]	:Lifesteal: overhealed 7 :Health:
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Nymphedora]	Damage reduced by 30% (5 :Damage:)
+  -	[Harkon]	Royal Seax (Extra Attack) 13 :Damage:(-13 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 8 :Health:
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Royal Seax stole 5 :MaxHealth:
+  -	[Nymphedora]	Damage reduced by 30% (7 :Damage:)
+  -	[Harkon]	Royal Seax (Extra Attack) 17 :Damage:(-17 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 9 :Health:
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Amethyst Pendant gained 1 :Mana:
+  -	[Nymphedora]	Damage reduced by 30% (5 :Damage:)
+  -	[Harkon]	Royal Seax (Extra Attack) 13 :Damage:(-13 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 10 :Health:
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Royal Seax stole 5 :MaxHealth:
+  -	[Harkon]	Amethyst Pendant gained 1 :Mana:
+  -	[Harkon]	Amethyst Pendant gained 1 :Mana:
+  -	[Nymphedora]	Predator Scales resisted 1 :Bleed: from Skullsmasher to [Harkon]
+2.6s	[Harkon]	Fur Boots removed 1 :Chill:
+  -	[Harkon]	Fur Boots gained 1 :Empower:
+  -	[Harkon]	Fur Boots gained 1 :Stamina:
+  -	[Harkon]	Fur Boots gained 1 :Stamina:
+  -	[Harkon]	Fur Boots gained 1 :Empower:
+2.7s	[Nymphedora]	Damage reduced by 30% (6 :Damage:)
+  -	[Harkon]	Mallet 14 :Damage:(-14 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 11 :Health:
+3.2s	[Harkon]	Golden Skull gained 1 :Luck:
+  -	[Harkon]	Golden Skull drained 0.5 :Stamina: to [Nymphedora]
+  -	[Nymphedora]	Predator Scales resisted 1 :Curse: from Golden Skull to [Harkon]
+3.2s	[Nymphedora]	Evergreen Arc 42 :Damage:(-42 :Armor:) to [Harkon]
+  -	[Nymphedora]	:Lifesteal: overhealed 2 :Health:
+  -	[Nymphedora]	Evergreen Arc gained 3 :Luck:
+  -	[Nymphedora]	Evergreen Arc inflicted 5 :Bleed: to [Harkon]
+  -	[Nymphedora]	Evergreen Arc inflicted 2 :Bleed: to [Harkon]
+  -	[Nymphedora]	Poison Arrows inflicted 3 :Poison: to [Harkon]
+  -	[Nymphedora]	Poison Arrows inflicted 5 :Poison: to [Harkon]
+3.3s	[Nymphedora]	Stinkbug 2 :Damage:(-2 :Armor:) to [Harkon]
+3.4s	[Nymphedora]	Golden Skull gained 1 :Luck:
+  -	[Nymphedora]	Golden Skull drained 0.5 :Stamina: to [Harkon]
+  -	[Nymphedora]	Golden Skull inflicted 1 :Curse: to [Harkon]
+3.4s	[Nymphedora]	Heavenly Skull gained 1 :Regeneration:
+  -	[Nymphedora]	Heavenly Skull gained 1.5 :Stamina:
+3.5s	[Nymphedora]	Leafbound Striders gained 1 :Stamina:
+3.7s	[Nymphedora]	Cleansing Crown overhealed 5 :Health:
+3.8s	[Harkon]	Giant's Belt gained 1 :Empower:
+  -	[Harkon]	Giant's Belt gained 1 :Empower:
+  -	[Harkon]	Magic Belt removed 2 :Mana:
+  -	[Harkon]	Magic Belt gained 1 :Empower:
+  -	[Harkon]	Magic Belt gained 1 :Haste:
+  -	[Harkon]	Magic Belt gained 1 :Lifesteal:
+  -	[Harkon]	Magic Belt gained 1 :Regeneration:
+  -	[Harkon]	Magic Belt gained 1 :Luck:
+  -	[Harkon]	Magic Belt gained 1 :Thorns:
+  -	[Harkon]	Wrath Potion was used 1/5
+  -	[Harkon]	Wrath Potion gained 1 :Empower:
+  -	[Harkon]	Wrath Potion gained 1 :StaminaRecovery:
+  -	[Harkon]	Wrath Potion gained 0.5 :StaminaRecovery:
+  -	[Harkon]	World's End used 1 :Stamina: to make a Charged Strike (150% :Damage:)
+  -	[Nymphedora]	Critical damage reduced by 30% (13 :CritDamage:)
+  -	[Nymphedora]	Damage reduced by 30% (28 :Damage:)
+  -	[Harkon]	World's End 67 :CritDamage: (-67 :Armor:)(Critical)
+  -	[Harkon]	:Lifesteal: overhealed 12 :Health:
+  -	[Harkon]	World's End gained 2 :Empower:
+  -	[Harkon]	World's End gained 3 :Regeneration:
+  -	[Nymphedora]	Damage reduced by 30% (12 :Damage:)
+  -	[Harkon]	World's End (Extra Attack) 31 :Damage:(-31 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 12 :Health:
+  -	[Harkon]	World's End gained 2 :Empower:
+  -	[Harkon]	World's End gained 3 :Regeneration:
+  -	[Harkon]	World's End gained 1 :Lifesteal:
+  -	[Harkon]	World's End gained 1 :Empower:
+3.9s	[Nymphedora]	Cursed Clover inflicted 1 :Poison: to [Harkon]
+  -	[Nymphedora]	Cursed Clover inflicted 1 :Curse: to [Harkon]
+4.0s	[Harkon]	:Regeneration: overhealed 26 :Health:
+4.0s	[Nymphedora]	:Regeneration: overhealed 6 :Health:
+4.2s	[Harkon]	Giant's Belt gained 1 :Empower:
+  -	[Harkon]	Giant's Belt gained 1 :Empower:
+  -	[Harkon]	Magic Belt removed 2 :Mana:
+  -	[Harkon]	Magic Belt gained 1 :Empower:
+  -	[Harkon]	Magic Belt gained 1 :Haste:
+  -	[Harkon]	Magic Belt gained 1 :Lifesteal:
+  -	[Harkon]	Magic Belt gained 1 :Regeneration:
+  -	[Harkon]	Magic Belt gained 1 :Luck:
+  -	[Harkon]	Magic Belt gained 1 :Thorns:
+  -	[Harkon]	Wrath Potion was used 1/5
+  -	[Harkon]	Wrath Potion gained 1 :Empower:
+  -	[Harkon]	Wrath Potion gained 1 :StaminaRecovery:
+  -	[Harkon]	Wrath Potion gained 0.5 :StaminaRecovery:
+4.2s	[Nymphedora]	Critical damage reduced by 30% (8 :CritDamage:)
+  -	[Nymphedora]	Damage reduced by 30% (17 :Damage:)
+  -	[Harkon]	Royal Seax 41 :CritDamage: (-41 :Armor:)(Critical)
+  -	[Harkon]	:Lifesteal: overhealed 14 :Health:
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Amethyst Pendant gained 1 :Mana:
+4.4s	[Nymphedora]	Dragonfang 18 :Damage:(-18 :Armor:) to [Harkon]
+  -	[Nymphedora]	:Lifesteal: overhealed 2 :Health:
+  -	[Harkon]	:Thorns: 2 :Damage:(-2 :Armor:) to [Nymphedora]
+  -	[Nymphedora]	Dragonfang gained 4 :Haste:
+  -	[Nymphedora]	Dragonfang inflicted 4 :Bleed: to [Harkon]
+4.4s	[Nymphedora]	Damage reduced by 30% (9 :Damage:)
+  -	[Harkon]	Mallet 22 :Damage:(-22 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 15 :Health:
+4.6s	[Nymphedora]	Vampire Bat 25 :CritDamage: (-25 :Armor:)(Critical)
+  -	[Nymphedora]	Vampire Bat overhealed 10 :Health:
+  -	[Nymphedora]	Vampire Bat stole 10 :Health:
+  -	[Nymphedora]	Vampire Bat gained 2 :Lifesteal:
+4.6s	[Harkon]	Giant's Belt gained 1 :Empower:
+  -	[Harkon]	Giant's Belt gained 1 :Empower:
+  -	[Harkon]	Magic Belt removed 2 :Mana:
+  -	[Harkon]	Magic Belt gained 1 :Empower:
+  -	[Harkon]	Magic Belt gained 1 :Haste:
+  -	[Harkon]	Magic Belt gained 1 :Lifesteal:
+  -	[Harkon]	Magic Belt gained 1 :Regeneration:
+  -	[Harkon]	Magic Belt gained 1 :Luck:
+  -	[Harkon]	Magic Belt gained 1 :Thorns:
+  -	[Harkon]	Wrath Potion was used 1/5
+  -	[Harkon]	Wrath Potion gained 1 :Empower:
+  -	[Harkon]	Wrath Potion gained 1 :StaminaRecovery:
+  -	[Harkon]	Wrath Potion gained 0.5 :StaminaRecovery:
+4.7s	[Harkon]	Royal Seax missed
+4.8s	[Nymphedora]	Damage reduced by 30% (10 :Damage:)
+  -	[Harkon]	Hooked Dagger 24 :Damage:(-24 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: healed 10 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 0 (2%)
+	[Harkon]	:Lifesteal: overhealed 6 :Health:
+  -	[Nymphedora]	Predator Scales resisted 2 :Bleed: from Hooked Dagger to [Harkon]
+5.0s	[Nymphedora]	Damage reduced by 30% (10 :Damage:)
+  -	[Harkon]	Royal Seax 25 :Damage:(-25 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 16 :Health:
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Royal Seax stole 5 :MaxHealth:
+  -	[Harkon]	Amethyst Pendant gained 1 :Mana:
+  -	[Harkon]	Amethyst Pendant gained 1 :Mana:
+5.1s	[Nymphedora]	Damage reduced by 30% (11 :Damage:)
+  -	[Harkon]	Royal Seax 27 :Damage:(-27 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 17 :Health:
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Royal Seax stole 5 :MaxHealth:
+5.2s	[Nymphedora]	Critical damage reduced by 30% (9 :CritDamage:)
+  -	[Nymphedora]	Damage reduced by 30% (20 :Damage:)
+  -	[Harkon]	Skullsmasher 48 :CritDamage: (-12 :Armor:)(Critical)
+  -	[Harkon]	:Lifesteal: overhealed 18 :Health:
+5.2s	[Harkon]	:Poison: 9 :Damage:(-9 :Armor:)
+5.3s	[Harkon]	Fur Boots gained 1 :Empower:
+  -	[Harkon]	Fur Boots gained 1 :Stamina:
+  -	[Harkon]	Fur Boots gained 1 :Stamina:
+  -	[Harkon]	Fur Boots gained 1 :Empower:
+5.4s	[Nymphedora]	Critical damage reduced by 30% (7 :CritDamage:)
+  -	[Nymphedora]	Damage reduced by 30% (15 :Damage:)
+  -	[Harkon]	Mallet 38 :CritDamage: (Critical)
+  -	[Harkon]	:Lifesteal: overhealed 18 :Health:
+5.4s	[Nymphedora]	Frost Emblem inflicted 1 :Chill: to [Harkon]
+  -	[Nymphedora]	Frost Emblem inflicted 1 :Chill: to [Harkon]
+5.5s	[Nymphedora]	Rod of Memories 23 :Damage:(-20 :Armor:) to [Harkon]
+  -	[Nymphedora]	:Lifesteal: healed 4 :Health:
+  -	[Nymphedora]	Ranger's Satchel gained 1 :Haste:
+  -	[Nymphedora]	Rod of Memories gained 1 :Haste:
+  -	[Nymphedora]	Rod of Memories gained 1 :Regeneration:
+5.5s	[Nymphedora]	Predator Scales added 56 :Armor:
+  -	[Nymphedora]	Predator Scales gained 4 :Haste:
+5.7s	[Harkon]	Giant's Belt gained 1 :Empower:
+  -	[Harkon]	Giant's Belt gained 1 :Empower:
+  -	[Harkon]	Magic Belt removed 2 :Mana:
+  -	[Harkon]	Magic Belt gained 1 :Empower:
+  -	[Harkon]	Magic Belt gained 1 :Haste:
+  -	[Harkon]	Magic Belt gained 1 :Lifesteal:
+  -	[Harkon]	Magic Belt gained 1 :Regeneration:
+  -	[Harkon]	Magic Belt gained 1 :Luck:
+  -	[Harkon]	Magic Belt gained 1 :Thorns:
+  -	[Harkon]	Wrath Potion was used 1/5
+  -	[Harkon]	Wrath Potion gained 1 :Empower:
+  -	[Harkon]	Wrath Potion gained 1 :StaminaRecovery:
+  -	[Harkon]	Wrath Potion gained 0.5 :StaminaRecovery:
+  -	[Harkon]	World's End used 1 :Stamina: to make a Charged Strike (150% :Damage:)
+  -	[Nymphedora]	Damage reduced by 30% (27 :Damage:)
+  -	[Harkon]	World's End 66 :Damage:(-56 :Armor:) to [Nymphedora]
+  -	[Harkon]	:Lifesteal: healed 3 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 0 (2%)
+	[Harkon]	:Lifesteal: overhealed 16 :Health:
+  -	[Harkon]	World's End gained 2 :Empower:
+  -	[Harkon]	World's End gained 3 :Regeneration:
+  -	[Nymphedora]	Predator Scales resisted 1 :Bleed: from World's End to [Harkon]
+  -	[Harkon]	World's End inflicted 5 :Bleed: to [Nymphedora]
+  -	[Harkon]	World's End used 1 :Stamina: to make a Charged Strike (150% :Damage:)
+  -	[Nymphedora]	Damage reduced by 30% (31 :Damage:)
+  -	[Harkon]	World's End (Extra Attack) 75 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 19 :Health:
+  -	[Harkon]	World's End gained 2 :Empower:
+  -	[Harkon]	World's End gained 3 :Regeneration:
+  -	[Harkon]	World's End inflicted 6 :Bleed: to [Nymphedora]
+  -	[Harkon]	World's End gained 1 :Lifesteal:
+  -	[Harkon]	World's End gained 1 :Empower:
+5.9s	[Nymphedora]	Evergreen Arc 97 :CritDamage: (Critical)
+  -	[Nymphedora]	:Lifesteal: healed 4 :Health:
+  -	[Nymphedora]	Ranger's Satchel gained 1 :Haste:
+  -	[Nymphedora]	Evergreen Arc gained 3 :Luck:
+  -	[Nymphedora]	Evergreen Arc inflicted 5 :Bleed: to [Harkon]
+  -	[Nymphedora]	Poison Arrows inflicted 3 :Poison: to [Harkon]
+  -	[Nymphedora]	Poison Arrows inflicted 5 :Poison: to [Harkon]
+  -	[Nymphedora]	Evergreen Arc gained 1 :Haste:
+  -	[Nymphedora]	Evergreen Arc healed 32 :Health:
+  -	[Nymphedora]	Poison Arrows disabled Mallet (1.3s) to [Harkon]
+  -	[Nymphedora]	Werewolf Paw inflicted 1 :Curse: to [Harkon]
+  -	[Nymphedora]	Werewolf Paw inflicted 1 :Curse: to [Harkon]
+6.0s	[Harkon]	:Regeneration: healed 37 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 1 (4%)
+6.0s	[Nymphedora]	:Regeneration: healed 7 :Health:
+6.0s	[Nymphedora]	Golden Skull gained 1 :Luck:
+  -	[Nymphedora]	Golden Skull drained 0.5 :Stamina: to [Harkon]
+  -	[Nymphedora]	Golden Skull inflicted 1 :Curse: to [Harkon]
+6.1s	[Nymphedora]	Heavenly Skull gained 1 :Regeneration:
+  -	[Nymphedora]	Heavenly Skull gained 1.5 :Stamina:
+6.2s	[Harkon]	:Bleed: 16 :Damage:
+6.2s	[Nymphedora]	Damage reduced by 30% (16 :Damage:)
+  -	[Harkon]	Royal Seax 40 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: healed 19 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 1 (5%)
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Royal Seax stole 5 :MaxHealth:
+  -	[Harkon]	Amethyst Pendant gained 1 :Mana:
+6.3s	[Harkon]	Golden Skull gained 1 :Luck:
+  -	[Harkon]	Golden Skull drained 0.5 :Stamina: to [Nymphedora]
+  -	[Harkon]	Golden Skull inflicted 1 :Curse: to [Nymphedora]
+  -	[Harkon]	Golden Skull inflicted 1 :Curse: to [Nymphedora]
+  -	[Harkon]	Golden Skull gained 1 :Luck:
+6.3s	[Nymphedora]	Dragonfang 46 :CritDamage: (Critical)
+  -	[Nymphedora]	:Lifesteal: healed 4 :Health:
+  -	[Nymphedora]	Damage reduced by 30% (2 :Damage:)
+  -	[Harkon]	:Thorns: 6 :Damage: to [Nymphedora]
+  -	[Nymphedora]	Dragonfang removed 1 :Curse:
+  -	[Nymphedora]	Dragonfang removed 1 :Bleed:
+  -	[Nymphedora]	Dragonfang gained 4 :Haste:
+  -	[Nymphedora]	Dragonfang inflicted 4 :Bleed: to [Harkon]
+6.3s	[Nymphedora]	Leafbound Striders gained 1 :Stamina:
+  -	[Nymphedora]	Leafbound Striders gained 1 :Stamina:
+6.6s	[Nymphedora]	Stinkbug missed
+6.7s	[Nymphedora]	Vampire Bat 13 :Damage: to [Harkon]
+  -	[Nymphedora]	Vampire Bat stole 10 :Health:
+  -	[Nymphedora]	Vampire Bat removed 4 :Bleed:
+  -	[Nymphedora]	Vampire Bat gained 2 :Lifesteal:
+  -	[Nymphedora]	Speed Essence gained 1 :Haste:
+6.9s	[Nymphedora]	Cleansing Crown removed 6 :Bleed:
+  -	[Nymphedora]	Cleansing Crown removed 1 :Curse:
+  -	[Nymphedora]	Cleansing Crown healed 5 :Health:
+7.0s	[Nymphedora]	Damage reduced by 30% (13 :Damage:)
+  -	[Harkon]	Royal Seax 33 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: healed 20 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 1 (5%)
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Royal Seax stole 5 :MaxHealth:
+7.0s	[Nymphedora]	Cursed Clover inflicted 1 :Poison: to [Harkon]
+  -	[Nymphedora]	Cursed Clover inflicted 1 :Curse: to [Harkon]
+7.1s	[Nymphedora]	Damage reduced by 30% (13 :Damage:)
+  -	[Harkon]	Hooked Dagger 31 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: healed 21 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 1 (6%)
+  -	[Harkon]	Hooked Dagger inflicted 2 :Bleed: to [Nymphedora]
+  -	[Harkon]	Hooked Dagger inflicted 1 :Bleed: to [Nymphedora]
+7.2s	[Harkon]	:Poison: 18 :Damage:
+7.5s	[Nymphedora]	Damage reduced by 30% (14 :Damage:)
+  -	[Harkon]	Royal Seax 33 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: healed 21 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 1 (6%)
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Royal Seax stole 5 :MaxHealth:
+  -	[Harkon]	Amethyst Pendant gained 1 :Mana:
+7.6s	[Nymphedora]	Damage reduced by 30% (14 :Damage:)
+  -	[Harkon]	Royal Seax 34 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: healed 22 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 1 (6%)
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Royal Seax stole 5 :MaxHealth:
+7.6s	[Harkon]	World's End used 1 :Stamina: to make a Charged Strike (150% :Damage:)
+  -	[Nymphedora]	Damage reduced by 30% (32 :Damage:)
+  -	[Nymphedora]	Wilderness Potion healed 18 :Health:
+  -	[Nymphedora]	Wilderness Potion gained 8 :Haste:
+  -	[Nymphedora]	Wilderness Potion was used 0/1
+  -	[Harkon]	World's End 76 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: healed 23 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 1 (6%)
+  -	[Harkon]	World's End gained 2 :Empower:
+  -	[Harkon]	World's End gained 3 :Regeneration:
+  -	[Harkon]	World's End inflicted 6 :Bleed: to [Nymphedora]
+  -	[Harkon]	World's End gained 1 :Lifesteal:
+  -	[Harkon]	World's End gained 1 :Empower:
+7.6s	[Nymphedora]	Frost Emblem inflicted 1 :Chill: to [Harkon]
+  -	[Nymphedora]	Frost Emblem inflicted 1 :Chill: to [Harkon]
+7.7s	[Nymphedora]	Dragonflower removed 3 :Bleed:
+  -	[Nymphedora]	Dragonflower removed 3 :Bleed:
+7.7s	[Nymphedora]	Damage reduced by 30% (18 :Damage:)
+  -	[Harkon]	Skullsmasher 43 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: healed 24 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 1 (6%)
+7.7s	[Nymphedora]	Rod of Memories 24 :Damage: to [Harkon]
+  -	[Nymphedora]	:Lifesteal: healed 6 :Health:
+  -	[Nymphedora]	Ranger's Satchel gained 1 :Haste:
+  -	[Nymphedora]	Rod of Memories gained 1 :Regeneration:
+  -	[Nymphedora]	Rod of Memories gained 1 :Luck:
+7.8s	[Nymphedora]	Dragonflower removed 3 :Bleed:
+7.8s	[Harkon]	Wrath Potion removed 1 :StaminaRecovery:
+7.8s	[Nymphedora]	Critical damage reduced by 30% (9 :CritDamage:)
+  -	[Nymphedora]	Damage reduced by 30% (20 :Damage:)
+  -	[Harkon]	Mallet 49 :CritDamage: (Critical)
+  -	[Harkon]	:Lifesteal: healed 24 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 1 (6%)
+7.9s	[Harkon]	Fur Boots removed 4 :Chill:
+  -	[Harkon]	Fur Boots gained 1 :Empower:
+  -	[Harkon]	Fur Boots gained 1 :Stamina:
+  -	[Harkon]	Fur Boots gained 1 :Stamina:
+  -	[Harkon]	Fur Boots gained 1 :Empower:
+8.0s	[Harkon]	:Regeneration: healed 13 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 2 (6%)
+	[Harkon]	:Regeneration: overhealed 30 :Health:
+8.0s	[Nymphedora]	:Regeneration: healed 9 :Health:
+8.1s	[Nymphedora]	Dragonfang 18 :Damage: to [Harkon]
+  -	[Nymphedora]	:Lifesteal: healed 6 :Health:
+  -	[Nymphedora]	Damage reduced by 30% (1 :Damage:)
+  -	[Harkon]	:Thorns: 3 :Damage: to [Nymphedora]
+  -	[Nymphedora]	Dragonfang gained 4 :Haste:
+  -	[Nymphedora]	Dragonfang inflicted 4 :Bleed: to [Harkon]
+  -	[Nymphedora]	Dragonfang inflicted 3 :Bleed: to [Harkon]
+8.1s	[Nymphedora]	Damage reduced by 30% (15 :Damage:)
+  -	[Harkon]	Mallet 37 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: healed 18 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 1 (6%)
+	[Harkon]	:Lifesteal: overhealed 6 :Health:
+8.2s	[Harkon]	Wrath Potion removed 1 :StaminaRecovery:
+8.2s	[Nymphedora]	Evergreen Arc 64 :Damage: to [Harkon]
+  -	[Nymphedora]	:Lifesteal: healed 6 :Health:
+  -	[Nymphedora]	Ranger's Satchel gained 1 :Haste:
+  -	[Nymphedora]	Evergreen Arc gained 3 :Luck:
+  -	[Nymphedora]	Evergreen Arc inflicted 5 :Bleed: to [Harkon]
+  -	[Nymphedora]	Evergreen Arc inflicted 2 :Bleed: to [Harkon]
+  -	[Nymphedora]	Poison Arrows inflicted 3 :Poison: to [Harkon]
+8.3s	[Nymphedora]	Damage reduced by 30% (18 :Damage:)
+  -	[Harkon]	Royal Seax 43 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: healed 24 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 1 (6%)
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Royal Seax stole 5 :MaxHealth:
+  -	[Harkon]	Amethyst Pendant gained 1 :Mana:
+8.6s	[Harkon]	Wrath Potion removed 1 :StaminaRecovery:
+8.6s	[Nymphedora]	Golden Skull gained 1 :Luck:
+  -	[Nymphedora]	Golden Skull drained 0.5 :Stamina: to [Harkon]
+  -	[Nymphedora]	Golden Skull inflicted 1 :Curse: to [Harkon]
+8.6s	[Nymphedora]	Heavenly Skull gained 1 :Regeneration:
+  -	[Nymphedora]	Heavenly Skull gained 1.5 :Stamina:
+8.6s	[Nymphedora]	Vampire Bat 13 :Damage: to [Harkon]
+  -	[Nymphedora]	Vampire Bat stole 10 :Health:
+  -	[Nymphedora]	Vampire Bat gained 2 :Lifesteal:
+8.9s	[Nymphedora]	Leafbound Striders gained 1 :Stamina:
+9.1s	[Nymphedora]	Damage reduced by 30% (16 :Damage:)
+  -	[Harkon]	Royal Seax 38 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: healed 25 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 1 (7%)
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+9.2s	[Harkon]	:Bleed: 34 :Damage:
+9.2s	[Harkon]	:Poison: 21 :Damage:
+9.3s	[Nymphedora]	Stinkbug 7 :CritDamage: (Critical)
+  -	[Nymphedora]	Stinkbug inflicted 1 :Poison: to [Harkon]
+9.5s	[Harkon]	World's End used 1 :Stamina: to make a Charged Strike (150% :Damage:)
+  -	[Nymphedora]	Critical damage reduced by 30% (23 :CritDamage:)
+  -	[Nymphedora]	Damage reduced by 30% (51 :Damage:)
+  -	[Harkon]	World's End 120 :CritDamage: (Critical)
+  -	[Harkon]	:Lifesteal: healed 26 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 1 (7%)
+  -	[Harkon]	World's End gained 2 :Empower:
+  -	[Harkon]	World's End gained 3 :Regeneration:
+  -	[Harkon]	World's End inflicted 6 :Bleed: to [Nymphedora]
+  -	[Harkon]	World's End used 1 :Stamina: to make a Charged Strike (150% :Damage:)
+  -	[Nymphedora]	Damage reduced by 30% (35 :Damage:)
+  -	[Harkon]	World's End (Extra Attack) 84 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: healed 26 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 1 (7%)
+  -	[Harkon]	World's End gained 2 :Empower:
+  -	[Harkon]	World's End gained 3 :Regeneration:
+  -	[Harkon]	World's End inflicted 6 :Bleed: to [Nymphedora]
+  -	[Harkon]	World's End gained 1 :Lifesteal:
+  -	[Harkon]	World's End gained 1 :Empower:
+  -	[Harkon]	World's End gained 1 :Lifesteal:
+  -	[Harkon]	World's End gained 1 :Empower:
+9.6s	[Harkon]	Golden Skull gained 1 :Luck:
+  -	[Harkon]	Golden Skull drained 0.5 :Stamina: to [Nymphedora]
+  -	[Harkon]	Golden Skull inflicted 1 :Curse: to [Nymphedora]
+9.6s	[Nymphedora]	Critical damage reduced by 30% (13 :CritDamage:)
+  -	[Nymphedora]	Damage reduced by 30% (26 :Damage:)
+  -	[Harkon]	Hooked Dagger 63 :CritDamage: (Critical)
+  -	[Harkon]	:Lifesteal: healed 27 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 2 (7%)
+  -	[Harkon]	Hooked Dagger inflicted 2 :Bleed: to [Nymphedora]
+  -	[Harkon]	Hooked Dagger inflicted 1 :Bleed: to [Nymphedora]
+9.7s	[Nymphedora]	Cleansing Crown removed 1 :Curse:
+  -	[Nymphedora]	Cleansing Crown removed 7 :Bleed:
+  -	[Nymphedora]	Cleansing Crown healed 5 :Health:
+9.7s	[Nymphedora]	Cursed Clover inflicted 1 :Poison: to [Harkon]
+  -	[Nymphedora]	Cursed Clover inflicted 1 :Curse: to [Harkon]
+9.7s	[Nymphedora]	Dragonfang 53 :CritDamage: (Critical)
+  -	[Nymphedora]	:Lifesteal: healed 8 :Health:
+  -	[Nymphedora]	Damage reduced by 30% (2 :Damage:)
+  -	[Harkon]	:Thorns: 6 :Damage: to [Nymphedora]
+  -	[Nymphedora]	Dragonfang removed 2 :Bleed:
+  -	[Nymphedora]	Dragonfang gained 4 :Haste:
+  -	[Nymphedora]	Dragonfang inflicted 4 :Bleed: to [Harkon]
+9.7s	[Nymphedora]	Frost Emblem inflicted 1 :Chill: to [Harkon]
+  -	[Nymphedora]	Frost Emblem inflicted 1 :Chill: to [Harkon]
+9.7s	[Harkon]	Wrath Potion removed 1 :StaminaRecovery:
+9.8s	[Nymphedora]	Rod of Memories missed
+9.9s	[Nymphedora]	Predator Scales added 56 :Armor:
+  -	[Nymphedora]	Predator Scales gained 4 :Haste:
+9.9s	[Nymphedora]	Critical damage reduced by 30% (12 :CritDamage:)
+  -	[Nymphedora]	Damage reduced by 30% (26 :Damage:)
+  -	[Harkon]	Royal Seax 62 :CritDamage: (-56 :Armor:)(Critical)
+  -	[Harkon]	:Lifesteal: healed 27 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 2 (8%)
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Amethyst Pendant gained 1 :Mana:
+10.0s	[Harkon]	Medium Bag healed 4 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 0 (8%)
+  -	[Harkon]	Stamina Sack gained 0.1 :StaminaRecovery:
+  -	[Harkon]	Stamina Sack gained 0.1 :StaminaRecovery:
+  -	[Harkon]	Fanny Pack gained 1 :Haste:
+  -	[Harkon]	Fanny Pack gained 1 :Haste:
+  -	[Harkon]	Fanny Pack gained 1 :Haste:
+  -	[Harkon]	Fanny Pack gained 1 :Haste:
+  -	[Harkon]	Fanny Pack gained 1 :Haste:
+  -	[Harkon]	Giant's Belt gained 2 :Luck:
+  -	[Harkon]	Giant's Belt gained 2 :Regeneration:
+  -	[Harkon]	Berserker Sack gained 12 :MaxHealth:
+	[Harkon]	:Curse: reduced :MaxHealth: gain by 0 (8%)
+  -	[Harkon]	Fanny Pack gained 1 :Haste:
+  -	[Harkon]	Fanny Pack gained 1 :Haste:
+  -	[Harkon]	Stamina Sack gained 0.1 :StaminaRecovery:
+  -	[Harkon]	Fanny Pack gained 1 :Haste:
+  -	[Harkon]	Fanny Pack gained 1 :Haste:
+  -	[Harkon]	Giant's Belt gained 2 :Luck:
+  -	[Harkon]	Giant's Belt gained 2 :Regeneration:
+  -	[Harkon]	Magic Belt gained 4 :Mana:
+  -	[Harkon]	Magic Belt gained 1 :Haste:
+  -	[Harkon]	Magic Belt gained 1 :Thorns:
+  -	[Harkon]	Magic Belt gained 1 :Regeneration:
+  -	[Harkon]	Magic Belt gained 1 :Luck:
+  -	[Harkon]	Giant's Belt gained 2 :Luck:
+  -	[Harkon]	Giant's Belt gained 2 :Regeneration:
+  -	[Harkon]	Fanny Pack gained 1 :Haste:
+  -	[Harkon]	Fanny Pack gained 1 :Haste:
+  -	[Harkon]	Giant's Belt gained 2 :Luck:
+  -	[Harkon]	Giant's Belt gained 2 :Regeneration:
+  -	[Harkon]	Magic Belt gained 4 :Mana:
+  -	[Harkon]	Magic Belt gained 3 :Luck:
+  -	[Harkon]	Magic Belt gained 1 :Thorns:
+  -	[Harkon]	Ethereal Cloak gave invulnerable (1.3s)
+  -	[Harkon]	Day begins
+  -	[Nymphedora]	Ranger's Satchel gained 1 :Haste:
+  -	[Nymphedora]	Medium Bag healed 4 :Health:
+  -	[Nymphedora]	Medium Bag healed 4 :Health:
+  -	[Nymphedora]	Dragonleaf gained 2 :Haste:
+10.0s	[Harkon]	:Regeneration: healed 43 :Health:
+	[Harkon]	:Curse: reduced :Health: gain by 5 (8%)
+	[Harkon]	:Regeneration: overhealed 15 :Health:
+10.0s	[Nymphedora]	Critical damage reduced by 30% (13 :CritDamage:)
+  -	[Nymphedora]	Damage reduced by 30% (27 :Damage:)
+  -	[Harkon]	Royal Seax 65 :CritDamage: (Critical)
+  -	[Harkon]	:Lifesteal: overhealed 28 :Health:
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+10.0s	[Nymphedora]	:Regeneration: healed 10 :Health:
+10.1s	[Nymphedora]	Damage reduced by 30% (17 :Damage:)
+  -	[Harkon]	Mallet 40 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 29 :Health:
+10.2s	[Nymphedora]	Damage reduced by 30% (21 :Damage:)
+  -	[Harkon]	Skullsmasher 49 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 29 :Health:
+  -	[Harkon]	Skullsmasher stunned Nymphedora (0.47s) to [Nymphedora]
+  -	[Nymphedora]	Damage reduced by 30% (16 :Damage:)
+  -	[Harkon]	Hooked Dagger (Extra Attack) 39 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 29 :Health:
+  -	[Harkon]	Hooked Dagger inflicted 2 :Bleed: to [Nymphedora]
+  -	[Harkon]	Hooked Dagger inflicted 1 :Bleed: to [Nymphedora]
+  -	[Nymphedora]	Damage reduced by 30% (18 :Damage:)
+  -	[Harkon]	Royal Seax (Extra Attack) 42 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 29 :Health:
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Royal Seax stole 5 :MaxHealth:
+  -	[Nymphedora]	Critical damage reduced by 30% (13 :CritDamage:)
+  -	[Nymphedora]	Damage reduced by 30% (27 :Damage:)
+  -	[Harkon]	Royal Seax (Extra Attack) 65 :CritDamage: (Critical)
+  -	[Harkon]	:Lifesteal: overhealed 30 :Health:
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Nymphedora]	Damage reduced by 30% (21 :Damage:)
+  -	[Harkon]	Royal Seax (Extra Attack) 51 :Damage: to [Nymphedora]
+  -	[Harkon]	:Lifesteal: overhealed 31 :Health:
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Amethyst Pendant gained 1 :Mana:
+  -	[Nymphedora]	Critical damage reduced by 30% (13 :CritDamage:)
+  -	[Nymphedora]	Damage reduced by 30% (26 :Damage:)
+  -	[Harkon]	Royal Seax (Extra Attack) 61 :CritDamage: (Critical)
+  -	[Harkon]	:Lifesteal: overhealed 32 :Health:
+  -	[Harkon]	Royal Seax gained 1 :Regeneration:
+  -	[Harkon]	Royal Seax gained 1 :Lifesteal:
+  -	[Harkon]	Amethyst Pendant gained 1 :Mana:

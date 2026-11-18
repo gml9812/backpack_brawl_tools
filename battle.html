@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Backpack Brawl 양측 빌드를 입력해 턴 진행 전투를 반복 실행하고 승률과 전투 시간을 확인합니다.">
+  <title>Battle Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="optimizer.css">
+  <link rel="stylesheet" href="battle.css">
+</head>
+<body class="optimizer-page">
+  <a class="skip-link" href="#battle">전투 시뮬레이터로 바로가기</a>
+  <header class="site-header optimizer-header">
+    <div>
+      <nav class="tool-nav" aria-label="도구 선택">
+        <a href="index.html">Shop Odds</a>
+        <a href="optimizer.html">Star Optimizer</a>
+        <a href="simulator.html">Saved & Combat</a>
+        <a href="battle.html" aria-current="page">Battle Sim</a>
+        <a href="econ.html">Econ Items</a>
+      </nav>
+      <p class="eyebrow">TURN-BY-TURN BATTLE</p>
+      <h1>Battle Simulator</h1>
+      <p class="subtitle">양측의 아이템, 활성화된 별, 겹친 가방 효과를 입력하면 전투를 반복 실행해 승률과 전투 시간을 계산합니다. 아이템 좌표는 사용하지 않습니다.</p>
+    </div>
+    <div class="data-stamp" aria-label="전투 데이터 기준">
+      <span>Game <strong>7.2.0</strong></span>
+      <span>Items <strong id="battleItemCount">—</strong></span>
+    </div>
+  </header>
+
+  <main id="battle" class="battle-layout">
+    <section class="panel battle-settings" aria-label="전투 설정">
+      <label class="field"><span>라운드</span><input id="battleRound" type="number" min="1" max="99" step="1" value="22"></label>
+      <label class="field"><span>반복 횟수</span>
+        <select id="battleRuns">
+          <option value="100">100회</option>
+          <option value="1000" selected>1,000회</option>
+          <option value="3000">3,000회</option>
+          <option value="10000">10,000회</option>
+        </select>
+      </label>
+      <label class="field"><span>시작 시드</span><input id="battleSeed" type="number" min="0" step="1" value="1"></label>
+      <div class="battle-actions">
+        <button id="battleRunButton" class="button button-primary" type="button">전투 실행</button>
+        <button id="battleCancelButton" class="button button-secondary" type="button" hidden>취소</button>
+        <button id="battleExampleButton" class="button button-quiet" type="button">예시 불러오기</button>
+        <button id="battleClearButton" class="button button-quiet" type="button">모두 비우기</button>
+      </div>
+      <p id="battleProgress" class="battle-progress" aria-live="polite"></p>
+      <p id="battleError" class="battle-error" role="alert"></p>
+    </section>
+
+    <div id="battleSides" class="battle-sides"></div>
+
+    <section id="battleResults" class="panel battle-results" aria-labelledby="battleResultsHeading" hidden>
+      <div class="panel-heading">
+        <div><p class="step-label">RESULT</p><h2 id="battleResultsHeading">전투 결과</h2></div>
+        <span id="battleResultMeta" class="battle-meta"></span>
+      </div>
+      <div id="battleWinBar" class="battle-win-bar" role="img"></div>
+      <div id="battleSummary" class="battle-summary"></div>
+      <ul id="battleWarnings" class="battle-warnings" hidden></ul>
+      <details class="battle-log" open>
+        <summary>전투 로그 <span id="battleLogMeta" class="battle-meta"></span></summary>
+        <pre id="battleLog" tabindex="0"></pre>
+      </details>
+    </section>
+
+    <details class="panel battle-notes">
+      <summary>빌드 JSON 가져오기·내보내기</summary>
+      <textarea id="battleJson" rows="10" spellcheck="false" aria-label="빌드 JSON"></textarea>
+      <div class="battle-actions">
+        <button id="battleJsonApply" class="button button-secondary" type="button">JSON 적용</button>
+        <button id="battleJsonCopy" class="button button-quiet" type="button">복사</button>
+        <span id="battleJsonStatus" class="battle-meta" aria-live="polite"></span>
+      </div>
+    </details>
+
+    <details class="panel battle-notes">
+      <summary>모델의 한계</summary>
+      <p>실제 전투 로그 한 판으로 맞춘 모델입니다. 아래 항목은 추정값이므로 결과를 참고용으로 사용하세요.</p>
+      <ul>
+        <li><strong>피로 피해:</strong> 공개된 수식이 없어 임시 모델을 씁니다. 30초를 넘는 전투 결과는 믿기 어렵습니다.</li>
+        <li><strong>치명타 추가 피해:</strong> 로그에 맞춘 추정식이며, 가시를 더하는 항은 근거가 약합니다.</li>
+        <li><strong>스태미나 부족:</strong> 공격 없이 쿨다운을 다시 시작한다고 가정합니다.</li>
+        <li><strong>Fanny Pack과 Haste:</strong> 합연산으로 계산합니다. 곱연산과 구분되지 않았습니다.</li>
+        <li><strong>기절 시간과 동시 발동 순서:</strong> 로그 한 판에서만 관찰했으며 실제와 조금 다를 수 있습니다.</li>
+        <li><strong>영웅 시작 스탯:</strong> 영웅 레벨 10·16 보너스는 Harkon과 Nymphedora만 확인했습니다.</li>
+        <li><strong>예시 빌드:</strong> 아이템 레벨, Fanny Pack 수, 일부 별 대상은 로그에서 역산한 추정값입니다.</li>
+      </ul>
+    </details>
+  </main>
+
+  <script charset="utf-8" src="battle-rng.js"></script>
+  <script charset="utf-8" src="battle-heroes.js"></script>
+  <script charset="utf-8" src="battle-items.js"></script>
+  <script charset="utf-8" src="battle-engine.js"></script>
+  <script charset="utf-8" src="battle-core.js"></script>
+  <script charset="utf-8" src="battle-example.js"></script>
+  <script charset="utf-8" src="battle-app.js"></script>
+</body>
+</html>
