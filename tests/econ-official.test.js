@@ -16,6 +16,6 @@ assert.deepEqual(Array.from(petRock.pools[0].candidates, (candidate) => candidat
 const mimic = items.find((item) => item.id === 'mimic');
 assert.equal(mimic.directGold, 2);
 assert.equal(mimic.pools[0].probability, 1);
-assert.equal(mimic.displayGold, '3.46+a');
+assert.equal(mimic.displayGold, '3.38+a');
 assert.match(goldenSkull.formula, /공식 직접 Gold 평균 1.5/);
 console.log('econ-official.test.js passed');

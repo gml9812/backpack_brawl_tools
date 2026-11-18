@@ -26,9 +26,9 @@ dataContext.globalThis = dataContext;
 vm.createContext(dataContext);
 vm.runInContext(fs.readFileSync(path.join(root, 'data.js'), 'utf8'), dataContext);
 const data = dataContext.BB_DATA;
-assert.equal(data.version, '6.0.1');
+assert.equal(data.version, '7.2.0');
 assert.equal(data.roundOdds.length, 20);
-assert.equal(data.items.length, 274);
+assert.equal(data.items.length, 280);
 assert.equal(new Set(data.items.map((item) => item.id)).size, data.items.length);
 for (const item of data.items) {
   assert.ok(data.rarities.includes(item.rarity), `${item.name} has invalid rarity`);

@@ -19,10 +19,7 @@
     'cast-iron-anchor': [{ id: 'reef-knot', label: 'Star Reef Knot', offsets: [[1, -1]], target: { anyItemIds: ['reef-knot'] } }],
     dragonfang: [{ id: 'dragonleaf', label: 'Star Dragonleaf', offsets: [[-1, 0], [1, 0], [-1, 1], [1, 1]], target: { anyItemIds: ['dragonleaf'] } }],
     'dragonleaf-acorn': [{ id: 'dragonleaf', label: 'Star Dragonleaf', offsets: [[-1, -1], [-1, 0], [1, 0], [1, 1]], target: { anyItemIds: ['dragonleaf'] } }],
-    'dragonscale-cuirass': [
-      { id: 'melee', label: 'Star Melee', offsets: [[-1, 0], [2, 0], [-2, 1], [3, 1]], target: { anyTypes: ['Melee'] } },
-      { id: 'melee-pet-ranged', label: 'Star Melee Ranged Pet', offsets: [[-1, 0], [2, 0], [-2, 1], [3, 1]], target: { anyTypes: ['Melee', 'Pet', 'Ranged'] } }
-    ],
+    'dragonscale-cuirass': [{ id: 'any-item', label: 'Star item', offsets: [[-1, 0], [2, 0], [-2, 1], [3, 1]], target: { any: true } }],
     'dull-oyster-shucker': [{ id: 'tidal-clam', label: 'Star Tidal Clam', offsets: [[-1, -1]], target: { anyItemIds: ['tidal-clam'] } }],
     'elven-blade': [{ id: 'dragonleaf', label: 'Star Dragonleaf', offsets: [[-1, 0], [1, 0]], target: { anyItemIds: ['dragonleaf'] } }],
     'errant-lance': [{ id: 'cactus', label: 'Star Cactus', offsets: [[0, -1], [-1, 1], [1, 1]], target: { anyItemIds: ['cactus'] } }],
@@ -45,7 +42,7 @@
 
   root.BB_OPTIMIZER_DATA = {
     schemaVersion: 1,
-    version: '6.0.1',
+    version: '7.2.0',
     verifiedOn,
     supportLevel: 'verified-fixtures',
     board: { columns: 9, rows: 6 },
@@ -56,8 +53,8 @@
         url: 'https://www.backpackbrawl.com/items/'
       },
       {
-        label: 'Official Backpack Brawl 6.0.1 patch notes',
-        url: 'https://www.backpackbrawl.com/patch-notes/6-0-1/'
+        label: 'Official Backpack Brawl 7.2.0 patch notes',
+        url: 'https://www.backpackbrawl.com/patch-notes/7-2-0/'
       },
       {
         label: 'Backpack Brawl Pro item layouts (cross-checked fixtures)',

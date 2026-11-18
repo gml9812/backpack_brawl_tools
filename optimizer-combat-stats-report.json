@@ -1,13 +1,13 @@
 {
   "schemaVersion": 2,
-  "generatedOn": "2026-08-10T05:56:41.390Z",
+  "generatedOn": "2026-11-18T06:08:35.133Z",
   "source": "https://www.backpackbrawl.com/items/",
   "sourceLastModified": "Thu, 06 Aug 2026 10:46:41 GMT",
-  "sourceItemCount": 956,
-  "itemCount": 956,
+  "sourceItemCount": 995,
+  "itemCount": 995,
   "failedCount": 0,
-  "withBaseStats": 709,
-  "withEffects": 953,
+  "withBaseStats": 746,
+  "withEffects": 993,
   "withLevels": 0,
   "failures": []
 }

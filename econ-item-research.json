@@ -1,9 +1,9 @@
 {
-  "gameVersion": "6.0.1",
-  "researchedOn": "2026-08-10",
+  "gameVersion": "7.2.0",
+  "researchedOn": "2026-11-18",
   "source": "https://www.backpackbrawl.com/items/",
   "sourceLastModified": "Thu, 06 Aug 2026 10:46:41 GMT",
-  "checked": 956,
+  "checked": 995,
   "failed": 0,
   "candidates": [
     {
@@ -125,7 +125,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/fisherman-s-hook/",
-      "text": "On hit:\n- Inflict 1 Bleed per Star Type Fish\nOn shop entered:\n- 35% chance to Go Fishing (Shallow)\n- +5% per failed attempt until success"
+      "text": "On hit:\n- Inflict 1 Bleed per Star Type Fish\nOn shop entered:\n- 30% chance to Go Fishing (Shallow)\n- +5% per failed attempt until success"
     },
     {
       "id": "iron-bar",
@@ -273,11 +273,11 @@
       "hero": "shared",
       "rarity": "Rare",
       "types": [
-        "Ingredient",
-        "Food"
+        "Fungus",
+        "Ingredient"
       ],
       "url": "https://www.backpackbrawl.com/items/fly-agaric/",
-      "text": "Every 4 seconds:\n- Inflict 1 Poison\n+10% faster for every Star Type Food of another type"
+      "text": "Every 3.6 seconds:\n- Inflict 1 Poison"
     },
     {
       "id": "longing-begonia",
@@ -442,16 +442,16 @@
       "text": "On hit:\n- 33% chance to inflict 3 Burn"
     },
     {
-      "id": "cheese",
-      "name": "Cheese",
+      "id": "mild-cheese",
+      "name": "Mild Cheese",
       "hero": "shared",
       "rarity": "Rare",
       "types": [
         "Ingredient",
         "Food"
       ],
-      "url": "https://www.backpackbrawl.com/items/cheese/",
-      "text": "Every 4.2 seconds:\n- Star Type Rat gain +1 Damage\nOn shop entered:\n- 25% chance to catch 1 Rat\n+10% faster for every Star Type Food of another type"
+      "url": "https://www.backpackbrawl.com/items/mild-cheese/",
+      "text": "Every 4.2 seconds:\n- Star Type Rat gain +1 Damage\nOn shop entered:\n- 40% chance to catch 1 Brown Rat\n+10% faster for every Star Type Food of another type"
     },
     {
       "id": "golden-egg",
@@ -519,7 +519,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/leather-belt/",
-      "text": "Start of Dawn:\n- Gain 3 Luck\n- Star Potion gain +1 more use"
+      "text": "Start of Dawn:\n- Gain 3 Luck\n- Star Type Potion gain +1 more use"
     },
     {
       "id": "bolstering-bag",
@@ -640,15 +640,15 @@
       "text": "Every 4.2 seconds:\n- Gain 1 Haste\n- Cleanse 2 Debuff\n+10% faster for every Star Type Food of another type"
     },
     {
-      "id": "bat",
-      "name": "Bat",
+      "id": "cave-bat",
+      "name": "Cave Bat",
       "hero": "shared",
       "rarity": "Epic",
       "types": [
         "Charm",
         "Pet"
       ],
-      "url": "https://www.backpackbrawl.com/items/bat/",
+      "url": "https://www.backpackbrawl.com/items/cave-bat/",
       "text": "On hit:\n- Steal 6 Health\n- Cleanse 2 Bleed"
     },
     {
@@ -831,7 +831,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/pet-collar/",
-      "text": "Every 4.2 seconds:\n- Star Pet gains +2 Damage and +5% faster attacks\nOn Star Pet hit:\n- Every Star Pet gains +1% Crit Chance"
+      "text": "Every 4.2 seconds:\n- Star Pet gains +2 Damage and +3% faster attacks\nOn Star Pet hit:\n- Every Star Pet gains +1% Crit Chance"
     },
     {
       "id": "creepy-doll",
@@ -890,7 +890,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/bloodletter/",
-      "text": "On hit:\n- Inflict 2 Bleed\nPer Bleed on opponent:\n- Gain +5% faster attacks"
+      "text": "On hit:\n- Inflict 2 Bleed\nPer Bleed on opponent:\n- Gain +1% faster attacks"
     },
     {
       "id": "discordant-harp",
@@ -949,7 +949,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/wing-clipper/",
-      "text": "On hit:\n- Inflict 1 Bleed\n- Use 4 Haste from opponent to:\n- Inflict 1 Bleed\n- Gain +10% faster attacks"
+      "text": "On hit:\n- Inflict 1 Bleed\n- Use 4 Haste from opponent to:\n- Inflict 1 Bleed\n- Gain +5% faster attacks"
     },
     {
       "id": "platemail",
@@ -960,7 +960,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/platemail/",
-      "text": "Start of Dawn:\n- Gain 80 Armor and 8 Resist\n- Reduce Damage taken by 20%\nEvery 5.8 seconds:\n- Gain 5 Armor per Star item"
+      "text": "Start of Dawn:\n- Gain 130 Armor and 8 Resist\n- Reduce Damage taken by 20%\nEvery 5.8 seconds:\n- Gain 7 Armor per Star item"
     },
     {
       "id": "rune-of-r-lyeh",
@@ -984,7 +984,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/celestial-teapot/",
-      "text": "Start of Dawn:\n- Star Melee Ranged Pet gains +20% Accuracy\nEvery 3.2 seconds:\n- Gain 2 Mana\n- Use 5 Mana to gain 5 Luck"
+      "text": "Start of Dawn:\n- Star Melee Ranged Pet gains +20% Accuracy\nEvery 3.2 seconds:\n- Gain 2 Mana\n- Use 5 Mana to gain 4 Luck"
     },
     {
       "id": "emerald-scarab",
@@ -1007,7 +1007,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/cleansing-crown/",
-      "text": "Every 3.9 seconds:\n- Cleanse 6 Debuff\n- Use 10 Mana to cleanse 100 Debuff (once)\n- Heal for 5 Health"
+      "text": "Every 3.9 seconds:\n- Cleanse 8 Debuff\n- Use 5 Mana to cleanse 75 Debuff (once)\n- Heal for 5 Health"
     },
     {
       "id": "mars-flytrap",
@@ -1018,7 +1018,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/mars-flytrap/",
-      "text": "When hit ( Melee Ranged Pet ):\n- 20% chance to inflict 1 Bleed per Star Type Plant"
+      "text": "When hit ( Melee Ranged Pet ):\n- 20% chance to inflict 1 Bleed per Star Type Plant Type Fungus"
     },
     {
       "id": "ancient-vessel",
@@ -1029,7 +1029,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/ancient-vessel/",
-      "text": "Every 4.2 seconds:\n- Steal 9 Health per Star Type Plant\n- Cleanse 3 Bleed per Star Type Plant\n- Inflict 1 Bleed per Star Type Plant"
+      "text": "Every 3.6 seconds:\n- Transfer 1 Debuff per Star Type Plant Type Skull\n- Steal 6 Health per Star Type Plant Type Skull"
     },
     {
       "id": "man-o-lorian-helmet",
@@ -1077,7 +1077,7 @@
         "Tool"
       ],
       "url": "https://www.backpackbrawl.com/items/frost-cleaver/",
-      "text": "On hit:\n- Inflict 3 Slow\nOn critical hit:\n- Inflict 3 Slow\nPer Slow on opponent:\n- Gain +5% Crit Damage"
+      "text": "On hit:\n- Inflict 2 Slow\nOn critical hit:\n- Inflict 2 Slow\nPer Slow on opponent:\n- Gain +5% Crit Damage"
     },
     {
       "id": "genie-of-glittering-gifts",
@@ -1157,7 +1157,7 @@
         "Food"
       ],
       "url": "https://www.backpackbrawl.com/items/guppy/",
-      "text": "Every 4.6 seconds:\n- Gain 3 Max Health\n+10% faster for every Star Type Food of another type"
+      "text": "Every 5.1 seconds:\n- Gain 3 Max Health\n+10% faster for every Star Type Food of another type"
     },
     {
       "id": "tidal-clam",
@@ -1269,7 +1269,7 @@
         "Potion"
       ],
       "url": "https://www.backpackbrawl.com/items/endurance-potion/",
-      "text": "Out of stamina:\n- Gain 1 Stamina\n- Increase Stamina Recovery by 0.5 for 3 seconds"
+      "text": "Stamina below 35%:\n- Increase Stamina Recovery by 1 for 2 seconds"
     },
     {
       "id": "fishing-rod",
@@ -1321,7 +1321,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/iron-sword/",
-      "text": ""
+      "text": "On hit:\n- 15% → 45% chance to gain 1 Stamina"
     },
     {
       "id": "large-water-potion",
@@ -1357,7 +1357,7 @@
         "Rat"
       ],
       "url": "https://www.backpackbrawl.com/items/muck-rat/",
-      "text": "On Hit:\n- Gain +1 Damage per Star Type Rat"
+      "text": "On hit:\n- Gain +1 Damage per Star Type Rat"
     },
     {
       "id": "predator-teeth",
@@ -1382,7 +1382,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/shovel/",
-      "text": "On hit:\n- 50% chance to inflict 1 Blind\nOn shop entered:\n- Dig for Treasure"
+      "text": "On hit:\n- Inflict 1 Blind\nOn shop entered:\n- Dig for Treasure"
     },
     {
       "id": "spiked-shield",
@@ -1440,7 +1440,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/bloodthorn/",
-      "text": "Start of Dawn:\n- Gain 4 Thorns and 2 Luck\n- Steal 20 Max Health"
+      "text": "Start of Dawn:\n- Gain 20 Max Health, 4 Thorns, and 2 Luck"
     },
     {
       "id": "bumble-rat",
@@ -1538,7 +1538,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/foul-brew/",
-      "text": "Every 5 seconds:\n- Remove 2 Buff and 6 Max Health\nActivate absorbed items:\n- No Type Charm absorbed yet\nOn shop entered:\n- Absorb 1 Star Type Charm (0/3)"
+      "text": "Every 5 seconds:\n- Remove 3 Buff and 6 Max Health\nActivate absorbed items:\n- No Type Charm absorbed yet\nOn shop entered:\n- Absorb 1 Star Type Charm (0/3)"
     },
     {
       "id": "golden-clover",
@@ -1633,7 +1633,7 @@
         "Food"
       ],
       "url": "https://www.backpackbrawl.com/items/spicy-sausage/",
-      "text": "Every 5 seconds:\n- Gain 5 Max Health\n- Inflict 2 Burn\n- Cleanse 3 Chill\n+10% faster for every Star Type Food of another type"
+      "text": "Every 5 seconds:\n- Gain 5 Max Health\n- Inflict 2 Burn\n- Gain 1 Empower\n+10% faster for every Star Type Food of another type"
     },
     {
       "id": "strong-health-potion",
@@ -1693,7 +1693,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/robo-rat-2-0/",
-      "text": "On hit:\n- Gain 1 Haste, 1 Regeneration, or 7 Armor per Star Type Tool Type Rat"
+      "text": "On hit:\n- Gain 7 Armor\n- Gain +1 Damage per Star Type Rat or Part"
     },
     {
       "id": "sawfin-shark",
@@ -1742,7 +1742,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/chainmail/",
-      "text": "Start of Dawn:\n- Gain 70 Armor and 5 Resist\n- Reduce Damage taken by 12%\nEvery 5.7 seconds:\n- Gain 4 Armor per Star item"
+      "text": "Start of Dawn:\n- Gain 80 Armor and 5 Resist\n- Reduce Damage taken by 12%\nEvery 5.7 seconds:\n- Gain 5 Armor per Star item"
     },
     {
       "id": "fine-sword",
@@ -1791,7 +1791,7 @@
         "Food"
       ],
       "url": "https://www.backpackbrawl.com/items/succulent-cheese/",
-      "text": "Every 4.4 seconds:\n- Cleanse 3 Debuff\n- Star Type Rat gains +2 Damage\nOn shop entered:\n- 50% chance to catch 1 Rat\n+10% faster for every Star Type Food of another type"
+      "text": "Every 4.4 seconds:\n- Cleanse 3 Debuff\n- Star Type Rat gains +2 Damage\nOn shop entered:\n- 70% chance to catch 1 Brown Rat\n+10% faster for every Star Type Food of another type"
     },
     {
       "id": "tenacity-potion",
@@ -1802,7 +1802,7 @@
         "Potion"
       ],
       "url": "https://www.backpackbrawl.com/items/tenacity-potion/",
-      "text": "Out of stamina:\n- Gain 1 Stamina\n- Increase Stamina Recovery by 0.5 for 4 seconds"
+      "text": "Stamina below 35%:\n- Increase Stamina Recovery by 1 for 3 seconds"
     },
     {
       "id": "heater-shield",
@@ -1849,7 +1849,7 @@
         "Potion"
       ],
       "url": "https://www.backpackbrawl.com/items/potion-of-botulinum/",
-      "text": "When opponent heals:\n- Inflict 1 Poison per second for 6 seconds\n- Drain 0.5 Stamina per second for 3 seconds"
+      "text": "When opponent heals:\n- Inflict 1 Poison per second for 8 seconds\n- Drain 0.5 Stamina per second for 3 seconds"
     },
     {
       "id": "red-widow",
@@ -1892,7 +1892,6 @@
       "hero": "shared",
       "rarity": "Epic",
       "types": [
-        "Bramble",
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/beautiful-bouquet/",
@@ -2009,7 +2008,7 @@
         "Potion"
       ],
       "url": "https://www.backpackbrawl.com/items/blood-siphon-potion/",
-      "text": "Health below 50% or 5 Regeneration on opponent:\n- Steal 40 Health and 5 Regeneration from opponent\n- Inflict 1 Curse on yourself"
+      "text": "Health below 50% or 5 Regeneration on opponent:\n- Deal 40 Damage and gain 40 Max Health\n- Steal 5 Regeneration\n- Inflict 1 Curse on yourself"
     },
     {
       "id": "frost-dagger",
@@ -2202,7 +2201,7 @@
         "Potion"
       ],
       "url": "https://www.backpackbrawl.com/items/wrath-potion/",
-      "text": "Out of stamina:\n- Gain 1 Stamina and 1 Empower\n- Increase Stamina Recovery by 0.5 for 6 seconds"
+      "text": "Stamina below 35%:\n- Gain 1 Empower\n- Increase Stamina Recovery by 1 for 4 seconds"
     },
     {
       "id": "golden-skull",
@@ -2227,7 +2226,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/night-angler/",
-      "text": "Every 3.3 seconds:\n- Inflict 3 Blind\nPer Blind on opponent:\n- Gain +1 Damage, +2% Crit Chance, and +5% Crit Damage"
+      "text": "On hit:\n- Inflict 3 Blind\nPer Blind on opponent:\n- Gain +1 Damage, +2% Crit Chance, and +5% Crit Damage"
     },
     {
       "id": "blue-chilly-cheese",
@@ -2235,11 +2234,12 @@
       "hero": "shared",
       "rarity": "Legendary",
       "types": [
-        "Ingredient",
-        "Food"
+        "Fungus",
+        "Food",
+        "Ingredient"
       ],
       "url": "https://www.backpackbrawl.com/items/blue-chilly-cheese/",
-      "text": "Every 4.6 seconds:\n- Cleanse 4 Debuff\n- Star Type Rat gain +2 Damage\n- Inflict 1 Slow per Star Type Rat\nOn shop entered:\n- 50% chance to catch 1 Type Rat\n+10% faster for every Star Type Food of another type"
+      "text": "Every 4.6 seconds:\n- Cleanse 4 Debuff\n- Star Type Rat gain +2 Damage\n- Inflict 1 Slow per Star Type Rat\nOn shop entered:\n- 50% chance to catch 1 Muck Rat\n+10% faster for every Star Type Food of another type"
     },
     {
       "id": "heavenly-skull",
@@ -2262,7 +2262,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/holy-libram/",
-      "text": "Start of Dawn:\n- Gain 24 Mana\nEvery 5 seconds:\n- Use 8 Mana to:\n- Cleanse 12 Debuff\n- Heal for 48 Health\nOn shop entered:\n- Gain 1 free reroll\n- 33% chance to get 1 Essence"
+      "text": "Start of Dawn:\n- Gain 24 Mana\nEvery 5 seconds:\n- Use 6 Mana to:\n- Cleanse 12 Debuff\n- Heal for 48 Health\nOn shop entered:\n- Gain 1 free reroll\n- 33% chance to get 1 Essence"
     },
     {
       "id": "unholy-skull",
@@ -2286,7 +2286,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/aristorat/",
-      "text": "On hit:\n- Gain 1 Luck per Star Type Rat\n- Weaken 2 random opponent Pet\nWEAK\nOn shop entered:\n- 50% to get 1 Cheese"
+      "text": "On hit:\n- Gain 1 Luck per Star Type Rat\n- Weaken 2 random opponent Pet\nWeaken:\n- Remove -1 Damage from target\nOn shop entered:\n- 50% to get 1 Mild Cheese"
     },
     {
       "id": "staff-of-wisdom",
@@ -2322,7 +2322,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/magic-belt/",
-      "text": "Start of Dawn:\n- Gain 3 Mana and 3 Luck\n- Star Potion gain +1 more use\nOn Star Potion consumed:\n- Use 1 Mana to gain 1 of each other Buff"
+      "text": "Start of Dawn:\n- Gain 6 Mana and 3 Luck\n- Star Type Potion gain +1 more use\nOn Star Type Potion consumed:\n- Use 2 Mana to gain 1 of each other Buff"
     },
     {
       "id": "reinforced-shield",
@@ -2356,7 +2356,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/sorcerat/",
-      "text": "On hit:\n- Gain 2 Mana\n- Gain 1 Buff per Star Type Rat"
+      "text": "On hit:\n- Gain 5 Mana\n- Gain 1 Buff per Star Type Rat"
     },
     {
       "id": "rat-lich",
@@ -2431,7 +2431,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/blooddrinker/",
-      "text": "On hit:\n- Gain 1 Thorns\n- Steal 9 Max Health\n- Inflict 3 Bleed\nPer Bleed on opponent:\n- Gain +5% faster attacks\nPer Thorns on you:\n- Gain +5% Accuracy"
+      "text": "On hit:\n- Gain 15 Max Health and 2 Thorns\n- Inflict 3 Bleed\nPer Bleed on opponent:\n- Gain +1% faster attacks"
     },
     {
       "id": "hag-s-cauldron",
@@ -2442,7 +2442,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/hag-s-cauldron/",
-      "text": "Every 4.6 seconds:\n- Remove 4 Buff and 12 Max Health\nActivate absorbed items:\n- No Type Charm absorbed yet\nOn shop entered:\n- Absorb 1 Star Type Charm (0/5)"
+      "text": "Every 4.3 seconds:\n- Remove 4 Buff and 12 Max Health\nActivate absorbed items:\n- No Type Charm absorbed yet\nOn shop entered:\n- Absorb 1 Star Type Charm (0/5)"
     },
     {
       "id": "leviathan",
@@ -2563,7 +2563,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/vampire-s-scepter/",
-      "text": "On attack:\n- Use 8 Mana to steal 32 Health\nOn hit:\n- Gain 4 Mana\n- Increase Health steal by 8\nOn Star Melee Ranged hit:\n- 50% chance to increase Health steal by 4"
+      "text": "On attack:\n- Use 8 Mana to steal 32 Health\nOn hit:\n- Gain 4 Mana\n- Increase Health steal by 8\nOn Star Melee Ranged hit:\n- 50% chance to increase Health steal by 6"
     },
     {
       "id": "unholy-sword",
@@ -2657,12 +2657,13 @@
       "hero": "shared",
       "rarity": "Mythic",
       "types": [
+        "Fungus",
         "Pet",
         "Food",
         "Skull"
       ],
       "url": "https://www.backpackbrawl.com/items/moldemort/",
-      "text": "Start of Dawn: \r\n* This gains +10% Crit Chance per Star Type Rat \r\nOn hit: \r\n- Disable Star Type Rat for 1 second\n- Gain 9 Damage per Star Type Rat\n- Cleanse 1 Debuff per Star Type Rat\n* Inflict 1 Chill per Star Type Rat \r\nOn shop entered:\n- 50% chance to catch 1 Type Rat\n+10% faster for every Star Type Food of another type"
+      "text": "Start of Dawn: \r\n* This gains +10% Crit Chance per Star Type Rat \r\nOn hit: \r\n- Disable Star Type Rat for 1 second\n- Gain 9 Damage per Star Type Rat\n- Cleanse 1 Debuff per Star Type Rat\n* Inflict 1 Chill per Star Type Rat \r\nOn shop entered:\n- Catch 1 Type Rat\n+10% faster for every Star Type Food of another type"
     },
     {
       "id": "ratnaros",
@@ -2686,7 +2687,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/ratymandias/",
-      "text": "On hit:\n- Gain 1 Mana, 1 Luck, 1 Resist per Star Type Rat\n- If you have 35 or more Luck:\n- This and Star Type Rat gain +20% Crit Damage\nOn shop entered:\n- 50% chance to get 1 Cheese\n- Gain 1 Gold per Star Cheese"
+      "text": "On hit:\n- Gain 1 Mana, 1 Luck, 1 Resist per Star Type Rat\n- If you have 35 or more Luck:\n- This and Star Type Rat gain +20% Crit Damage\nOn shop entered:\n- 50% chance to get 1 Mild Cheese\n- Gain 1 Gold per Star Cheese"
     },
     {
       "id": "deathhowl",
@@ -2720,7 +2721,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/amberheart-amulet/",
-      "text": "When time of day changes:\n- Gain 8 Max Health per Star Pet Type Plant\nEvery 4.2 seconds:\n- Cleanse 1 Curse and 1 Slow per Star Type Plant\nOn shop entered:\n- Increase Max Health gained by 1 permanently\n- Get 1 common Type Plant"
+      "text": "Start of Dawn Day Dusk Night:\n- Gain 6 Max Health per Star Pet Type Plant\nEvery 4.2 seconds:\n- Cleanse 1 Curse and 1 Slow per Star Type Plant\nOn shop entered:\n- Increase Max Health gained by 1 permanently\n- Get 1 common Type Plant"
     },
     {
       "id": "arcane-astrolabe",
@@ -2731,7 +2732,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/arcane-astrolabe/",
-      "text": "Start of Dawn:\n- Shorten Dawn and Dusk duration by 2 seconds each\nEvery 4 seconds:\n- Gain 2 Resist\n- Gain 1 Buff per Star item during Day Night"
+      "text": "Start of Dawn:\n- Shorten Dawn and Dusk duration by 2 seconds each\nEvery 5 seconds:\n- Gain 1 Resist per Star Type Armor Type Accessory Type Charm Type Skull\n- Gain 1 Buff"
     },
     {
       "id": "arcane-crystal",
@@ -2742,7 +2743,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/arcane-crystal/",
-      "text": "Every 3 seconds:\n- Gain 1 Mana and 5 Armor per Star Type Accessory\nPer 10 Mana gained by this:\n- Gain 3 Buff\nWhile equipped:\n- Increased chance of Essences in the shop"
+      "text": "Every 4.3 seconds:\n- Gain 2 Mana and 5 Armor per Star Type Accessory\nPer 10 Mana gained by this:\n- Gain 2 Buff\nWhile equipped:\n- Increased chance of Essences in the shop"
     },
     {
       "id": "arctic-core",
@@ -2754,7 +2755,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/arctic-core/",
-      "text": "On Star Type Tool Pet hit:\n- Inflict 1 Slow\nEvery 20 Slow inflicted by this:\n- Inflict Stun for 1 second\n- Gain 20 Armor"
+      "text": "On Star Type Tool Pet hit:\n- 50% to inflict 1 Slow\nEvery 15 Slow inflicted by this:\n- Inflict Stun for 1 second\n- Gain 20 Armor"
     },
     {
       "id": "blood-moon-berry",
@@ -2799,7 +2800,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/dormant-dragon-egg/",
-      "text": "On shop entered:\n- If Star items have inflicted 50+ Burn (0/50):\n- This becomes Black Dragon Whelpling\n- If Star items have inflicted 50+ Bleed (0/50):\n- This becomes Red Dragon Whelpling\n- If Star items have inflicted 50+ Slow (0/50):\n- This becomes Blue Dragon Whelpling\n- If Star items have inflicted 50+ Poison (0/50):\n- This becomes Green Dragon Whelpling"
+      "text": "On shop entered:\n- If Star items have inflicted 45+ Burn (0/45):\n- This becomes Black Dragon Whelpling\n- If Star items have inflicted 45+ Bleed (0/45):\n- This becomes Red Dragon Whelpling\n- If Star items have inflicted 45+ Slow (0/45):\n- This becomes Blue Dragon Whelpling\n- If Star items have inflicted 55+ Poison (0/55):\n- This becomes Green Dragon Whelpling"
     },
     {
       "id": "eternal-heart",
@@ -2822,7 +2823,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/exhaustion-stone/",
-      "text": "Start of Dawn:\n- Opponent Fatigue starts Fatigue Delay seconds earlier per Star Ranged\nEvery 3.3 seconds:\n- Gain 7 Armor per Star Ranged"
+      "text": "Start of Dawn:\n- Opponent Fatigue starts Fatigue Delay seconds earlier per Star Ranged\nEvery 3.3 seconds:\n- Gain 3 Armor per Star Ranged"
     },
     {
       "id": "fire-lord-s-brand",
@@ -2833,7 +2834,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/fire-lord-s-brand/",
-      "text": "On Star Melee Ranged Pet hit:\n- 50% chance to inflict 1-2 Burn"
+      "text": "On Star Melee Ranged Pet hit:\n- 25% chance to inflict 2 Burn"
     },
     {
       "id": "five-leaf-cave-clover",
@@ -2866,7 +2867,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/frostbite-ring/",
-      "text": "Every 4.8 seconds:\n- Inflict 2 Slow per Star Melee Ranged Pet\nHealth below 20%:\n- Inflict 2 Slow per Star Melee Ranged Pet per second for 5 seconds"
+      "text": "Every 4 seconds:\n- Inflict 1 Slow per Star Melee Ranged Pet\nHealth below 20%:\n- Inflict 2 Slow per Star Melee Ranged Pet per second for 5 seconds"
     },
     {
       "id": "gambler-s-dice",
@@ -2877,7 +2878,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/gambler-s-dice/",
-      "text": "Every 6 seconds:\n- Gain 1-6 Luck and 1-6 Luck for 6 seconds\n- Steal 1 Buff per Star Type Plant\nWhile equipped:\n- +50% chance to increase the rarity\non a shop item when it rerolls"
+      "text": "Every 6 seconds:\n- Gain 1-6 Luck and 1-6 Luck for 4 seconds\n- Steal 1 Buff per Star Type Plant\nWhile equipped:\n- +50% chance to increase the rarity\non a shop item when it rerolls"
     },
     {
       "id": "gladiator-s-emblem",
@@ -2899,7 +2900,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/grandpaw-s-pepper-mill/",
-      "text": "Every 3.6 seconds:\n- Gain 1 Buff per Star Type Food Type Ingredient\n- Heal for 4 Health per Star Type Food Type Ingredient"
+      "text": "Every 6.2 seconds:\n- Gain 1 Buff per Star Type Food Type Ingredient\n- Heal for 4 Health per Star Type Food Type Ingredient"
     },
     {
       "id": "hag-s-hatred",
@@ -2911,7 +2912,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/hag-s-hatred/",
-      "text": "Every 3.7 seconds:\n- Gain 1 Mana and inflict 1 Curse per Star Pet Type Accessory Type Skull\n- Steal 5 Health per Star Pet Type Accessory Type Skull"
+      "text": "Every 3.6 seconds:\n- Gain 1 Mana and inflict 1 Curse per Star Pet Type Accessory Type Skull\n- Steal 5 Health per Star Pet Type Accessory Type Skull"
     },
     {
       "id": "healing-seed",
@@ -2934,7 +2935,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/infernal-ashes/",
-      "text": "On Star Melee Ranged hit:\n- Inflict 1 Burn\nAfter 12 seconds:\n- Star Melee Ranged gains +1 Damage per 5 Burn on opponent"
+      "text": "Start of Day:\n- Star Melee Ranged gains +1 Damage per 5 Debuff on opponent"
     },
     {
       "id": "karmic-essence",
@@ -2945,7 +2946,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/karmic-essence/",
-      "text": "When Star item activates:\n- 20% chance to gain 1 Luck\nEvery 3 seconds:\n- Use 2 Luck to gain 2 Thorns\nWhen critically hit ( Ranged Pet ):\n- Deal 1 Damage per Thorns on you"
+      "text": "When Star item activates:\n- 20% chance to gain 1 Luck\nEvery 3 seconds:\n- Use 1 Luck to gain 2 Thorns\nWhen critically hit ( Melee Ranged Pet ):\n- Deal 4 Damage"
     },
     {
       "id": "mega-strike-jewel",
@@ -2956,7 +2957,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/mega-strike-jewel/",
-      "text": "Start of Dawn:\n- Star Melee gains +25% Crit Chance"
+      "text": "Start of Dawn Day Dusk Night:\n- Star Melee gains +15% Crit Chance"
     },
     {
       "id": "merman-s-delight",
@@ -2967,7 +2968,7 @@
         "Food"
       ],
       "url": "https://www.backpackbrawl.com/items/merman-s-delight/",
-      "text": "Every 6.2 seconds:\n- Star Type Fish gain +10% faster activations\nOn Star Type Fish activation:\n- 40% chance to gain 2 Buff\nOn shop entered:\n- 50% chance to Go Fishing (Shallow)\n- +10% per failed attempt until success\n+10% faster for every Star Type Food of another type"
+      "text": "Every 5.2 seconds:\n- Skip 1.5 seconds Cooldown on Star Type Fish\nOn shop entered:\n- Go Fishing (Shallow)\n+10% faster for every Star Type Food of another type"
     },
     {
       "id": "pebbles-the-golem-lord",
@@ -3000,7 +3001,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/plaguebringer-s-pendant/",
-      "text": "Every 4 seconds:\n- Inflict 1 Poison per Star item\n- Use 6 Mana to activate Poison"
+      "text": "Every 5 seconds:\n- Inflict 1 Poison per Star Type Plant Type Potion Type Fungus Type Skull\n- Use 6 Mana to activate Poison"
     },
     {
       "id": "power-stone",
@@ -3022,7 +3023,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/rat-king-s-crown/",
-      "text": "On Star Type Rat hit:\n- Star Type Rat gain +1% Crit Chance\nOn Star Type Rat critical hit:\n- Inflict 3 Bleed\n- Heal for 5 Health per Star Type Rat\nOn shop entered:\n- Catch 1 Rat"
+      "text": "Start of Dawn Day Dusk Night:\n- Star Type Rat gain +6% faster attacks\nOn shop entered:\n- Catch 1 Brown Rat"
     },
     {
       "id": "siphoning-chalice",
@@ -3044,7 +3045,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/sniper-s-monocle/",
-      "text": "Start of Dawn:\n- Star Melee Ranged Pet gain +15% Crit Chance\nOn Star Melee Ranged Pet hit:\n- 50% chance to inflict 1 Bleed\nOn Star Melee Ranged Pet critical hit:\n- 50% chance to inflict 1 Blind"
+      "text": "Start of Dawn:\n- Star Melee Ranged Pet gain +15% Crit Chance\nOn Star Melee Ranged Pet hit:\n- 50% chance to inflict 1 Bleed"
     },
     {
       "id": "spinegrowth-signet",
@@ -3090,7 +3091,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/velocity-ring/",
-      "text": "Every 3.3 seconds:\n- Star Melee Ranged Pet gain +5% faster attacks\nOn Star Melee Ranged Pet hit:\n- 50% chance all Star Melee Ranged Pet gains +3% faster attacks"
+      "text": "Every 3.3 seconds:\n- Star Melee Ranged Pet gain +6% faster attacks"
     },
     {
       "id": "venomous-pincer",
@@ -3281,7 +3282,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/bramblebat/",
-      "text": "Start of Dawn:\n- Gain 2 Thorns\nOn hit:\n- Deal 1 Damage per 2 Thorns on you\n- 50% chance to gain 1 Thorns\nOn shop entered:\n- 25% chance to catch 1 Arcanefly"
+      "text": "Start of Dawn:\n- Gain 2 Thorns\nOn hit:\n- Deal 1 Damage per 2 Thorns on you\n- 50% chance to gain 1 Thorns\nOn shop entered:\n- 45% chance to catch 1 Arcanefly"
     },
     {
       "id": "briarthorn",
@@ -3415,7 +3416,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/thorned-crown/",
-      "text": "Start of Dawn Day Dusk Night:\n- Gain 4 Thorns\nWhen hit ( Melee Ranged Pet ):\n- 30% chance to inflict 3 Poison and steal 2 Health"
+      "text": "Start of Dawn Day Dusk Night:\n- Gain 4 Thorns\nWhen hit ( Melee Ranged Pet ):\n- 30% chance to inflict 3 Poison and steal 5 Health"
     },
     {
       "id": "buzzing-bouquet",
@@ -3452,7 +3453,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/spiked-whip/",
-      "text": "On hit:\n- Gain 4 Thorns\n- Steal 6 Health per Star Bramble\n- Inflict 4 Poison per Star Bramble\nOn critical hit:\n- Deal 5 Damage per Thorns"
+      "text": "On hit:\n- Gain 4 Thorns\n- Steal 10 Health per Star Bramble\n- Inflict 4 Poison per Star Bramble\nOn critical hit:\n- Deal 4 Damage per Thorns"
     },
     {
       "id": "stingtrap",
@@ -3465,7 +3466,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/stingtrap/",
-      "text": "Start of Dawn Day Dusk Night:\n- Gain 5 Thorns\nWhen hit ( Melee Ranged Pet ):\n- 40% chance to:\n- Inflict 5 Poison\n- Steal 4 Health"
+      "text": "Start of Dawn Day Dusk Night:\n- Gain 5 Thorns\nWhen hit ( Melee Ranged Pet ):\n- 45% chance to:\n- Inflict 3 Poison\n- Steal 7 Health"
     },
     {
       "id": "wildflower-symphony",
@@ -3473,7 +3474,6 @@
       "hero": "buzz",
       "rarity": "Mythic",
       "types": [
-        "Bramble",
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/wildflower-symphony/",
@@ -3501,7 +3501,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/goliathfly/",
-      "text": "On hit:\n- Gain 6 Max Health per Star Pet Type Plant\n- Inflict 3 Poison per Star Pet Type Plant\nOn critical hit:\n- Activate Poison"
+      "text": "On hit:\n- Gain 6 Max Health per Star Pet Type Plant\n- Inflict 2 Poison per Star Pet Type Plant\nOn critical hit:\n- Activate Poison"
     },
     {
       "id": "bag-of-maggots",
@@ -3524,7 +3524,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/bombus/",
-      "text": "Start of Dawn:\n- Gain +10% Accuracy per Star Bee\nOn hit:\n- Gain +2 Damage per Star Type Plant"
+      "text": "Start of Dawn:\n- Gain +10% Accuracy and +5% Crit Chance per Star Bee\nOn hit:\n- Gain +2 Damage per Star Type Plant"
     },
     {
       "id": "buzzing-bungalow",
@@ -3547,7 +3547,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/frostwing/",
-      "text": "On hit:\n- +14% chance per Star Pet to inflict 4 Slow\nOn Star Bees hit:\n- 30% chance to inflict 2 Slow\nOn shop entered:\n- 25% chance to get 1 Frost Emblem"
+      "text": "On hit:\n- +14% chance per Star Pet to inflict 4 Slow\nOn Star Bees hit:\n- 30% chance to inflict 3 Slow\nOn shop entered:\n- 50% chance to get 1 Frost Emblem"
     },
     {
       "id": "lily-pad-prince",
@@ -3569,7 +3569,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/pollen-palace/",
-      "text": "When time of day changes:\nStar Bees gain +7 Damage per Star Honey\nOn shop entered:\n- Star Bees have an additional chance to make Honey"
+      "text": "When time of day changes:\nStar Bees gain +6 Damage per Star Honey\nOn shop entered:\n- Star Bees have an additional chance to make Honey"
     },
     {
       "id": "razorvine",
@@ -3649,7 +3649,7 @@
         "Potion"
       ],
       "url": "https://www.backpackbrawl.com/items/lightning-in-a-bottle/",
-      "text": "Out of stamina:\n- Gain 3 Stamina\n- Star items gains 3 Static"
+      "text": "Out of stamina:\n- Gain 2.5 Stamina\n- Star items gain 2 Static"
     },
     {
       "id": "power-cluster",
@@ -3671,7 +3671,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/elemental-whetstone/",
-      "text": "Start of Dawn:\n- Star Melee Ranged gain +4 max Damage and +5% Crit Chance\nOn Star Melee Ranged hit:\n- 33% chance Star items gain 1 Static"
+      "text": "Start of Dawn:\n- Star Melee Ranged gain +2 max Damage and +5% Crit Chance\nOn Star Melee Ranged hit:\n- 33% chance Star items gain 1 Static"
     },
     {
       "id": "zap-rat",
@@ -3766,7 +3766,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/galvanic-armor/",
-      "text": "Start of Dawn:\n- Gain 70 Armor and 5 Resist\n- Reduce Damage taken by 12%\nWhen hit ( Melee Ranged Pet ):\n- 40% chance this and Star items gain 1 Static\nDischarge (20 Static ):\n- Cleanse 18 Debuff"
+      "text": "Start of Dawn:\n- Gain 70 Armor and 5 Resist\n- Reduce Damage taken by 12%\nWhen hit ( Melee Ranged Pet ):\n- 40% chance:\n- This gains 2 Static\n- Star items gain 1 Static\nDischarge (25 Static ):\n- Cleanse 18 Debuff"
     },
     {
       "id": "stormstrike-gavel",
@@ -3811,7 +3811,7 @@
         "Potion"
       ],
       "url": "https://www.backpackbrawl.com/items/flash-potion/",
-      "text": "Out of stamina:\n- Gain 3 Stamina\n- Gain 12 Haste for 3 seconds\n- Star items gains 3 Static"
+      "text": "Out of stamina:\n- Gain 3 Stamina\n- Gain 10 Haste for 3 seconds\n- Star items gain 3 Static"
     },
     {
       "id": "charged-girdle",
@@ -3822,7 +3822,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/charged-girdle/",
-      "text": "Start of Dawn:\n- Gain 3 Luck, 3 Empower, 3 Mana\n- Star Potion gain +1 more use\nOn Star Potion consumed:\n- Gain 2 Empower and 4 Mana"
+      "text": "Start of Dawn:\n- Gain 4 Luck and 2 Empower\n- Star Type Potion gain +1 more use\nOn Star Type Potion consumed:\n- Gain 2 Empower and 2 Mana"
     },
     {
       "id": "electrobat",
@@ -3845,7 +3845,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/hailstorm-scepter/",
-      "text": "On attack:\n- Use 3 Mana to gain 9 Static\nOn hit:\n- Star items gain 3 Static\nDischarge (24 Static ):\n- Deal 33 Damage\n- Inflict 1 Slow per second for 5 seconds"
+      "text": "On attack:\n- Use 4 Mana to gain 9 Static\nOn hit:\n- Star items gain 3 Static\nDischarge (24 Static ):\n- Deal 33 Damage\n- Inflict 1 Slow per second for 5 seconds"
     },
     {
       "id": "stormbound-tranquility",
@@ -3937,7 +3937,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/stormbreaker-armor/",
-      "text": "Start of Dawn:\n- Gain 100 Armor and 10 Resist\n- Reduce Damage taken by 30%\nWhen hit ( Melee Ranged Pet ):\n- 40% chance this and Star items gain 1 Static\nDischarge (28 Static ):\n- Cleanse 24 Debuff\n- Inflict Stun for 0.5 seconds"
+      "text": "Start of Dawn:\n- Gain 100 Armor and 10 Resist\n- Reduce Damage taken by 30%\nWhen hit ( Melee Ranged Pet ):\n- 40% chance:\n- This gains 2 Static\n- Star items gain 1 Static\nDischarge (30 Static ):\n- Cleanse 24 Debuff\n- Inflict Stun for 0.5 seconds"
     },
     {
       "id": "hurricane-focus",
@@ -3949,7 +3949,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/hurricane-focus/",
-      "text": "On attack:\n- Use 4 Mana to gain 12 Static\nOn hit:\n- Star items gain 4 Static\nDischarge (30 Static ):\n- Deal 48 Damage\n- Remove 2 Buff per Star Type Accessory\n- Inflict 2 Slow per second for 5 seconds"
+      "text": "On attack:\n- Use 5 Mana to gain 12 Static\nOn hit:\n- Star items gain 4 Static\nDischarge (30 Static ):\n- Deal 48 Damage\n- Remove 2 Buff per Star Type Accessory\n- Inflict 2 Slow per second for 5 seconds"
     },
     {
       "id": "thunderstorm-spear",
@@ -3983,7 +3983,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/electric-crown/",
-      "text": "When hit ( Melee Ranged ):\n- 25% chance to gain 1 Static per Star Type Armor\nDischarge (18 Static ):\n- Deal 20 Damage\n- Cleanse 5 Debuff\n- Next Discharge deals +20 Damage\n- Next Discharge cleanses +5 Debuff"
+      "text": "When hit ( Melee Ranged ): \r\n- 25% chance to gain 1 Static per Star Type Armor Type Accessory\nDischarge (21 Static ):\n* Per time this has Discharged:\r\n* Deal +25 Damage (25)\r\n- Cleanse +8 Debuff (8)"
     },
     {
       "id": "glaring-bulb",
@@ -3994,7 +3994,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/glaring-bulb/",
-      "text": "On Star item activation:\n- 50% chance to gain 2 Static\nDischarge (20 Static ):\n- Cleanse 15 Blind\n- Heal for 30 Health\n- Inflict 1 Blind per Star item with Static\nOn shop entered:\n- Get 1 Spark"
+      "text": "On Star item activation:\n- 50% chance to gain 2 Static\nDischarge (13 Static ):\n- Cleanse 6 Blind\n- Heal for 15 Health\n- Inflict 10 Blind for 4 seconds\nOn shop entered:\n- Get 1 Spark"
     },
     {
       "id": "liquid-electricity",
@@ -4005,7 +4005,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/liquid-electricity/",
-      "text": "On Star Potion consumed:\n- Gain 4 Static and 2 Buff\nDischarge (20 Static ):\n- Star Potion gains +1 more use\n- Next Discharge requires +10 Static\nOn shop entered:\n- Get 1 Potion"
+      "text": "On Star Type Potion consumed:\n- Gain 2 Static and 1 Buff\nDischarge (22 Static ):\n- Star Type Potion gains +1 more use\n- Next Discharge requires +10 Static\nOn shop entered:\n- Get 1 Type Potion"
     },
     {
       "id": "recharge-rucksack",
@@ -4027,7 +4027,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/shock-gloves/",
-      "text": "Start of Dawn:\n- Gain 35 Armor\n- Star Melee Ranged gains +25% Crit Chance\nOn Star Melee Ranged critical hit:\n- Gain 1 Static\nDischarge (20 Static ):\n- Gain 30 Armor\n- Star Melee Ranged gains +15 max Damage"
+      "text": "Start of Dawn:\n- Gain 35 Armor\n- Star Melee Ranged gains +20% Accuracy and +10% Crit Chance\nEvery 2.2 seconds:\n- Gain 1 Static per Star Melee Ranged\nDischarge (20 Static ):\n- Gain 20 Armor\n- Star Melee Ranged gains +10 max Damage"
     },
     {
       "id": "storm-lute",
@@ -4039,7 +4039,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/storm-lute/",
-      "text": "On hit:\n- Gain 5 Static\nWhen Star items discharge:\n- Gain 4 Buff\nDischarge (16 Static ):\n- Gain 3 Haste\n- Star items gain 2 Static"
+      "text": "On hit:\n- Gain 5 Static\nWhen Star items discharge:\n- Gain 3 Buff\nDischarge (16 Static ):\n- Gain 3 Haste\n- Star items gain 2 Static"
     },
     {
       "id": "thunder-rat",
@@ -4051,7 +4051,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/thunder-rat/",
-      "text": "Start of Dawn:\n- Discharge requires 2 less Static per different Star Pet\nOn hit:\n- Disable 1 enemy item for 1 second\n- This and Star Pet gains +2 max Damage\nDischarge (16 Static ):\n- Trigger an extra attack\nOn shop entered:\n- Attract a Rat"
+      "text": "Start of Dawn:\n- Discharge requires 1 less Static per different Star Pet\nOn hit:\n- Gain 3 Static\n- Inflict Disable on 1 item for 1 second\n- This and Star Melee Ranged Pet gains +2 max Damage\nDischarge (11 Static ):\n- Trigger an extra attack\nOn shop entered:\n- Attract a Brown Rat"
     },
     {
       "id": "thunderstrike-ring",
@@ -4062,7 +4062,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/thunderstrike-ring/",
-      "text": "On Star Melee Ranged hit:\n- Gain 2 Static\nOn Star Melee Ranged critical hit:\n- Gain 2 Static\nDischarge (30 Static ):\n- Star Melee Ranged gains +5% Crit Chance and +10% Crit Damage\n- 2 random Star Melee Ranged trigger a free attack"
+      "text": "On Star Melee Ranged hit:\n- Gain 1 Static\nOn Star Melee Ranged critical hit:\n- Gain 1 Static\nDischarge (33 Static ):\n- Star Melee Ranged gains +5% Crit Chance and +10% Crit Damage\n- Star Melee Ranged trigger a free attack"
     },
     {
       "id": "starbloom",
@@ -4155,7 +4155,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/icicle-shard/",
-      "text": "Per Slow on opponent:\n- Star Melee Ranged Pet gains +3% Crit Damage"
+      "text": "Every 2 seconds:\n- Star Melee Ranged Pet gains +3% Crit Damage"
     },
     {
       "id": "mana-crystal",
@@ -4224,7 +4224,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/hungry-wand/",
-      "text": "On attack:\n- Use 4 Mana to remove 2 Buff and inflict 2 Burn\nOn hit:\n- Inflict 2 Burn"
+      "text": "On attack:\n- Use 4 Mana to remove 2 Buff and inflict 1 Burn\nOn hit:\n- Inflict 2 Burn"
     },
     {
       "id": "chillbane",
@@ -4236,7 +4236,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/chillbane/",
-      "text": "On attack:\n- Use 2 Mana to inflict 2 Slow\nOn hit:\n- Inflict 2 Slow"
+      "text": "On attack:\n- Use 3 Mana to inflict 3 Slow\nOn hit:\n- Inflict 1 Slow"
     },
     {
       "id": "mana-shield",
@@ -4259,7 +4259,7 @@
         "Food"
       ],
       "url": "https://www.backpackbrawl.com/items/marshmallow/",
-      "text": "Every 4.1 seconds:\n- Heal for 1 Health per Burn on opponent\n+10% faster for every Star Type Food of another type"
+      "text": "Every 5.4 seconds:\n- Heal for 1 Health per Burn on opponent\n+10% faster for every Star Type Food of another type"
     },
     {
       "id": "belt-of-firethrowing",
@@ -4270,7 +4270,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/belt-of-firethrowing/",
-      "text": "Start of Dawn:\n- Gain 3 Mana and 3 Luck\n- Star Potion gains +1 more use\nOn Star Potion consumed:\n- Inflict 3 Burn"
+      "text": "Start of Dawn:\n- Gain 3 Mana and 3 Luck\n- Star Type Potion gains +1 more use\nOn Star Type Potion consumed:\n- Inflict 2 Burn"
     },
     {
       "id": "frost-scroll",
@@ -4340,7 +4340,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/frostbite-wand/",
-      "text": "On attack:\n- Use 3 Mana to inflict 3 Slow\nOn hit:\n- Inflict 3 Slow\nPer Slow on opponent:\n- Gain +5% Crit Damage"
+      "text": "On attack:\n- Use 4 Mana to inflict 4 Slow\nOn hit:\n- Inflict 2 Slow\nPer Slow on opponent:\n- Gain +5% Crit Damage"
     },
     {
       "id": "cinderstaff",
@@ -4352,7 +4352,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/cinderstaff/",
-      "text": "On attack:\n- Use 5 Mana to remove 2 Buff and inflict 4 Burn\nOn hit:\n- Inflict 3 Burn\nPer Burn on opponent:\n- Gain +0.35 Damage"
+      "text": "On attack:\n- Use 5 Mana to remove 2 Buff and inflict 3 Burn\nOn hit:\n- Inflict 3 Burn\nPer Burn on opponent:\n- Gain +0.35 Damage"
     },
     {
       "id": "elemental-barrier",
@@ -4397,7 +4397,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/cryoblaze-staff/",
-      "text": "On attack:\n- Use 4 Mana to inflict 5 Slow\nOn hit:\n- Inflict 4 Slow\nEvery 15 Slow inflicted:\n- Inflict 3 Burn\nPer Slow on opponent:\n- Gain +1% Crit Chance and +5% Crit Damage"
+      "text": "On attack:\n- Use 5 Mana to inflict 5 Slow\nOn hit:\n- Inflict 4 Slow\nEvery 15 Slow inflicted:\n- Inflict 3 Burn\nPer Slow on opponent:\n- Gain +1% Crit Chance and +5% Crit Damage"
     },
     {
       "id": "conflagration-staff",
@@ -4443,7 +4443,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/fire-vortex/",
-      "text": "Every 3 seconds:\n- Gain 2 Mana\nIf you have gained 60 Mana this fight:\n- Also inflict 2 Burn per Star Ranged"
+      "text": "Every 3 seconds:\n- Gain 2 Mana\nIf you have gained 70 Mana this fight:\n- Also inflict 2 Burn per Star Ranged"
     },
     {
       "id": "iceburn-scepter",
@@ -4466,7 +4466,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/kelvin-s-tome/",
-      "text": "Every 4 seconds:\n- Inflict 2 Burn and 2 Slow\n- Gain 1 Mana\nOn shop entered:\n- Turn Star Rock into Lava Rock, Frost Emblem, or 2 Rock\nWhen purchased:\n- Get 1 Rock"
+      "text": "Every 2.8 seconds:\n- Inflict 2 Burn and 2 Slow\n- Gain 1 Mana\nOn shop entered:\n- Turn Star Rock into Lava Rock, Frost Emblem, or 2 Rock"
     },
     {
       "id": "mana-stew",
@@ -4488,7 +4488,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/sigil-of-eternal-frost/",
-      "text": "Every 4.5 seconds:\n- Inflict 1 Slow per Star Melee Ranged Pet\nPer 4 Slow inflicted by this and Star items:\n- Gain 20 Armor"
+      "text": "Every 4 seconds:\n- Inflict 1 Slow per Star Melee Ranged Pet\nPer 4 Slow inflicted by this and Star items:\n- Gain 20 Armor"
     },
     {
       "id": "wand-of-backdraft",
@@ -4511,7 +4511,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/wildfire-essence/",
-      "text": "Every 7 Burn inflicted by Star items:\n- Gain 3 Haste\n- Next activation requires 1 more Burn"
+      "text": "Start of Dawn:\n- Gain 40 Max Health\nEvery 7 Burn inflicted by Star items:\n- Gain 3 Haste\n- Next activation requires 1 more Burn"
     },
     {
       "id": "wizard-hat",
@@ -4522,7 +4522,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/wizard-hat/",
-      "text": "Every 35 Mana used:\n- Gain 4 Resist and 6 Armor per Star Melee Ranged Pet\n- Star Melee Ranged Pet gains +70% Crit Damage\n- Next activation requires 1 more Mana"
+      "text": "Every 35 Mana used or lost:\n- Gain 12 Resist and 25 Max Health\n- Star Melee Ranged Pet gains +50% Crit Damage\n- Next activation requires 1 more Mana"
     },
     {
       "id": "wizard-s-pouch",
@@ -4559,7 +4559,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/lumps-of-coal/",
-      "text": "On hit:\n- 50% chance to inflict 1 Blind\n- Can only be thrown once per battle"
+      "text": "On hit:\n- 50% chance to inflict 2 Blind\n- Can only be thrown once per battle"
     },
     {
       "id": "wax-candle",
@@ -4773,7 +4773,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/boom-barrel/",
-      "text": "After 12 seconds:\n- Inflict Stun for 2 seconds\n- Inflict 8 Burn and 3 Blind\nOn shop entered:\n- Go Mining (Underground)"
+      "text": "After 12 seconds:\n- Inflict Stun for 1.5 seconds\n- Inflict 8 Burn and 3 Blind\nOn shop entered:\n- Go Mining (Underground)"
     },
     {
       "id": "steel-pickaxe",
@@ -4931,7 +4931,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/gem-studded-forgeplate/",
-      "text": "Start of Dawn:\n- Gain 100 Armor and 10 Resist\n- Reduce Damage taken by 30%\nEvery 7 seconds:\n- Gain 15 Armor per Star item\n- Gain 3 Empower\n- Use 6 Mana to reduce Damage taken by 10% for 5 seconds"
+      "text": "Start of Dawn:\n- Gain 150 Armor and 10 Resist\n- Reduce Damage taken by 30%\nEvery 5 seconds:\n- Gain 15 Armor per Star item\n- Gain 3 Empower\n- Use 2 Mana to reduce Damage taken by 10% for 3 seconds"
     },
     {
       "id": "gemforged-warpick",
@@ -4968,7 +4968,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/baby-core-creeper/",
-      "text": "When hit ( Melee Ranged Pet ):\n- 30% chance to:\n- Inflict 1 Burn\n- Trigger an extra attack for a Star Molten Core Creeper\nOn shop entered:\n- Get 1 Rock\n- Turn 1 Star Rock into 1 Lava Rock\n- Turn 1 Star Lava Boulder into 1 Molten Core Creeper"
+      "text": "When hit ( Melee Ranged Pet ):\n- 20% chance to:\n- Inflict 4 Burn\n- Trigger an extra attack for a Star Molten Core Creeper\nOn shop entered:\n- Get 1 Rock\n- Turn 1 Star Rock into 1 Lava Rock\n- Turn 1 Star Lava Boulder into 1 Molten Core Creeper"
     },
     {
       "id": "blast-furnace-bellows",
@@ -4991,7 +4991,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/caged-songbird/",
-      "text": "On hit:\n- Gain 1 Luck and cleanse 1 Debuff\nHealth below 50%:\n- Cleanse 1 Debuff per Luck\n- Gain 8 Max Health per Luck"
+      "text": "On attack:\n- Gain 1 Luck and cleanse 1 Debuff\nHealth below 50%:\n- Cleanse 1 Debuff per Luck\n- Gain 8 Max Health per Luck"
     },
     {
       "id": "dark-iron-anvil",
@@ -5025,7 +5025,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/grandma-s-dusty-blast-box/",
-      "text": "Start of Dawn:\n- 1 Star Bomb goes +50% faster\n- 1 other Star Bomb goes +20% faster\nOn Star Bomb exploding:\n- Inflict 7 Burn and 3 Blind\nOn shop entered:\n- Get 1 Wax Candle"
+      "text": "Start of Dawn:\n- 1 Star Bomb goes +50% faster\n- 1 other Star Bomb goes +20% faster\nOn Star Bomb exploding:\n- Inflict 3 Burn and 3 Blind\nOn shop entered:\n- Get 1 Wax Candle"
     },
     {
       "id": "proto-golem",
@@ -5038,7 +5038,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/proto-golem/",
-      "text": "On hit:\n- Star Type Mineral gains +2 Damage\nOn Star Golem hit:\n- This gains +2 Damage and +2% Crit Damage\nMultithrow"
+      "text": "On hit:\n- Star Type Mineral gains +2 Damage\nOn Star Golem hit:\n- This gains +4 Damage and +6% Crit Damage\nOn shop entered:\n- Go Mining (Surface)\nStar Type Mineral can now be thrown multiple times"
     },
     {
       "id": "reinforced-mining-bag",
@@ -5060,7 +5060,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/rickety-mining-cart/",
-      "text": "Every 5 seconds:\n- Gain 1 Haste\n- Gain 1 Haste per Star Type Mineral\nOn shop entered:\n- Go Mining (Surface)\n- Go Mining (Underground)\n- Go Mining (Core)"
+      "text": "Every 5 seconds:\n- Gain 1 Haste per Star Type Mineral\nOn shop entered:\n- Go Mining (Surface)\n- Go Mining (Underground)\n- Go Mining (Core)"
     },
     {
       "id": "candy-corn",
@@ -5084,7 +5084,7 @@
         "Food"
       ],
       "url": "https://www.backpackbrawl.com/items/spectral-sweet/",
-      "text": "Every 5 seconds:\n- Cleanse 1 Debuff\n- Heal for 4 Health\n+10% faster for every Star Type Food of another type"
+      "text": "Every 5 seconds:\n- Cleanse 1 Debuff\n- Heal for 3 Health\n+10% faster for every Star Type Food of another type"
     },
     {
       "id": "vanilla-dream",
@@ -5179,10 +5179,11 @@
       "hero": "enoch",
       "rarity": "Rare",
       "types": [
-        "Accessory"
+        "Accessory",
+        "Charm"
       ],
       "url": "https://www.backpackbrawl.com/items/graveyard-soil/",
-      "text": "When Star items trap a Soul:\n- 40% chance for it to trap another Soul"
+      "text": "Every 4.2 seconds:\n- Inflict 1 Curse per Star Melee Ranged Pet"
     },
     {
       "id": "lantern",
@@ -5240,7 +5241,7 @@
         "Food"
       ],
       "url": "https://www.backpackbrawl.com/items/grape-burst/",
-      "text": "On Star Melee Ranged Pet hit:\n- 50% chance to inflict 1 Blind\nOn shop entered:\n- Destroy this"
+      "text": "On Star Melee Ranged Pet hit:\n- Inflict 1 Blind\nOn shop entered:\n- Destroy this"
     },
     {
       "id": "jack-o-lantern",
@@ -5249,7 +5250,8 @@
       "rarity": "Epic",
       "types": [
         "Pumpkin",
-        "Accessory"
+        "Accessory",
+        "Charm"
       ],
       "url": "https://www.backpackbrawl.com/items/jack-o-lantern/",
       "text": "Every 3.5 seconds:\n- Gain 2 Resist and 1 Regeneration during Dawn Day\n- Inflict 2 Blind and 2 Curse during Dusk Night"
@@ -5320,10 +5322,11 @@
       "hero": "enoch",
       "rarity": "Epic",
       "types": [
-        "Accessory"
+        "Accessory",
+        "Charm"
       ],
       "url": "https://www.backpackbrawl.com/items/spiderweb/",
-      "text": "When hit ( Melee Ranged ):\n- 35% chance to inflict 2 Slow\n- 10% chance for Star Pet to trigger an extra attack\nOn shop entered:\n- Check the spiderweb"
+      "text": "When hit ( Melee Ranged ):\n- 35% chance to inflict 2 Slow\nWhen hit ( Pet ):\n- 10% chance for Star Pet to trigger an extra attack\nOn shop entered:\n- Check the spiderweb"
     },
     {
       "id": "duskreaver",
@@ -5344,7 +5347,8 @@
       "rarity": "Legendary",
       "types": [
         "Ingredient",
-        "Food"
+        "Food",
+        "Charm"
       ],
       "url": "https://www.backpackbrawl.com/items/cursed-candy/",
       "text": "Every 3.6 seconds:\n- Inflict 2 Debuff on both players\n+10% faster for every Star Type Food of another type"
@@ -5368,7 +5372,8 @@
       "hero": "enoch",
       "rarity": "Legendary",
       "types": [
-        "Pet"
+        "Pet",
+        "Charm"
       ],
       "url": "https://www.backpackbrawl.com/items/all-seeing-bat/",
       "text": "On hit:\n- Trap 1 Soul\n- Gain 2 Luck\nOn critical hit:\n- Trap 1 Soul\n- Inflict 2 Blind\nEvery 8 Soul trapped:\n- Gain +15% Crit Chance\nPer Blind on opponent:\n- Gain +5% Crit Damage"
@@ -5379,7 +5384,8 @@
       "hero": "enoch",
       "rarity": "Legendary",
       "types": [
-        "Pet"
+        "Pet",
+        "Charm"
       ],
       "url": "https://www.backpackbrawl.com/items/ancient-soul/",
       "text": "On hit:\n- Trap 1 Soul\n- Inflict 2 Curse\nOn critical hit:\n- Trap 1 Soul\nEvery 6 Soul trapped:\n- Steal 10 Max Health\n- Gain +3 Damage, +5% Crit Chance, +20% Crit Damage"
@@ -5392,7 +5398,8 @@
       "types": [
         "Pumpkin",
         "Cat",
-        "Accessory"
+        "Accessory",
+        "Charm"
       ],
       "url": "https://www.backpackbrawl.com/items/cat-o-lantern/",
       "text": "Every 3.2 seconds:\n- Steal 9 Max Health and 2 Buff during Dawn Day\n- Inflict 3 Poison and 3 Curse during Dusk Night"
@@ -5483,7 +5490,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/bucket-of-nightmares/",
-      "text": "Start of Dawn:\n- Inflict 4 Curse\nEvery 3.1 seconds:\n- Steal 2 Buff\n- Inflict 2 Debuff\nEvery 20 Health healed or overhealed by opponent:\n- Inflict 1 Blind\n- Next activation requires 5 more Health\nOn shop entered:\n- Get 1-3 Treats"
+      "text": "Start of Dawn:\n- Inflict 4 Curse\nEvery 3.1 seconds:\n- Steal 2 Buff\n- Inflict 2 Debuff\nEvery 20 Health healed or overhealed by opponent:\n- Inflict 2 Blind\n- Next activation requires 5 more Health\nOn shop entered:\n- Get 1-2 Treats"
     },
     {
       "id": "crowbane",
@@ -5496,7 +5503,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/crowbane/",
-      "text": "Every 3.8 seconds:\n- Gain 6 Resist and steal 20 Max Health and 3 Buff during Dawn Day\n- Inflict 3 Blind, 3 Poison, 3 Curse during Dusk Night\nStart of Day:\n- Disable 5 enemy Pet for 1.5 seconds"
+      "text": "Every 3.8 seconds:\n- Gain 6 Resist and steal 20 Max Health and 2 Buff during Dawn Day\n- Inflict 3 Blind, 3 Poison, 3 Curse during Dusk Night\nStart of Day:\n- Disable 5 enemy Pet for 1.5 seconds"
     },
     {
       "id": "reaper-s-judgment",
@@ -5520,7 +5527,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/bat-visor/",
-      "text": "Start of Dawn:\n- Gain 32 Armor per Star Pet\nOn Star Pet hit:\n- 33% chance Star Pet gains +1 Damage and +1% Crit Chance\nWhile equipped:\n- Increased chance of Bat appearing in the shop"
+      "text": "Start of Dawn:\n- Gain 32 Armor per Star Pet\nOn Star Pet hit:\n- 33% chance Star Pet gains +1 Damage and +1% Crit Chance\nOn shop entered:\n- Spend 4 Gold to get 1 Cave Bat"
     },
     {
       "id": "bloodsucker-s-visage",
@@ -5554,7 +5561,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/powersurge-mask/",
-      "text": "On Star Potion consumed:\n- Gain 1 Empower\n- Inflict 2 Debuff\nEvery 20 Curse inflicted on opponent:\n- Star Potion gains +1 more use\n- Next activation requires 10 more Curse\nOn shop entered:\n- Get 1 Potion"
+      "text": "On Star Type Potion consumed:\n- Gain 2 Empower\n- Inflict 2 Debuff\nEvery 30 Curse inflicted on opponent:\n- Star Type Potion gains +1 more use\n- Next activation requires 10 more Curse\nOn shop entered:\n- Get 1 Type Potion"
     },
     {
       "id": "pumpkin-patch",
@@ -5587,7 +5594,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/rebirth-mask/",
-      "text": "When hit ( MRP ):\n- 25% chance to gain 1 Regeneration\nHealth below 25%:\n- Inflict Stun for 0.3 seconds per Star Type Food\n- Cleanse all Curse\n- Activate Regeneration twice per Star Type Food\n- Remove all Regeneration"
+      "text": "Every 5.4 seconds:\n- Gain 1 Regeneration per Star Type Food Type Ingredient\nHealth below 25%:\n- Inflict Stun for 0.4 seconds per Star Type Food Type Ingredient\n- Cleanse all Curse\n- Heal for 4 Health per Regeneration"
     },
     {
       "id": "unblinking-overwatch",
@@ -5598,7 +5605,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/unblinking-overwatch/",
-      "text": "Every 3.9 seconds:\n- Cleanse 3 Debuff per Star Eyeball\n- Gain 1 Luck, 1 Haste, 1 Regeneration per Star Melee Pet"
+      "text": "Every 3.9 seconds:\n- Cleanse 2 Debuff per Star Type Charm\n- Gain 3 Luck per Star Melee\n- Gain 3 Regeneration per Star Pet"
     },
     {
       "id": "web-slinger-cover",
@@ -5609,7 +5616,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/web-slinger-cover/",
-      "text": "Start of Dawn:\n- Inflict 2 Slow per Star Spiderweb\nOn Star Pet hit:\n- 50% chance to inflict 1 Slow per Star Spiderweb\nWhile equipped:\n- Increased chance of Spiderweb in the shop"
+      "text": "Start of Dawn:\n- Inflict 2 Slow per Star Spiderweb or Pet\nOn Star Pet hit:\n- 50% chance to inflict 1 Slow per Star Spiderweb\nOn shop entered:\n- 25% chance to get 1 Spiderweb"
     },
     {
       "id": "oakheart-acorn",
@@ -5677,7 +5684,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/oakheart-sprout/",
-      "text": "Every 9 seconds:\n- Heal for 16 Health per Star Pet Type Plant\nWhile this blooms:\n- This goes +50% faster\n- Reduce Damage taken by 10%\nOn 3 shops entered (3 left):\n- Turn into Oakheart Sapling"
+      "text": "Every 9 seconds:\n- Heal for 12 Health per Star Pet Type Plant\nWhile this blooms:\n- This goes +50% faster\n- Reduce Damage taken by 10%\nOn 3 shops entered (3 left):\n- Turn into Oakheart Sapling"
     },
     {
       "id": "sapwood",
@@ -5700,7 +5707,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/rootflare-flute/",
-      "text": "Start of Dawn and every 6 seconds:\n- Star Bloomers bloom for 3 seconds\n- Gain 3 Resist"
+      "text": "Start of Dawn and every 6 seconds:\n- Star Bloomers bloom for 3 seconds\n- Gain 2 Resist"
     },
     {
       "id": "viridian-warbler",
@@ -5725,7 +5732,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/leafblade-skean/",
-      "text": "On hit:\n- Inflict 2 Bleed\nWhile this blooms:\n- Inflict 2 Bleed on critical hit"
+      "text": "On hit:\n- Inflict 1 Bleed\nWhile this blooms:\n- Inflict 2 Bleed on critical hit"
     },
     {
       "id": "mossfur-squirrel",
@@ -5762,7 +5769,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/barkskin-horn/",
-      "text": "Start of Dawn and every 6 seconds:\n- Star Bloomers bloom for 3 seconds\n- Gain 6 Resist and 6 Max Health\nWhen time of day changes:\n- Increase Max Health gained by 1 permanently"
+      "text": "Start of Dawn and every 6 seconds:\n- Star Bloomers bloom for 3 seconds\n- Gain 3 Resist and heal for 6 Health\nWhen time of day changes:\n- Increase Health healed by 2 permanently"
     },
     {
       "id": "dendromancy-rod",
@@ -5776,7 +5783,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/dendromancy-rod/",
-      "text": "Every 4 seconds:\n- Star Bloomers bloom for 2 seconds\n- Gain 1 Thorns\nOn hit while this blooms:\n- Gain 2 Luck\n- Deal 1 Damage per Thorns"
+      "text": "Every 4 seconds:\n- Star Bloomers bloom for 2 seconds\n- Gain 1 Thorns\nOn hit while this blooms:\n- Gain 2 Luck\n- Use 3 Thorns to deal 30 Damage"
     },
     {
       "id": "oakheart-sapling",
@@ -5788,7 +5795,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/oakheart-sapling/",
-      "text": "Every 9 seconds:\n- Cleanse 2 Debuff per Star Pet Type Plant\n- Heal for 16 Health per Star Pet Type Plant\nWhile this blooms:\n- This goes +50% faster\n- Reduce Damage taken by 15%\nOn 4 shops entered (4 left):\n- Turn into Young Oakheart"
+      "text": "Every 9 seconds:\n- Cleanse 1 Debuff per Star Pet Type Plant\n- Heal for 16 Health per Star Pet Type Plant\nWhile this blooms:\n- This goes +50% faster\n- Reduce Damage taken by 15%\nOn 4 shops entered (4 left):\n- Turn into Young Oakheart"
     },
     {
       "id": "pinewhisper-thrush",
@@ -5864,7 +5871,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/young-oakheart/",
-      "text": "Every 9 seconds:\n- Cleanse 3 Debuff per Star Pet Type Plant\n- Heal for 16 Health per Star Pet Type Plant\n- Gain 2 Regeneration per Star Pet Type Plant\nWhile this blooms:\n- This goes +50% faster\n- Reduce Damage taken by 20%\nOn 5 shops entered (5 left):\n- Turn into Mature Oakheart"
+      "text": "Every 9 seconds:\n- Cleanse 2 Debuff per Star Pet Type Plant\n- Heal for 16 Health per Star Pet Type Plant\n- Gain 1 Regeneration per Star Pet Type Plant\nWhile this blooms:\n- This goes +50% faster\n- Reduce Damage taken by 20%\nOn 5 shops entered (5 left):\n- Turn into Mature Oakheart"
     },
     {
       "id": "glittercall-magpie",
@@ -5889,7 +5896,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/bloodwood-spear/",
-      "text": "On hit:\n- Inflict 3 Bleed\nOn critical hit:\n- Steal 5 Health\n- Gain +1% Crit Damage permanently\nWhile this blooms:\n- Gain +30% Crit Chance\n- Inflict 4 Bleed on critical hit"
+      "text": "On hit:\n- Inflict 3 Bleed\nOn critical hit:\n- Gain 10 Max Health\n- Gain +1% Crit Damage permanently\nWhile this blooms:\n- Gain +30% Crit Chance\n- Inflict 4 Bleed on critical hit"
     },
     {
       "id": "bronzebark-carnyx",
@@ -5901,7 +5908,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/bronzebark-carnyx/",
-      "text": "Start of Dawn and every 6 seconds:\n- Star Bloomers bloom for 3 seconds\n- Gain 10 Resist and 10 Max Health\nEvery 6 seconds:\n- 50% chance to activate Regeneration\nWhen time of day changes:\n- Increase Max Health gained by 2 permanently"
+      "text": "Start of Dawn and every 6 seconds:\n- Star Bloomers bloom for 3 seconds\n- Gain 5 Resist and heal for 10 Health\nEvery 6 seconds:\n- 50% chance to activate Regeneration\nWhen time of day changes:\n- Increase Health healed by 3 permanently"
     },
     {
       "id": "arboreal-defender",
@@ -5914,7 +5921,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/arboreal-defender/",
-      "text": "Start of Dawn Day Dusk Night:\n- Gain 50 Armor and 3 Regeneration\n- Increase Armor gained by 3 permanently\nWhen hit ( Melee Ranged Pet ):\n- 40% chance to:\n- Block 12 Damage\n- Drain 0.5 Stamina when blocking Melee Ranged\nWhile this blooms:\n- Increase chance to block by +(0.55-0.4)*100%\n- Increase block by 8 Damage"
+      "text": "Start of Dawn Day Dusk Night:\n- Gain 50 Max Health and 3 Regeneration\n- Increase Max Health gained by 3 permanently\nWhen hit ( Melee Ranged Pet ):\n- 40% chance to:\n- Block 12 Damage\n- Drain 0.5 Stamina when blocking Melee Ranged\nWhile this blooms:\n- Increase chance to block by +(0.55-0.4)*100%\n- Increase block by 8 Damage"
     },
     {
       "id": "living-staff",
@@ -5928,7 +5935,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/living-staff/",
-      "text": "Every 4 seconds:\n- Star Bloomers bloom for 2 seconds\n- Gain 2 Thorns\nOn hit while this blooms:\n- Gain 2 Luck and 2 Regeneration\n- Deal 2 Damage per Thorns"
+      "text": "Every 4 seconds:\n- Star Bloomers bloom for 2 seconds\n- Gain 2 Thorns\nOn hit while this blooms:\n- Gain 2 Luck and 4 Regeneration\n- Use 5 Thorns to deal 60 Damage"
     },
     {
       "id": "ratatoskr",
@@ -5954,7 +5961,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/mature-oakheart/",
-      "text": "Every 9 seconds:\n- Cleanse 4 Debuff per Star Pet Type Plant\n- Heal for 16 Health per Star Pet Type Plant\n- Gain 2 Regeneration per Star Pet Type Plant\n- Star Pet Type Plant gain +5 Damage\nWhile this blooms:\n- This goes +50% faster\n- Reduce Damage taken by 25%\nOn shop entered:\n- This heals +10% more Health permanently\n- (Currently: +(1-1)*100% more Health )"
+      "text": "Every 9 seconds:\n- Cleanse 2 Debuff per Star Pet Type Plant\n- Heal for 16 Health per Star Pet Type Plant\n- Gain 2 Regeneration per Star Pet Type Plant\n- Star Pet Type Plant gain +3 Damage\nWhile this blooms:\n- This goes +50% faster\n- Reduce Damage taken by 25%\nOn shop entered:\n- This heals +15% more Health permanently\n- (Currently: +(1-1)*100% more Health )"
     },
     {
       "id": "oakblood-glaive",
@@ -5968,7 +5975,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/oakblood-glaive/",
-      "text": "On hit:\n- Inflict 4 Bleed\nOn critical hit:\n- Steal 10 Health\n- Gain +2% Crit Damage permanently\nWhile this blooms:\n- Gain +40% Crit Chance\n- Inflict 6 Bleed on critical hit"
+      "text": "On hit:\n- Inflict 4 Bleed\nOn critical hit:\n- Gain 20 Max Health\n- Gain +2% Crit Damage permanently\nWhile this blooms:\n- Gain +40% Crit Chance\n- Inflict 6 Bleed on critical hit"
     },
     {
       "id": "crownwood-lur",
@@ -5980,7 +5987,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/crownwood-lur/",
-      "text": "Start of Dawn and every 6 seconds:\n- Star Bloomers bloom for 3 seconds\n- Gain 15 Resist and 15 Max Health\nEvery 6 seconds:\n- Activate Regeneration\nWhen time of day changes:\n- Increase Max Health gained by 3 permanently"
+      "text": "Start of Dawn and every 6 seconds:\n- Star Bloomers bloom for 3 seconds\n- Gain 8 Resist and heal for 15 Health\nEvery 6 seconds:\n- Activate Regeneration\nWhen time of day changes:\n- Increase Health healed by 4 permanently"
     },
     {
       "id": "nightsong-raven",
@@ -6004,7 +6011,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/regrowth-barrier/",
-      "text": "Start of Dawn Day Dusk Night:\n- Gain 70 Armor and 5 Regeneration\n- Increase Armor gained by 5 permanently\nWhen hit ( Melee Ranged Pet ):\n- 40% chance to:\n- Block 16 Damage\n- Drain 0.5 Stamina when blocking Melee Ranged\nWhile this blooms:\n- Increase chance to block by +(0.6-0.4)*100%\n- Increase block by 12 Damage"
+      "text": "Start of Dawn Day Dusk Night:\n- Gain 70 Max Health and 5 Regeneration\n- Increase Max Health gained by 5 permanently\nWhen hit ( Melee Ranged Pet ):\n- 40% chance to:\n- Block 16 Damage\n- Drain 0.5 Stamina when blocking Melee Ranged\nWhile this blooms:\n- Increase chance to block by +(0.6-0.4)*100%\n- Increase block by 12 Damage"
     },
     {
       "id": "barkweave-basket",
@@ -6063,7 +6070,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/lanternbug/",
-      "text": "Start of Dawn Day Dusk Night:\n- Star items Bloom for 5 seconds\n- Inflict 12 Burn\nWhen Burn deals damage to opponent:\n- Heal for 1 Health per damage dealt\nYour Fatigue starts 10 seconds later"
+      "text": "Start of Dawn Day Dusk Night:\n- Star items Bloom for 6 seconds\n- Inflict 12 Burn\nWhen Burn deals damage to opponent:\n- Heal for 1 Health per damage dealt\nYour Fatigue starts 10 seconds later"
     },
     {
       "id": "nightingale",
@@ -6100,7 +6107,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/perennial-recurve/",
-      "text": "On hit:\n- Gain 3 Haste\nWhile this blooms:\n- Gain +50% Crit Chance\n- This and Star Pet Type Plant gain +30% faster activations\nWhen time of day changes:\n- Gain +5% Crit Damage permanently"
+      "text": "On hit:\n- Gain 1 Haste\nWhile this blooms:\n- Gain +50% Crit Chance\n- This and Star Pet Type Plant gain +25% faster activations\nWhen time of day changes:\n- Gain +5% Crit Damage permanently"
     },
     {
       "id": "venus-pitfall",
@@ -6112,7 +6119,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/venus-pitfall/",
-      "text": "When hit ( Melee Ranged Pet ):\n- 25% chance to:\n- Inflict 1 Poison per Star Pet Type Plant\nIf this is blooming:\n- Slow attacking Melee Ranged Pet by 15%\nOn shop entered:\n- Increase chance to inflict Poison by +1% permanently\n- Get 1 Arcanefly"
+      "text": "When hit ( Melee Ranged Pet ):\n- 25% chance to:\n- Inflict 1 Poison and 1 Bleed per Star Pet Type Plant\nIf this is blooming:\n- Slow attacking Melee Ranged Pet by 15%\nOn shop entered:\n- Increase chance to trigger by +1% permanently\n- Get 1 Arcanefly"
     },
     {
       "id": "fury-fungus",
@@ -6120,8 +6127,9 @@
       "hero": "harkon",
       "rarity": "Common",
       "types": [
-        "Ingredient",
-        "Food"
+        "Fungus",
+        "Food",
+        "Ingredient"
       ],
       "url": "https://www.backpackbrawl.com/items/fury-fungus/",
       "text": "Health below 50%:\n- Gain 1 Empower per Star Melee"
@@ -6137,7 +6145,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/lost-symbol/",
-      "text": "On Star Melee Ranged hit:\n- 20% chance to gain 1 Regeneration"
+      "text": "On Star Melee Ranged hit:\n- 40% chance to heal for 3 Health"
     },
     {
       "id": "rusty-sword",
@@ -6175,7 +6183,7 @@
         "Tool"
       ],
       "url": "https://www.backpackbrawl.com/items/meat-cleaver/",
-      "text": "Health below 50%:\n- Gain 2 Regeneration"
+      "text": "Health below 50%:\n- Gain 1 Regeneration"
     },
     {
       "id": "berserker-potion",
@@ -6198,7 +6206,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/bonesaw/",
-      "text": "On hit if opponent has no Armor:\n- Gain 1 Lifesteal"
+      "text": "On hit if opponent has no Armor:\n- Heal for 4 Health"
     },
     {
       "id": "fury-edge",
@@ -6258,7 +6266,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/skullsmasher/",
-      "text": "On hit:\n- 33% chance to inflict Stun for 1 second"
+      "text": "On hit:\n- 20% chance to inflict Stun for 1 second"
     },
     {
       "id": "snow-pear",
@@ -6329,7 +6337,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/giant-s-belt/",
-      "text": "Start of Dawn:\n- Gain 2 Luck and 2 Regeneration\n- Star Potion gain +1 more use\nOn Star Potion consumed:\n- Gain 1 Empower"
+      "text": "Start of Dawn:\n- Gain 2 Luck and 2 Regeneration\n- Star Type Potion gain +1 more use\nOn Star Type Potion consumed:\n- Gain 1 Empower"
     },
     {
       "id": "shaman-s-talisman",
@@ -6459,7 +6467,7 @@
         "Food"
       ],
       "url": "https://www.backpackbrawl.com/items/ancient-grog/",
-      "text": "Every 4.4 seconds:\n- Gain 2 Empower\nOn Star Potion consumed:\n- Gain 6 Regeneration\n- Activate Regeneration\n+10% faster for every Star Type Food of another type"
+      "text": "Every 4.4 seconds:\n- Gain 1 Empower per Star Type Potion\nOn Star Type Potion consumed:\n- Gain 6 Regeneration\n- Activate Regeneration\n+10% faster for every Star Type Food of another type"
     },
     {
       "id": "berserker-sack",
@@ -6490,10 +6498,10 @@
       "hero": "harkon",
       "rarity": "Unique",
       "types": [
-        "Plant"
+        "Fungus"
       ],
       "url": "https://www.backpackbrawl.com/items/corrupted-shroom/",
-      "text": "Every 3.9 seconds:\n- Gain 1 Regeneration\n- Activate Regeneration\nOn every Regeneration activation:\n- Inflict 1 Poison and 1 Slow per Star Type Accessory"
+      "text": "Every 3.9 seconds:\n- Gain 1 Regeneration\n- Activate Regeneration\nOn every Regeneration activation:\n- Inflict 1 Poison and 1 Slow per Star Type Accessory Pet"
     },
     {
       "id": "lost-runeword",
@@ -6505,7 +6513,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/lost-runeword/",
-      "text": "Start of Dawn:\n- Gain 15 Max Health per second for 20 seconds\nWhen time of day changes:\n- Gain 4 Regeneration and 2 Empower per Star Rune\nOn shop entered:\n- Turn 1 Star Rock into a Lost Symbol"
+      "text": "Start of Dawn:\n- Gain 3 Regeneration per Star Melee Ranged Pet\nEvery 4.2 seconds:\n- Cleanse 1 Debuff per Star Melee Ranged Pet\n- Use 2 Regeneration to gain 4 Empower"
     },
     {
       "id": "stoneheart-brew",
@@ -6516,7 +6524,7 @@
         "Potion"
       ],
       "url": "https://www.backpackbrawl.com/items/stoneheart-brew/",
-      "text": "Start of Dawn:\n- Star Golem benefits from Empower\nPer 250 Damage dealt by Star Type Mineral\n- Gain 1 use\nHealth below 20%:\n- Gain 4 Armor per Empower on you\n- Gain 14 Armor per Star Type Mineral\nOn shop entered:\n- Get a Rock or Lava Rock"
+      "text": "Start of Dawn:\n- Star Golem benefits from Empower\nPer 250 Damage dealt by Star Type Mineral\n- Gain 1 use\nHealth below 20%:\n- Gain 4 Armor per Empower on you\n- Gain 14 Armor per Star Type Mineral\n- Gain 1 Empower per Star Golem\nOn shop entered:\n- Get a Rock or Lava Rock"
     },
     {
       "id": "stonehide-mask",
@@ -6527,7 +6535,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/stonehide-mask/",
-      "text": "Start of Dawn:\n- Gain 55 Armor\n- Reduce Stun duration by 25%\n- Reduce Crit Damage taken by 25%\nAfter 12 seconds:\n- Transfer all Burn, Bleed, and Poison to opponent"
+      "text": "Start of Dawn:\n- Gain 55 Armor\n- Reduce Stun duration by 25%\n- Reduce Crit Damage taken by 35%\nStart of Day:\n- Transfer all Burn, Bleed, and Poison to opponent"
     },
     {
       "id": "war-drum",
@@ -6684,7 +6692,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/sticky-dart/",
-      "text": "On hit:\n- Steal 1 Buff\n- Inflict 1 Slow per second for 6 seconds\nQuantity: 3/3"
+      "text": "On hit:\n- Steal 1 Buff\n- Inflict 2 Slow per second for 3 seconds\nQuantity: 3/3"
     },
     {
       "id": "brimstone-powder",
@@ -6768,7 +6776,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/gobnoxious-dart/",
-      "text": "On hit:\n- Steal 1 Buff\n- Inflict 1 Slow and 1 Poison per second for 6 seconds\nQuantity: 3/3"
+      "text": "On hit:\n- Steal 1 Buff\n- Inflict 2 Slow and 2 Poison per second for 3 seconds\nQuantity: 3/3"
     },
     {
       "id": "trangoblizer-dart",
@@ -6781,7 +6789,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/trangoblizer-dart/",
-      "text": "On hit:\n- Steal 1 Buff\n- Remove 1 Haste or 1 Empower per second for 6 seconds\nQuantity: 3/3"
+      "text": "On hit:\n- Steal 1 Buff\n- Remove 2 Haste or 2 Empower per second for 3 seconds\nQuantity: 3/3"
     },
     {
       "id": "oil-of-vitriol",
@@ -6792,7 +6800,7 @@
         "Potion"
       ],
       "url": "https://www.backpackbrawl.com/items/oil-of-vitriol/",
-      "text": "When hit 10 times ( Melee Ranged Pet ):\n- Inflict 2 Burn and 2 Poison per second for 5 seconds"
+      "text": "When hit 5 times ( Melee Ranged Pet ):\n- Inflict 2 Burn and 2 Poison per second for 5 seconds"
     },
     {
       "id": "premeditated-stinkbomb",
@@ -6828,7 +6836,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/gobliterator-dart/",
-      "text": "On hit:\n- Steal 1 Buff\n- Inflict 1 Slow and 1 Poison per second for 6 seconds\n- Remove 1 Haste or 1 Empower per second for 6 seconds\nQuantity: 3/3"
+      "text": "On hit:\n- Steal 1 Buff\n- Inflict 2 Slow and 2 Poison per second for 3 seconds\n- Remove 2 Haste or 2 Empower per second for 3 seconds\nQuantity: 3/3"
     },
     {
       "id": "unsafe-safe-cracker",
@@ -6855,7 +6863,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/rat-burglar/",
-      "text": "On hit:\n- Gain +1 Damage per Star Type Skull\n- Steal 1 Buff per Star Type Rat\n- Steal 0.25 Stamina per Star item from another hero"
+      "text": "On hit:\n- Gain +1 Damage per Star Type Skull\n- Steal 0.25 Stamina per Star Type Rat\n- Steal 1 Buff per Star item from another hero"
     },
     {
       "id": "goblin-spice-mix",
@@ -6877,8 +6885,7 @@
       "rarity": "Mythic",
       "types": [
         "Ranged",
-        "Weapon",
-        "Accessory"
+        "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/harper-sonic-dart-sling/",
       "text": "On hit:\n- Shoot 1 Star Dart or Bolt\n- Gain 12 Armor\n- Inflict 3 Bleed\nEvery 5 hits:\n- Activate Bleed"
@@ -6896,7 +6903,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/vitri-oil-vault-drill/",
-      "text": "On hit:\n- Steal 0.25 Stamina\n- Inflict 4 Bleed\n- Sabotage 4 enemy Melee Ranged\nEvery 3 hits:\n- Gain +20% faster attacks\n- Spend 1 Potion use to inflict 9 Burn and 9 Poison\nSabotage"
+      "text": "On hit:\n- Steal 0.25 Stamina\n- Inflict 4 Bleed\n- Sabotage 4 enemy Melee Ranged\nEvery 3 hits:\n- Gain +20% faster attacks\n- Spend 1 Type Potion use to inflict 9 Burn and 9 Poison\nSabotage:\n- Remove -1 min Damage and -5% Crit Damage from target"
     },
     {
       "id": "hypnodisc-deflector",
@@ -6919,7 +6926,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/partial-invisibility-cloak/",
-      "text": "Start of Dawn:\n- Steal 10 Max Health per Star item from another hero\n- Reduce Damage taken by 18%\nWhen hit 5 times ( Melee Ranged Pet ):\n- Gain 2 Resist per Star item from another hero\n- 50% chance to steal 1 Buff per Star item from another hero\n- Cleanse 5 Debuff\nWhen time of day changes:\n- Become invulnerable for 1 seconds"
+      "text": "Start of Dawn:\n- Steal 10 Max Health per Star item from another hero\n- Reduce Damage taken by 18%\nWhen hit 5 times ( Melee Ranged Pet ):\n- Gain 2 Resist per Star item from another hero\n- Steal 1 Buff per Star item from another hero\n- Cleanse 5 Debuff\nWhen time of day changes:\n- Become invulnerable for 1 seconds"
     },
     {
       "id": "grab-bag",
@@ -6941,7 +6948,7 @@
         "Bag"
       ],
       "url": "https://www.backpackbrawl.com/items/planner-s-pack/",
-      "text": "When time of day changes:\nIf there is a Heist inside:\n- Potion inside gain +1 more use\nOn shop entered:\nIf you don't have a Heist:\n- Get a Heist"
+      "text": "When time of day changes:\nIf there is a Heist inside:\n- Type Potion inside gain +1 more use\nOn shop entered:\nIf you don't have a Heist:\n- Get a Heist"
     },
     {
       "id": "tactical-knapsack",
@@ -7020,7 +7027,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/gobituary-dart/",
-      "text": "On hit:\n- Inflict 3 Poison per second for 8 seconds\nQuantity: 3/3"
+      "text": "On hit:\n- Inflict 4 Poison per second for 5 seconds\nOn Star Dart or Bolt hit:\n- Inflict 2 Poison per second for 5 seconds\nQuantity: 4/4"
     },
     {
       "id": "lb-7-gobstacle-skippers",
@@ -7079,7 +7086,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/scroll-of-potential/",
-      "text": "Every 5 seconds:\n- Gain 1 Buff per Star Melee Pet\nAfter 15 seconds:\n- Gain 15 Max Health"
+      "text": "Every 5 seconds:\n- Heal for 5 Health per Star Melee"
     },
     {
       "id": "aping-acolyte",
@@ -7090,7 +7097,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/aping-acolyte/",
-      "text": "Start of Dawn:\n- Gain +5% faster attacks per Star Melee Pet Type Food\nWhen time of day changes:\n- Gain +4 Damage per Star Banana"
+      "text": "Start of Dawn:\n- Gain +5% faster attacks per Star Melee Pet Type Food\nWhen time of day changes:\n- Gain +6 Damage per Star Banana"
     },
     {
       "id": "quarterstaff",
@@ -7138,7 +7145,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/scroll-of-water/",
-      "text": "Every 5 seconds:\n- Cleanse 2 Debuff per Star Melee Pet Potion\nAfter 15 seconds:\n- Heal for 45 Health"
+      "text": "Every 5 seconds:\n- Cleanse 2 Debuff per Star Melee Pet Type Potion\nAfter 15 seconds:\n- Heal for 45 Health"
     },
     {
       "id": "dumbbell",
@@ -7197,7 +7204,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/martial-monkey/",
-      "text": "Start of Dawn:\n- Gain +5% faster attacks per Star Melee Pet Type Food\nWhen time of day changes:\n- Gain +4 Damage per Star Type Food\nWhen hit ( Melee Ranged ):\n- 40% chance to block 3 Damage"
+      "text": "Start of Dawn:\n- Gain +5% faster attacks per Star Melee Pet Type Food\nWhen time of day changes:\n- Gain +6 Damage per Star Type Food\nWhen hit ( Melee Ranged ):\n- 40% chance to block 3 Damage"
     },
     {
       "id": "weightless-stone",
@@ -7233,7 +7240,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/ki-flow-cord/",
-      "text": "Start of Dawn:\n- Gain 3 Resist and 3 Luck\n- Star Potion gains +1 more use\nOn Star Potion consumed:\n- Cleanse 5 Debuff"
+      "text": "Start of Dawn:\n- Gain 3 Resist and 3 Luck\n- Star Type Potion gains +1 more use\nOn Star Type Potion consumed:\n- Cleanse 5 Debuff"
     },
     {
       "id": "enlightened-bell",
@@ -7256,7 +7263,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/zenpanzee/",
-      "text": "Start of Dawn:\n- Gain +5% faster attacks per Star Melee Pet Type Food\nWhen time of day changes:\n- Gain +4 Damage per Star Melee Pet Type Food\nWhen hit ( Melee Ranged Pet ):\n- 50% chance to block 5 Damage"
+      "text": "Start of Dawn:\n- Gain +5% faster attacks per Star Melee Pet Type Food\nWhen time of day changes:\n- Gain +6 Damage per Star Melee Pet Type Food\nWhen hit ( Melee Ranged Pet ):\n- 50% chance to block 5 Damage"
     },
     {
       "id": "fortified-sanjiegun",
@@ -7325,7 +7332,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/gururangutan/",
-      "text": "Start of Dawn:\n- Gain +5% faster attacks per Star item\nWhen time of day changes:\n- Gain +4 Damage per Star item\nWhen hit ( Melee Ranged Pet ):\n- 50% chance to block 8 Damage\n- 20% chance to cleanse 1 Debuff"
+      "text": "Start of Dawn:\n- Gain +5% faster attacks per Star item\nWhen time of day changes:\n- Gain +6 Damage per Star item\nWhen hit ( Melee Ranged Pet ):\n- 50% chance to block 8 Damage\n- 20% chance to cleanse 1 Debuff"
     },
     {
       "id": "elemental-greatstaff",
@@ -7361,7 +7368,7 @@
         "Bag"
       ],
       "url": "https://www.backpackbrawl.com/items/bag-of-wilful-burden/",
-      "text": "On Melee Ranged Pet inside hit:\n- 20% chance to gain 1 Stamina\nOn shop entered:\n- If there is a Melee Ranged Pet inside:\n- Get 1 Sturdy Stick"
+      "text": "On Melee Ranged inside hit:\n- 30% chance to gain 1 Stamina\nOn shop entered:\n- If there is a Melee Ranged inside:\n- Get 1 Sturdy Stick"
     },
     {
       "id": "bellringer-beetle",
@@ -7394,7 +7401,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/intense-incense/",
-      "text": "On Star Melee Pet hit:\n- 50% chance to inflict 3 Burn\nWhen hit ( Melee Ranged Pet ):\n- 50% chance to inflict 3 Poison\nPer 16 Burn inflicted by this:\n- Activate Poison\nPer 16 Poison inflicted by this:\n- Activate Burn"
+      "text": "On Star Melee Pet hit:\n- 50% chance to inflict 3 Burn\nWhen hit ( Melee Ranged Pet ):\n- 50% chance to inflict 3 Poison\nPer 24 Burn inflicted by this:\n- Activate Poison\nPer 24 Poison inflicted by this:\n- Activate Burn"
     },
     {
       "id": "loincloth-of-fortitude",
@@ -7583,7 +7590,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/shoddy-handline/",
-      "text": "On hit:\n- Inflict 2 Bleed\nOn shop entered:\n- 50% chance per Star Type Food to Go Fishing (Deep)\nIf you catch something:\n- Destroy Star Type Food"
+      "text": "On hit:\n- Inflict 2 Bleed\nOn shop entered:\n- 50% chance per Star Type Food to Go Fishing (Deep)\n- +10% per failed attempt until success\nIf you catch something:\n- Destroy Star Type Food"
     },
     {
       "id": "crab-trap",
@@ -7630,7 +7637,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/faulty-compass/",
-      "text": "Start of Dawn Day Dusk Night:\n- Gain 3 Haste per Star Potion\n- Gain 3 Luck per Star Type Charm\n- Gain 3 Regeneration per Star Type Food\n- Gain 3 Mana per Star Type Fish\n- Inflict 1 Insanity on yourself"
+      "text": "Start of Dawn Day Dusk Night:\n- Gain 3 Haste per Star Type Potion\n- Gain 3 Lifesteal per Star Type Charm\n- Gain 3 Regeneration per Star Type Food\n- Gain 3 Mana per Star Type Fish\n- Inflict 1 Insanity on yourself"
     },
     {
       "id": "bosun-s-monocular",
@@ -7641,7 +7648,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/bosun-s-monocular/",
-      "text": "When time of day changes:\n- Star Melee gains +20% Accuracy and +20% Crit Damage\n- Star Ranged gains +20% Accuracy and +10% Crit Chance\n- Star Pet gains +20% Accuracy and +2 Damage"
+      "text": "Start of Dawn Day Dusk Night:\n- Star Melee gains +20% Accuracy and +20% Crit Damage\n- Star Ranged gains +20% Accuracy and +10% Crit Chance\n- Star Pet gains +20% Accuracy and +2 Damage"
     },
     {
       "id": "slithering-lobster",
@@ -7688,7 +7695,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/sturdy-fly-gaff/",
-      "text": "On hit:\n- Gain 1 Haste per Star Type Fish\n- Inflict 2 Bleed\nOn shop entered:\n- 50% chance to Go Fishing (Deep)"
+      "text": "On hit:\n- Gain 1 Haste per Star Type Fish\n- Inflict 2 Bleed\nOn shop entered:\n- 50% chance to Go Fishing (Deep)\n- +10% per failed attempt until success"
     },
     {
       "id": "cast-iron-anchor",
@@ -7701,7 +7708,7 @@
         "Tool"
       ],
       "url": "https://www.backpackbrawl.com/items/cast-iron-anchor/",
-      "text": "Start of Dawn:\n- Gain +10% faster attacks per absorbed Reef Knot\nOn hit:\n- Inflict 2 Slow\nOn shop entered:\n- Absorb 1 Star Reef Knot (0/1)\n- 25% chance to Go Fishing (Deep)"
+      "text": "Start of Dawn:\n- Gain +10% faster attacks per absorbed Reef Knot\nOn hit:\n- Inflict 2 Slow\nOn shop entered:\n- Absorb 1 Star Reef Knot (0/1)\n- 25% chance to Go Fishing (Abyssal)\n- +5% per failed attempt until success"
     },
     {
       "id": "lobster-pot",
@@ -7759,7 +7766,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/seafarer-s-telescope/",
-      "text": "When time of day changes:\n- Star Melee gains +30% Accuracy and +30% Crit Damage\n- Star Ranged gains +30% Accuracy and +15% Crit Chance\n- Star Pet gains +30% Accuracy and +3 Damage\nOn Star Melee Ranged Pet hit:\n- 30% chance Star Melee Ranged Pet gains +1 Damage"
+      "text": "Start of Dawn Day Dusk Night:\n- Star Melee gains +30% Accuracy and +30% Crit Damage\n- Star Ranged gains +30% Accuracy and +15% Crit Chance\n- Star Pet gains +30% Accuracy and +3 Damage\nOn Star Melee Ranged Pet hit:\n- 30% chance Star Melee Ranged Pet gains +1 Damage"
     },
     {
       "id": "feathered-first-mate",
@@ -7803,7 +7810,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/oilskin-slicker/",
-      "text": "Start of Dawn:\n- Gain 35 Max Health per Star item\n- Reduce Damage taken by 12%\nEvery 5.1 seconds:\n- Gain 3 Resist per Star item"
+      "text": "Start of Dawn:\n- Gain 35 Max Health per Star item\n- Reduce Damage taken by 8%\nEvery 5.1 seconds:\n- Gain 3 Resist per Star item"
     },
     {
       "id": "admiralty-anchor",
@@ -7827,7 +7834,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/abyssal-embrace/",
-      "text": "Start of Dawn:\n- Gain 40 Max Health per Star item\n- Reduce Damage taken by 18%\nEvery 4.6 seconds:\n- Gain 4 Max Health and 3 Resist per Star item\n- Inflict 1 Insanity on both players\n- Inflict 2 Slow"
+      "text": "Start of Dawn:\n- Gain 40 Max Health per Star item\n- Reduce Damage taken by 12%\nEvery 4.6 seconds:\n- Gain 6 Max Health and 3 Resist per Star item\n- Inflict 1 Insanity on both players\n- Inflict 2 Slow"
     },
     {
       "id": "squirming-bicorne",
@@ -7929,7 +7936,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/leaky-prototype/",
-      "text": "Start of Dawn:\n- Gain 40 Armor\n- Reduce Stun duration by 90%\n- Reduce Damage taken by 10% per Star Type Fish\nEvery 3.5 seconds:\n- Inflict 1 Insanity on yourself\n- Gain 8 Armor per Star Type Fish"
+      "text": "Start of Dawn:\n- Gain 40 Armor\n- Reduce Stun duration by 50%\n- Reduce Damage taken by 10% per Star Type Fish\nEvery 3.5 seconds:\n- Inflict 1 Insanity on yourself\n- Gain 4 Armor per Star Type Fish"
     },
     {
       "id": "six-spoke-ship-s-wheel",
@@ -7940,7 +7947,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/six-spoke-ship-s-wheel/",
-      "text": "On Star Melee Ranged hit:\n- 25% chance to inflict 2 Slow per Star Pet\nOn Star Pet hit:\n- 25% chance to gain 2 Haste per Star Melee Ranged"
+      "text": "On Star Melee Ranged hit:\n- 20% chance to inflict 2 Slow per Star Pet\nOn Star Pet hit:\n- 20% chance to gain 2 Haste per Star Melee Ranged"
     },
     {
       "id": "tiny-kraken-tooth",
@@ -7963,7 +7970,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/worn-out-lifebuoy/",
-      "text": "Every 3.7 seconds:\n- Inflict 1 Insanity on yourself\n- Heal 8% of your missing Max Health"
+      "text": "Every 3.7 seconds:\n- Heal 10% of your missing Health"
     },
     {
       "id": "dragonleaf",
@@ -7998,7 +8005,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/light-bow/",
-      "text": "On hit:\n- 30% chance to gain Hunter's mark\nHunter's Mark"
+      "text": "On hit:\n- 50% chance to gain Hunter's mark\nHunter's mark:\n- Gain 5 Luck for 3 seconds"
     },
     {
       "id": "corny-corn",
@@ -8055,7 +8062,7 @@
         "Potion"
       ],
       "url": "https://www.backpackbrawl.com/items/snake-oil/",
-      "text": "When you critically hit:\n- Gain 3 Haste or 1 Empower"
+      "text": "When Star Melee Ranged Pet critically hits:\n- Gain 3 Haste and 1 Empower"
     },
     {
       "id": "hunter-s-bow",
@@ -8067,7 +8074,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/hunter-s-bow/",
-      "text": "On hit:\n- Gain +1 Damage\n- 60% chance to gain Hunter's mark\nHunter's Mark"
+      "text": "On hit:\n- Gain +1 Damage\n- 80% chance to gain Hunter's mark\nHunter's mark:\n- Gain 5 Luck for 3 seconds"
     },
     {
       "id": "ivory-knife",
@@ -8112,7 +8119,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/truefire-bracers/",
-      "text": "Start of Dawn:\n- Star Melee Ranged gains +15% Crit Chance and +25% Crit Damage"
+      "text": "Start of Dawn Day Dusk Night:\n- Star Melee Ranged gains +10% Crit Chance and +25% Crit Damage"
     },
     {
       "id": "arrow-sheath",
@@ -8134,7 +8141,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/sniper-scope/",
-      "text": "Start of Dawn:\n- Star Ranged gains +10% Crit Chance\nEvery 4.4 seconds:\n- Use 4 Mana to give Star Ranged +40% Crit Damage"
+      "text": "Every 4.4 seconds:\n- Use 2 Mana to give Star Ranged +10% Crit Chance and +30% Crit Damage for 3 seconds"
     },
     {
       "id": "elven-blade",
@@ -8158,7 +8165,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/silverbark-bow/",
-      "text": "On hit:\n- Gain +2 Damage\n- Gain Hunter's mark\nOn critical hit:\n- Gain 1 Haste\nHunter's Mark"
+      "text": "On hit:\n- Gain +2 Damage\n- Gain Hunter's mark\nOn critical hit:\n- Gain 1 Haste\nHunter's mark:\n- Gain 5 Luck for 3 seconds"
     },
     {
       "id": "shadow-armor",
@@ -8238,7 +8245,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/evergreen-arc/",
-      "text": "On hit:\n- Gain 3 Luck\n- Gain +2 Damage\n- Inflict 1 Bleed per Star Dragonleaf\nOn critical hit:\n- Gain 1 Haste\n- Heal for 2 Health per Bleed on opponent\nThis counts as 2 Dragonleaf"
+      "text": "On hit:\n- Gain 3 Luck\n- Gain +3 Damage\n- Inflict 1 Bleed per Star Dragonleaf\nOn critical hit:\n- Gain 1 Haste\n- Heal for 2 Health per Bleed on opponent\nThis counts as 2 Dragonleaf"
     },
     {
       "id": "frost-quiver",
@@ -8249,7 +8256,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/frost-quiver/",
-      "text": "On Star Ranged hit:\n- Transfer up to 2 Slow to opponent\n- 50% chance to:\n- Inflict 1 Slow\nEvery 3.6 seconds:\n- Gain 3 Haste\n- Star Ranged gains +20% Crit Damage and +14% faster attacks"
+      "text": "On Star Ranged hit:\n- Transfer 2 Slow to opponent\n- 50% chance to:\n- Inflict 1 Slow\nEvery 3.6 seconds:\n- Gain 3 Haste\n- Star Ranged gains +20% Crit Damage and +14% faster attacks"
     },
     {
       "id": "predator-scales",
@@ -8260,7 +8267,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/predator-scales/",
-      "text": "Start of Dawn:\n- Gain 110 Armor and 10 Resist\n- Reduce Damage taken by 30%\nEvery 6.2 seconds:\n- Gain 14 Armor and 1 Haste per Star Dragonleaf"
+      "text": "Start of Dawn:\n- Gain 150 Armor and 10 Resist\n- Reduce Damage taken by 30%\nEvery 6.2 seconds:\n- Gain 14 Armor and 1 Haste per Star Dragonleaf"
     },
     {
       "id": "dragonfang",
@@ -8273,7 +8280,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/dragonfang/",
-      "text": "Start of Dawn:\n- Gain +30% Crit Chance and +50% Crit Damage\nOn hit:\n- Cleanse 2 Debuff\n- Gain 1 Haste per Star Dragonleaf\n- Inflict 4 Bleed\nThis is not affected by Slow\nThis counts as 2 Dragonleaf"
+      "text": "Start of Dawn Day Dusk Night:\n- Gain +20% Crit Chance and +50% Crit Damage\nOn hit:\n- Cleanse 2 Debuff\n- Gain 1 Haste per Star Dragonleaf\n- Inflict 4 Bleed\nThis is not affected by Slow\nThis counts as 2 Dragonleaf"
     },
     {
       "id": "deathshot",
@@ -8285,7 +8292,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/deathshot/",
-      "text": "On hit:\n- Gain 3 Haste\n- Gain Hunter's mark\nOn critical hit:\n- Gain +15% faster attacks and +20% Crit Damage\n- Gain Hunter's mark\nHunter's Mark"
+      "text": "On hit:\n- Gain 3 Haste\n- Gain Hunter's mark\nOn critical hit:\n- Gain +15% faster attacks and +20% Crit Damage\n- Gain Hunter's mark\nHunter's mark:\n- Gain 5 Luck for 3 seconds"
     },
     {
       "id": "blazegaze",
@@ -8296,7 +8303,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/blazegaze/",
-      "text": "On hit:\n- Inflict 5 Blind for 3 seconds\nOn Star Melee Ranged Pet hit:\n- 50% chance to inflict 2 Burn\nPer Blind and Burn on opponent:\n- This gains +5% faster attacks"
+      "text": "On hit:\n- Inflict 5 Blind for 5 seconds\nOn Star Melee Ranged Pet hit:\n- 50% chance to inflict 2 Burn\nPer Blind and Burn on opponent:\n- This gains +5% faster attacks"
     },
     {
       "id": "dreadleaf",
@@ -8307,7 +8314,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/dreadleaf/",
-      "text": "Start of Dawn:\n- Inflict 1 Blind per Star Dragonleaf\nEvery 6 seconds:\n- Inflict 1 Blind per Star Type Plant\n- Reduce Cooldown by 0.3 seconds"
+      "text": "Start of Dawn:\n- Inflict 1 Blind per Star Dragonleaf\nEvery 5 seconds:\n- Inflict 1 Blind per Star Type Plant\n- Reduce Cooldown by 0.2 seconds"
     },
     {
       "id": "fiery-quiver",
@@ -8318,7 +8325,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/fiery-quiver/",
-      "text": "On Star Ranged hit:\n- 50% chance to inflict 4 Burn\nEvery 3.2 seconds:\n- Star Ranged gains +2 Damage"
+      "text": "On Star Ranged hit:\n- 50% chance to inflict 4 Burn\nEvery 3.6 seconds:\n- Star Ranged gains +3 Damage"
     },
     {
       "id": "final-blow",
@@ -8352,7 +8359,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/poison-arrows/",
-      "text": "On Star Ranged hit:\n- Inflict 3 Poison"
+      "text": "On Star Ranged hit:\n- Inflict 3 Poison\nOn Star Ranged critical hit:\n- Disable an enemy item for 1.25 seconds"
     },
     {
       "id": "ranger-s-satchel",
@@ -8375,7 +8382,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/reptile-stalker/",
-      "text": "On hit:\n- Gain 1 Haste per 2 Star Dragonleaf\nOn critical hit:\n- Gain 1 Haste per Star Dragonleaf"
+      "text": "On hit:\n- Gain +0.5 Damage per Star Dragonleaf\nOn critical hit:\n- Gain 1 Haste per Star Dragonleaf"
     },
     {
       "id": "shadow-cloak",
@@ -8386,7 +8393,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/shadow-cloak/",
-      "text": "Start of Dawn:\n- Inflict 1 Blind per Star Melee Ranged Pet\nEvery 4.6 seconds:\n- Gain 1 Dodge"
+      "text": "Every 5.1 seconds:\n- Gain 1 Dodge\n- Star Melee Ranged Pet gain +10% Crit Damage"
     },
     {
       "id": "bag-of-flour",
@@ -8409,7 +8416,7 @@
         "Food"
       ],
       "url": "https://www.backpackbrawl.com/items/potato/",
-      "text": "Every 4 seconds:\n- Gain 2 Max Health\n+10% faster for every Star Type Food of another type"
+      "text": "Every 4.4 seconds:\n- Gain 2 Max Health\n+10% faster for every Star Type Food of another type"
     },
     {
       "id": "paring-knife",
@@ -8542,7 +8549,7 @@
         "Food"
       ],
       "url": "https://www.backpackbrawl.com/items/croquette/",
-      "text": "Every 3.9 seconds:\n- Gain 5 Max Health\n- Star Type Food gains +5% faster activations\n+10% faster for every Star Type Food of another type"
+      "text": "Every 3.9 seconds:\n- Gain 5 Max Health\n- Star Type Food of another type gains +8% faster activations\n+10% faster for every Star Type Food of another type"
     },
     {
       "id": "dragonbreath-chili",
@@ -8697,7 +8704,7 @@
         "Food"
       ],
       "url": "https://www.backpackbrawl.com/items/croissant-crossbow/",
-      "text": "On hit:\n- Gain 2 Mana\n- Use 3 Mana to gain +10% Crit Chance\nOn critical hit:\n- Gain 4 Max Health and 1 Regeneration per Star Type Food\nPer 100 Max Health you have:\n- This gains +8 Damage\n+10% faster for every Star Type Food of another type"
+      "text": "On hit:\n- Gain 2 Mana\n- Use 3 Mana to gain +10% Crit Chance\nOn critical hit:\n- Gain 4 Max Health and 1 Regeneration per Star Type Food\nPer 100 Max Health you have:\n- This gains +5 Damage\n+10% faster for every Star Type Food of another type"
     },
     {
       "id": "funky-fundue",
@@ -8756,7 +8763,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/full-plate-splatterguard/",
-      "text": "Start of Dawn:\n- Gain 90 Armor and 10 Resist\n- Reduce Damage taken by 30%\nEvery 4.6 seconds:\n- Gain 2 Armor and 2 Resist per Star item\n- Cleanse 3 Debuff"
+      "text": "Start of Dawn:\n- Gain 130 Armor and 10 Resist\n- Reduce Damage taken by 30%\nEvery 4.6 seconds:\n- Gain 4 Armor and 2 Resist per Star item\n- Cleanse 3 Debuff"
     },
     {
       "id": "cat-whisker-whisk",
@@ -8779,7 +8786,7 @@
         "Food"
       ],
       "url": "https://www.backpackbrawl.com/items/cheese-wheel-of-fortune/",
-      "text": "Every 4 seconds:\n- Gain 1 Luck per Star Cheese\nOn Star Type Rat hit:\n- 50% chance for all Star Type Rat to gain +2 max Damage\nOn shop entered:\n- Get 1 Cheese or catch 1 Muck Rat\n+10% faster for every Star Type Food of another type"
+      "text": "Every 4 seconds:\n- Gain 3 Luck\nOn Star Type Rat hit:\n- 50% chance for all Star Type Rat to gain +2 max Damage\nOn shop entered:\n- Get 1 Mild Cheese or catch 1 Muck Rat\n+10% faster for every Star Type Food of another type"
     },
     {
       "id": "cutting-board-bag",
@@ -8860,7 +8867,7 @@
         "Tool"
       ],
       "url": "https://www.backpackbrawl.com/items/the-tenderizer/",
-      "text": "Start of Dawn:\n- Gain +15% Crit Chance per Star Type Food\nOn critical hit:\n- Remove 20% Max Health\nFor every 70 Max Health you have more than opponent:\n- Gain +10% Crit Damage"
+      "text": "Start of Dawn:\n- Gain +15% Crit Chance per Star Type Food\nOn critical hit:\n- Remove 20% Max Health\nFor every 70 Max Health you have more than opponent:\n- Gain +20% Crit Damage"
     },
     {
       "id": "cactus",
@@ -8918,7 +8925,7 @@
         "Potion"
       ],
       "url": "https://www.backpackbrawl.com/items/prickly-potion/",
-      "text": "When critically hit Melee Ranged Pet or health below 50%:\n- Gain 15 Armor\n- Gain 5 Thorns for 10 seconds\nThis counts as 2 Cactus"
+      "text": "When critically hit ( Melee Ranged Pet ) or health below 50%:\n- Gain 15 Armor\n- Gain 4 Thorns for 10 seconds\nThis counts as 2 Cactus"
     },
     {
       "id": "jagged-blade",
@@ -8976,7 +8983,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/knight-s-aegis/",
-      "text": "Start of Dawn:\n- Gain 35 Armor\nWhen hit ( Melee Ranged Pet ):\n- 50% chance to block 6 Damage\n- 20% chance to gain 1 Empower, 1 Thorns, or 1 Regeneration"
+      "text": "Start of Dawn:\n- Gain 35 Armor\nWhen hit ( Melee Ranged Pet ):\n- 50% chance to block 6 Damage\n- 20% chance to gain 1 Empower or 1 Regeneration"
     },
     {
       "id": "knight-s-sigil",
@@ -9010,7 +9017,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/bolstered-helmet/",
-      "text": "Start of Dawn:\n- Gain 55 Armor and 5 Thorns\n- Reduce Stun duration by 50%\n- Reduce Crit Damage taken by 20%\nEvery 4.2 seconds:\n- Gain 15 Armor"
+      "text": "Start of Dawn:\n- Gain 55 Armor and 5 Thorns\n- Reduce Stun duration by 50%\n- Reduce Crit Damage taken by 20%\nEvery 4.2 seconds:\n- Gain 15 Armor and 3 Resist"
     },
     {
       "id": "fanged-blade",
@@ -9045,7 +9052,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/defender-s-shield/",
-      "text": "Start of Dawn:\n- Gain 75 Armor and 3 Thorns\nWhen hit ( Melee Ranged Pet ):\n- 50% chance to block 12 Damage and gain 6 Armor"
+      "text": "Start of Dawn:\n- Gain 75 Armor\nWhen hit ( Melee Ranged Pet ):\n- 50% chance to block 12 Damage and gain 6 Armor"
     },
     {
       "id": "thornwall",
@@ -9068,7 +9075,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/vanguard-belt/",
-      "text": "Start of Dawn:\n- Gain 28 Armor and 3 Luck\n- Star Potion gain +1 more use\nOn Star Potion consumed:\n- Gain 22 Armor"
+      "text": "Start of Dawn:\n- Gain 28 Armor and 3 Luck\n- Star Type Potion gain +1 more use\nOn Star Type Potion consumed:\n- Gain 22 Armor and 3 Resist"
     },
     {
       "id": "champion-s-ripper",
@@ -9080,7 +9087,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/champion-s-ripper/",
-      "text": "On hit:\n- Steal 1 Buff\n- Inflict 2 Bleed\nOn critical hit:\n- Remove 2 Buff"
+      "text": "On hit:\n- Remove 2-3 Buff\n- Inflict 2 Bleed"
     },
     {
       "id": "errant-lance",
@@ -9115,7 +9122,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/unbreakable-wall/",
-      "text": "Start of Dawn:\n- Gain 100 Armor and 5 Thorns\nWhen hit ( Melee Ranged Pet ):\n- 50% chance to block 30 Damage and gain 10 Armor\n- 20% chance to gain 2 Empower, 2 Thorns, or 2 Regeneration"
+      "text": "Start of Dawn:\n- Gain 100 Armor\nWhen hit ( Melee Ranged Pet ):\n- 50% chance to block 30 Damage and gain 10 Armor\n- 20% chance to gain 2 Empower or 2 Regeneration"
     },
     {
       "id": "excalibur",
@@ -9127,7 +9134,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/excalibur/",
-      "text": "Start of Day, Night:\n- Reduce Cooldown by 1\nOn hit:\n- Steal 5 Buff\n- Inflict 5 Bleed\nOn 50 Buff stolen:\n- Gain 30 Regeneration and 30 Empower"
+      "text": "When time of day changes:\n- Reduce Cooldown by 0.5 seconds\nOn hit:\n- Remove 4 Buff\n- Gain 3 Empower\n- Inflict 5 Bleed\nAfter 10 hits:\n- Cleanse 100 Debuff\n- Gain Armor equal to your current Health"
     },
     {
       "id": "rhongomiant",
@@ -9151,7 +9158,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/spinegrowth-breastplate/",
-      "text": "Start of Dawn:\n- Gain 120 Armor, 10 Resist, 5 Thorns\n- Reduce Damage taken by 30%\nEvery 5.2 seconds:\n- Gain 10 Armor and 1 Thorns per Star item\nThis counts as 3 Cactus"
+      "text": "Start of Dawn:\n- Gain 150 Armor, 10 Resist, 5 Thorns\n- Reduce Damage taken by 30%\nEvery 5.2 seconds:\n- Gain 10 Armor and 1 Thorns per Star item\nThis counts as 3 Cactus"
     },
     {
       "id": "hungering-ward",
@@ -9162,7 +9169,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/hungering-ward/",
-      "text": "Start of Dawn Day Dusk Night:\n- Inflict Disable on 1 Melee Ranged Pet for 4 seconds\n- Gain 40 Armor per Star Type Armor\nWhen hit ( Melee Ranged Pet ):\n- 40% chance to block 5 Damage\nWhen critically hit ( Melee Ranged Pet ):\n- Increase Damage blocking by 1"
+      "text": "Start of Dawn Day Dusk Night:\n- Inflict Disable on 1 Melee Ranged for 5 seconds\n- Gain 40 Armor per Star Type Armor\nWhen hit ( Melee Ranged Pet ):\n- 40% chance to block 16 Damage and steal 5 Max Health\nWhen critically hit ( Melee Ranged Pet ):\n- Increase Damage blocking by 1"
     },
     {
       "id": "ironwill-banner",
@@ -9173,7 +9180,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/ironwill-banner/",
-      "text": "Every 2.9 seconds:\n- Gain 18 Armor per Star Type Armor\nOn every Fatigue activation:\n- Cleanse 2 Debuff\n- Gain 6 Armor per Star Type Armor"
+      "text": "Every 3.2 seconds:\n- Gain 18 Armor per Star Type Armor\nOn every Fatigue activation:\n- Cleanse 2 Debuff\n- Gain 6 Armor per Star Type Armor"
     },
     {
       "id": "knight-s-blessing",
@@ -9229,7 +9236,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/weapons-rack/",
-      "text": "On Star Melee Ranged hit:\n- 20% chance another Star Melee Ranged triggers a free attack"
+      "text": "Start of Dawn:\n- Star Melee Ranged gain +4 Damage\nOn Star Melee Ranged hit:\n- 20% chance another Star Melee Ranged triggers a free attack"
     },
     {
       "id": "winged-thorns",
@@ -9444,7 +9451,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/titanwood-repeater/",
-      "text": "When this shoots a Bolt or Dart:\n- That shot gets +6 Damage\n- Use 2 Mana to double that bonus\nOn hit:\n- Shoot 1 Star Bolt or Dart\nOn critical hit:\n- Shoot 1 Star Bolt or Dart"
+      "text": "When this shoots a Bolt or Dart:\n- That shot gets +8 Damage\n- Use 2 Mana to double that bonus\nOn hit:\n- Shoot 1 Star Bolt or Dart\nOn critical hit:\n- Shoot 1 Star Bolt or Dart"
     },
     {
       "id": "flame-bolt",
@@ -9493,7 +9500,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/midori-quiver/",
-      "text": "Start of Day, Dusk, Night:\n- Star Bolts and Darts gain +2 quantity\nOn Star Bolt or Dart hit: \r\n- 50% chance to:\n* Use 1 Mana to remove 1 Regeneration \r\n- Inflict 2 Poison\n- Double this if you removed Regeneration"
+      "text": "Start of Day, Dusk, Night:\n- Star Bolts and Darts gain +2 quantity\nOn Star Bolt or Dart hit: \r\n- 50% chance to:\n* Use 1 Mana to remove 2 Regeneration \r\n- Inflict 2 Poison\n- Double this if you removed Regeneration"
     },
     {
       "id": "scroll-of-blood",
@@ -9544,7 +9551,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/arcane-bolt-blaster/",
-      "text": "When this shoots a Bolt or Dart:\n- That shot gets +8 Damage and +10% Crit Chance\n- Use 4 Mana to double that bonus\nOn hit:\n- Inflict 3 Burn\n- Shoot 1 Star Bolt or Dart\nOn critical hit:\n- Shoot 1 Star Bolt or Dart"
+      "text": "When this shoots a Bolt or Dart:\n- That shot gets +10 Damage and +10% Crit Chance\n- Use 4 Mana to double that bonus\nOn hit:\n- Inflict 3 Burn\n- Shoot 1 Star Bolt or Dart\nOn critical hit:\n- Shoot 1 Star Bolt or Dart"
     },
     {
       "id": "scroll-of-sharp-edges",
@@ -9613,7 +9620,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/astral-gloves/",
-      "text": "Start of Dawn:\n- Gain 35 Armor\n- Star Bolts gain 1 quantity\n- Star Katana require 1 less hit to trigger\n- Star Melee Ranged gain +10% Crit Chance"
+      "text": "Start of Dawn:\n- Gain 35 Armor\n- Star Bolts gain 4 quantity\n- Star Katana require 1 less hit to trigger\n- Star Melee Ranged gain +20% Crit Chance"
     },
     {
       "id": "flashbang",
@@ -9625,7 +9632,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/flashbang/",
-      "text": "Health below 50%:\n- Inflict 20 Blind for 6 seconds\n- After 3 seconds:\n- Inflict Stun for 1 second per Star Melee Ranged"
+      "text": "Health below 50%:\n- Inflict 30 Blind for 6 seconds\n- After 3 seconds:\n- Inflict Stun for 1 second per Star Melee Ranged"
     },
     {
       "id": "kitsune-spirit-mask",
@@ -9647,7 +9654,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/noxious-lantern/",
-      "text": "Start of Dawn:\n- Inflict 5 Poison\nEvery 2.2 seconds:\n- Inflict 2 Poison\n- Poison on your opponent triggers 0.1 seconds faster"
+      "text": "Start of Dawn:\n- Inflict 5 Poison\nEvery 1.8 seconds:\n- Inflict 1 Poison\n- Poison on your opponent triggers 0.1 seconds faster"
     },
     {
       "id": "scroll-of-binding",
@@ -9672,7 +9679,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/serpent-deathbolt/",
-      "text": "On hit:\n- Inflict 2+(3*0) Poison\nOn Star Pet hit:\n- The next hit with this inflicts +3 Poison\nOn shop entered:\n- Use 6 Gold to get 1 Boomslang or 1 Red Widow\nQuantity: 4/4"
+      "text": "On hit:\n- Inflict 4+(3*0) Poison\nOn Star Pet hit:\n- The next hit with this inflicts +3 Poison\nOn shop entered:\n- Use 6 Gold to get 1 Boomslang or 1 Red Widow\nQuantity: 5/5"
     },
     {
       "id": "timeless-hourglass",
@@ -9683,7 +9690,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/timeless-hourglass/",
-      "text": "Every 1 seconds:\n- Star Melee Ranged gains +2% Crit Damage\nHealth below 20%:\n- Cleanse 75 Debuff\n- Heal for 500 Health\n- Restore all uses on Star Potion\n- Restore all quantity on Star Bolts and Darts"
+      "text": "Every 1 seconds: \r\n* Star Melee Ranged gains +2% Crit Damage \r\nHealth below 20%: \r\n* Cleanse 75 Debuff \r\n* Heal for 50% of missing Health \r\n* Restore up to 2 uses on Star Type Potion \r\n- Restore all quantity on Star Bolts and Darts"
     },
     {
       "id": "bandage",
@@ -9765,7 +9772,7 @@
         "Charm"
       ],
       "url": "https://www.backpackbrawl.com/items/dragon-scale/",
-      "text": "Start of Dawn:\n- Gain 8 Armor per Star Melee\n- Gain 2 Resist per Star Ranged\nWhen critically hit:\n- Inflict 1 Bleed or 1 Burn"
+      "text": "Start of Dawn:\n- Gain 8 Armor per Star Melee\n- Gain 2 Resist per Star Ranged\nWhen critically hit:\n- 25% chance to inflict 2 Bleed or 2 Burn"
     },
     {
       "id": "powdered-dragonbone",
@@ -9789,7 +9796,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/aspirant-s-axe/",
-      "text": "On hit:\n- Gain +5% Crit Chance\nOn shop entered:\n- If this has landed 3 critical hits in the last fight (0/3):\n- This becomes Contender's Cleaver"
+      "text": "On hit:\n- Gain +2% Crit Chance\nOn shop entered:\n- If this has landed 3 critical hits in the last fight (0/3):\n- This becomes Contender's Cleaver"
     },
     {
       "id": "dragonbone-club",
@@ -9860,7 +9867,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/contender-s-cleaver/",
-      "text": "On hit:\n- Gain +5% Crit Chance\nPer Bleed on opponent:\n- Gain +1% Accuracy\nOn shop entered:\n- If this has landed 5 critical hits in the last fight (0/5):\n- This becomes Chained Twin Choppers"
+      "text": "On hit:\n- Gain +2% Crit Chance\nPer Bleed on opponent:\n- Gain +1% Accuracy\nOn shop entered:\n- If this has landed 3 critical hits in the last fight (0/3):\n- This becomes Chained Twin Choppers"
     },
     {
       "id": "bloodsport-spatha",
@@ -9905,7 +9912,7 @@
         "Potion"
       ],
       "url": "https://www.backpackbrawl.com/items/wyrmblood-vial/",
-      "text": "Health below 50% or 15 Bleed on you:\n- Cleanse 15 Bleed\n- Gain 30 Max Health and 3 Regeneration\n- Inflict 5 Burn"
+      "text": "Health below 50% or 15 Bleed on you:\n- Cleanse 15 Bleed\n- Heal for 50 Health and gain 5 Regeneration\n- Inflict 5 Burn"
     },
     {
       "id": "drakerider-s-javelin",
@@ -9929,7 +9936,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/chained-twin-choppers/",
-      "text": "On hit:\n- Gain +5% Crit Chance\n- Inflict 3 Bleed\nOn critical hit:\n- Activate Bleed\nPer Bleed on opponent:\n- Gain +1% Accuracy"
+      "text": "On hit:\n- Gain +2% Crit Chance\n- Inflict 3 Bleed\nOn critical hit:\n- Activate Bleed\nPer Bleed on opponent:\n- Gain +1% Accuracy"
     },
     {
       "id": "main-event-maul",
@@ -9941,7 +9948,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/main-event-maul/",
-      "text": "On hit:\n- Remove 20 Max Health\nOn critical hit:\n- Steal 1 Empower\nOn shop entered:\n- If you won the last fight:\n- Increase Max Health removed by 3 permanently"
+      "text": "On hit:\n- Remove 15 Max Health\nOn critical hit:\n- Steal 1 Empower\nOn shop entered:\n- If you won the last fight:\n- Increase Max Health removed by 3 permanently"
     },
     {
       "id": "living-legend-s-longsword",
@@ -9964,7 +9971,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/dragonscale-cuirass/",
-      "text": "Start of Dawn:\n- Gain 90 Armor and 9 Resist\n- Reduce Damage taken by 20%\nWhen critically hit:\n- Inflict 2 Bleed and 2 Burn"
+      "text": "Start of Dawn:\n- Gain 110 Armor\n- Gain 3 Resist per Star item\n- Reduce Damage taken by 20%\nWhen critically hit:\n- 50% chance to inflict 3 Bleed or 3 Burn"
     },
     {
       "id": "performance-potion",
@@ -9975,7 +9982,7 @@
         "Potion"
       ],
       "url": "https://www.backpackbrawl.com/items/performance-potion/",
-      "text": "Out of stamina:\n- Gain 1.5 Stamina and 3 Regeneration\n- Increase Stamina Recovery by 0.5 for 5 seconds\n- Reduce Crit Damage taken by 15% for 5 seconds\n- Inflict 5 Bleed"
+      "text": "Stamina below 35%:\n- Gain 3 Regeneration\n- Increase Stamina Recovery by 1 for 4 seconds\n- Reduce Crit Damage taken by 15% for 5 seconds\n- Inflict 5 Bleed"
     },
     {
       "id": "headliner-s-halberd",
@@ -9987,7 +9994,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/headliner-s-halberd/",
-      "text": "On hit:\n- Inflict 2 Bleed per Star Type Accessory\n- Inflict 2 Burn\nOn critical hit:\n- Inflict 4 Burn\n- Activate Bleed and Burn\nPer Bleed on opponent:\n- This gains +1% Accuracy\nPer Burn on opponent:\n- This gains +2% Crit Chance"
+      "text": "On hit:\n- Inflict 2 Bleed\n- Inflict 2 Burn per Star Type Accessory\nOn critical hit:\n- Inflict 4 Burn\n- Activate Bleed and Burn\nPer Bleed on opponent:\n- This gains +1% Accuracy and +2% Crit Chance"
     },
     {
       "id": "titlekeeper-s-trident",
@@ -9999,7 +10006,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/titlekeeper-s-trident/",
-      "text": "Start of Dawn:\n- Reduce Crit Damage taken by 15%\nOn hit:\n- Inflict 3 Bleed per Star Type Accessory\nOn critical hit:\n- Inflict 4 Bleed"
+      "text": "Start of Dawn:\n- Reduce Crit Damage taken by 15%\nOn hit:\n- Inflict 2 Bleed and 2 Burn per Star Type Accessory"
     },
     {
       "id": "triple-flourish-flail",
@@ -10011,7 +10018,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/triple-flourish-flail/",
-      "text": "On hit:\n- Gain +5% Crit Chance\n- Remove 20 Max Health\nOn critical hit:\n- Steal 3 Empower\n- Inflict 3 Bleed\n- Activate Bleed\nOn shop entered:\n- If you won the last fight:\n- Increase Max Health removed by 6 permanently"
+      "text": "On hit:\n- Gain +5% Crit Chance\n- Remove 20 Max Health\nOn critical hit:\n- Steal 3 Empower\n- Inflict 3 Bleed\n- Activate Bleed\nOn shop entered:\n- If you won the last fight:\n- Increase Max Health removed by 5 permanently"
     },
     {
       "id": "crowdpleaser-s-crusher",
@@ -10023,7 +10030,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/crowdpleaser-s-crusher/",
-      "text": "Start of Dawn:\n- Reduce Crit Damage taken by 10%\nOn hit:\n- Steal 1 Empower\n- Remove 20 Max Health\n- Inflict 4 Bleed\nOn shop entered:\n- If you won the last fight:\n- Increase Max Health removed by 4 permanently"
+      "text": "Start of Dawn:\n- Reduce Crit Damage taken by 20%\nOn hit:\n- Steal 1 Empower\n- Remove 20 Max Health\n- Inflict 4 Bleed\nOn shop entered:\n- If you won the last fight:\n- Increase Max Health removed by 4 permanently"
     },
     {
       "id": "enhanced-performance-potion",
@@ -10034,7 +10041,7 @@
         "Potion"
       ],
       "url": "https://www.backpackbrawl.com/items/enhanced-performance-potion/",
-      "text": "Out of stamina:\n- Gain 2 Stamina and 4 Regeneration\n- Increase Stamina Recovery by 0.5 for 6 seconds\n- Reduce Damage taken by 10% for 6 seconds\n- Inflict 6 Bleed"
+      "text": "Stamina below 35%:\n- Gain 4 Regeneration\n- Increase Stamina Recovery by 1 for 5 seconds\n- Reduce Damage taken by 10% for 6 seconds\n- Inflict 6 Bleed"
     },
     {
       "id": "bloody-backpack",
@@ -10068,7 +10075,7 @@
         "Plant"
       ],
       "url": "https://www.backpackbrawl.com/items/champion-s-laurels/",
-      "text": "Every 4.8 seconds:\n- Gain 20 Max Health and 2 Luck per Star Type Plant\nWhen time of day changes:\n- Gain 2 Empower per Star Type Plant\nOn shop entered:\n- Get 1 Wild Rose if you won your last fight"
+      "text": "Every 4.8 seconds:\n- Gain 15 Max Health and 2 Luck per Star Type Plant\nWhen time of day changes:\n- Gain 2 Empower per Star Type Plant\nOn shop entered:\n- Get 1 Wild Rose if you won your last fight"
     },
     {
       "id": "dragonfang-talisman",
@@ -10090,7 +10097,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/gladiatrix-girdle/",
-      "text": "Start of Dawn:\n- Gain 30 Armor and 5 Luck\nEvery 30 Bleed inflicted by you:\n- Star Potion gain +1 more use\n- Next activation requires 10 more Bleed\nOn Star Potion consumed:\n- Gain 1 Empower"
+      "text": "Start of Dawn:\n- Gain 30 Armor and 5 Luck\nEvery 30 Bleed inflicted by you:\n- Star Type Potion gain +1 more use\n- Next activation requires 12 more Bleed\nOn Star Type Potion consumed:\n- Gain 1 Empower"
     },
     {
       "id": "retiarius-net",
@@ -10136,7 +10143,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/sweetie/",
-      "text": "On hit:\n- Remove 40 Armor\n- Inflict 3 Insanity"
+      "text": "On hit:\n- 40% chance to inflict Stun for 1.5 seconds\n- Inflict 5 Insanity"
     },
     {
       "id": "black-dragon-whelpling",
@@ -10158,7 +10165,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/blue-dragon-whelpling/",
-      "text": "On hit:\n- Inflict 5 Slow on opponent\n- Inflict 1 Slow on yourself\nPer Slow on you:\n- Gain +3% faster attacks\nReduce Cooldown by 0.1 seconds per Dormant Dragon Egg level"
+      "text": "On hit:\n- Inflict 6 Slow on opponent\n- Inflict 1 Slow on yourself\nPer Slow on you:\n- Gain +3% faster attacks\nReduce Cooldown by 0.1 seconds per Dormant Dragon Egg level"
     },
     {
       "id": "green-dragon-whelpling",
@@ -10169,7 +10176,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/green-dragon-whelpling/",
-      "text": "On hit:\n- Inflict 5 Poison on opponent\n- Inflict 1 Poison on yourself\nPer Poison on you:\n- Gain +3% faster attacks\nReduce Cooldown by 0.1 seconds per Dormant Dragon Egg level"
+      "text": "On hit:\n- Inflict 6 Poison on opponent\n- Inflict 1 Poison on yourself\nPer Poison on you:\n- Gain +3% faster attacks\nReduce Cooldown by 0.1 seconds per Dormant Dragon Egg level"
     },
     {
       "id": "prismatic-dragon-whelpling",
@@ -10191,7 +10198,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/red-dragon-whelpling/",
-      "text": "On hit:\n- Inflict 5 Bleed on opponent\n- Inflict 1 Bleed on yourself\nPer Bleed on you:\n- Gain +3% faster attacks\nReduce Cooldown by 0.1 seconds per Dormant Dragon Egg level"
+      "text": "On hit:\n- Inflict 6 Bleed on opponent\n- Inflict 1 Bleed on yourself\nPer Bleed on you:\n- Gain +3% faster attacks\nReduce Cooldown by 0.1 seconds per Dormant Dragon Egg level"
     },
     {
       "id": "scrap-metal",
@@ -10206,15 +10213,15 @@
       "text": "Start of Dawn:\n- Gain 7 Armor"
     },
     {
-      "id": "bolts",
-      "name": "Bolts",
+      "id": "steel-bolts",
+      "name": "Steel Bolts",
       "hero": "tink",
       "rarity": "Common",
       "types": [
         "Part",
         "Accessory"
       ],
-      "url": "https://www.backpackbrawl.com/items/bolts/",
+      "url": "https://www.backpackbrawl.com/items/steel-bolts/",
       "text": "Start of Dawn:\n- Gain 1 Regeneration"
     },
     {
@@ -10239,7 +10246,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/spring/",
-      "text": "Start of Dawn:\n- Gain 2 Haste"
+      "text": "Start of Dawn:\n- Star Melee Type Tool gains +1 Damage"
     },
     {
       "id": "spanner",
@@ -10252,7 +10259,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/spanner/",
-      "text": "On hit:\n- 50% chance to gain 2 Armor per Star Part\nOn shop entered:\n- 10% chance to get 1 Part"
+      "text": "On hit:\n- Gain 3 Armor per Star Part\nOn shop entered:\n- 10% chance to get 1 Part"
     },
     {
       "id": "superior-bolts",
@@ -10288,7 +10295,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/superior-spring/",
-      "text": "Start of Dawn:\n- Gain 4 Haste"
+      "text": "Start of Dawn:\n- Star Melee Type Tool gains +2 Damage"
     },
     {
       "id": "pliers",
@@ -10301,7 +10308,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/pliers/",
-      "text": "On hit:\n- Remove 1 Thorns\n- 50% chance to inflict 1 Bleed per Star Part\nOn shop entered:\n- 20% chance to get 1 Part"
+      "text": "On hit:\n- Remove 1 Thorns\n- Inflict 1 Bleed per Star Part\nOn shop entered:\n- 20% chance to get 1 Part"
     },
     {
       "id": "regenerating-shield",
@@ -10312,7 +10319,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/regenerating-shield/",
-      "text": "Start of Dawn:\n- Gain 14 Armor\nEvery 2.8 seconds:\n- Gain 9 Armor\nWhen hit ( Melee Ranged Pet ):\n- 40% chance to block 4 Damage"
+      "text": "Start of Dawn:\n- Gain 14 Armor\nEvery 3.2 seconds:\n- Gain 9 Armor\nWhen hit ( Melee Ranged Pet ):\n- 40% chance to block 4 Damage"
     },
     {
       "id": "screwsmacker",
@@ -10325,7 +10332,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/screwsmacker/",
-      "text": "Start of Dawn:\n- Gain +10% faster attacks per Star Part\nOn hit:\n- Remove 1 Buff\nOn shop entered:\n- 20% chance to get 1 Part"
+      "text": "On hit:\n- Remove 1 Buff\nOn shop entered:\n- 20% chance to get 1 Part"
     },
     {
       "id": "clockwork",
@@ -10350,7 +10357,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/crowbar/",
-      "text": "On hit:\n- 60% chance to gain 3 Armor per Star Part\n- 30% chance to inflict Stun for 0.6 seconds\nOn shop entered:\n- 45% chance to get 1 Part"
+      "text": "On hit:\n- Gain 3 Armor per Star Part\n- 30% chance to inflict Stun for 0.6 seconds\nOn shop entered:\n- 45% chance to get 1 Part"
     },
     {
       "id": "goblin-gizmo",
@@ -10375,7 +10382,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/barbed-spring/",
-      "text": "Start of Dawn:\n- Gain 5 Haste\n- Gain 1 Thorns per Star Type Accessory"
+      "text": "Start of Dawn:\n- Star Melee Type Tool gains +3 Damage\n- Gain 2 Thorns per Star Type Accessory"
     },
     {
       "id": "arcane-core",
@@ -10405,12 +10412,12 @@
       "id": "toolbox",
       "name": "Toolbox",
       "hero": "tink",
-      "rarity": "Epic",
+      "rarity": "Rare",
       "types": [
         "Bag"
       ],
       "url": "https://www.backpackbrawl.com/items/toolbox/",
-      "text": "On shop entered:\n- Get 1 Part\n- 20% chance per Type Tool inside to:\n- Get 1 Type Tool"
+      "text": "On shop entered:\n- +50% chance per Type Tool inside to:\n- Get 1 Part"
     },
     {
       "id": "boomer",
@@ -10422,7 +10429,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/boomer/",
-      "text": "After 12 seconds:\n- Deal 31 Damage\n- Inflict 13 Burn"
+      "text": "After 12 seconds:\n- Deal 31 Damage\n- Inflict 17 Burn"
     },
     {
       "id": "cleansomatic",
@@ -10483,7 +10490,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/elixir-express-3000/",
-      "text": "Start of Dawn:\n- This goes +25% faster per Star Potion\nEvery 6 seconds:\n- Restore 1 use to 1 empty Star Potion\n- Gain 1 Regeneration and 1 Luck"
+      "text": "Start of Dawn:\n- This goes +25% faster per Star Type Potion\nEvery 6 seconds:\n- Restore 1 use to 1 empty Star Type Potion\n- Gain 1 Regeneration and 1 Luck"
     },
     {
       "id": "frost-bolts",
@@ -10507,7 +10514,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/elemental-core/",
-      "text": "Start of Dawn:\n- Gain 30 Armor\nEvery 4.6 seconds:\n- Inflict 1 Burn, 1 Slow, 1 Poison\nOn Star Melee Ranged Pet hit:\n- 60% chance to:\n- Use 1 Mana to inflict 1 Burn, 1 Slow, 1 Poison"
+      "text": "Start of Dawn:\n- Gain 30 Armor\nEvery 4.6 seconds:\n- Inflict 1 Burn, 1 Slow, 1 Poison\nOn Star Melee Ranged Pet hit:\n- 45% chance to:\n- Use 1 Mana to inflict 1 Burn, 1 Slow, 1 Poison"
     },
     {
       "id": "power-vacuum",
@@ -10519,7 +10526,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/power-vacuum/",
-      "text": "Every 3.5 seconds:\n- Gain 4 Mana and 2 Haste\n- Use 16 Mana to steal 7 Buff\n- This has 1% chance per Luck to steal another 7 Buff"
+      "text": "Every 3.5 seconds:\n- Gain 4 Mana and 2 Haste\n- Use 16 Mana to steal 10 Buff"
     },
     {
       "id": "mana-recycler",
@@ -10530,7 +10537,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/mana-recycler/",
-      "text": "On hit:\n- Cleanse 4 Debuff\n- Gain 6 Mana\nEvery 8 Mana used:\n- Cleanse 1 of each Debuff\n- Gain 1 Empower, 2 Regeneration, 2 Luck\n- Next activation requires 1 more Mana"
+      "text": "On hit:\n- Cleanse 4 Debuff\n- Gain 6 Mana\nEvery 8 Mana used or lost:\n- Cleanse 1 of each Debuff\n- Gain 1 Empower, 2 Regeneration, 2 Luck\n- Next activation requires 1 more Mana"
     },
     {
       "id": "welding-torch",
@@ -10567,7 +10574,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/ice-age-boomer/",
-      "text": "After 12 seconds:\n- Deal 61 Damage\n- Inflict 37 Slow and 19 Burn"
+      "text": "After 12 seconds:\n- Deal 51 Damage\n- Inflict 25 Slow and 19 Burn"
     },
     {
       "id": "deathdart-dispenser",
@@ -10578,7 +10585,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/deathdart-dispenser/",
-      "text": "Start of Dawn:\n- Gain 40 Armor\nOn hit:\n- Inflict 1 Burn, 1 Slow, and 1 Poison\nWhen hit ( Melee Ranged Pet ):\n- 25% chance to use 1 Mana to:\n- Inflict 1 Burn, 1 Slow, and 1 Poison per Star Part"
+      "text": "Start of Dawn:\n- Gain 40 Armor\nOn hit:\n- Inflict 1 Burn, 1 Slow, and 1 Poison\nWhen hit ( Melee Ranged Pet ):\n- 35% chance to use 1 Mana to:\n- Inflict 1 Burn, 1 Slow, and 1 Poison per Star Part"
     },
     {
       "id": "forest-mower",
@@ -10591,7 +10598,7 @@
         "Weapon"
       ],
       "url": "https://www.backpackbrawl.com/items/forest-mower/",
-      "text": "On hit:\n- Inflict 3 Bleed\n- Remove 3 Buff\n- Gain +3% Crit Chance\nOn critical hit:\n- Inflict 3 Bleed\n- Gain +40% faster attacks for 2 seconds"
+      "text": "On hit:\n- Inflict 3 Bleed\n- Remove 3 Buff\n- Gain +3% Crit Chance\nOn critical hit:\n- Inflict 3 Bleed\n- Gain +40% faster attacks for 3 seconds\nOn shop entered:\n- 80% chance to get 1 Part"
     },
     {
       "id": "big-clockwork-bomb",
@@ -10614,7 +10621,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/core-reactor/",
-      "text": "Every 6 seconds:\n- Gain 2 Regeneration, 2 Empower and 2 Stamina\nOn every 5 Star Type Tool activations:\n- This goes +30% faster"
+      "text": "Every 3.8 seconds:\n- Gain 3 Regeneration, 2 Empower and 2 Stamina\nOn every 5 Star Type Tool activations:\n- This goes +20% faster"
     },
     {
       "id": "edge-calibrator",
@@ -10622,6 +10629,7 @@
       "hero": "tink",
       "rarity": "Unique",
       "types": [
+        "Tool",
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/edge-calibrator/",
@@ -10669,7 +10677,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/potion-mixer/",
-      "text": "On Star Potion consumed:\n- Gain 2 Buff\n- 25% chance to restore 1 use to 2 Star Potion\nOn shop entered:\n- Get 1 Potion"
+      "text": "On Star Type Potion consumed:\n- Gain 2 Buff\n- 25% chance to restore 1 use to 2 Star Type Potion\nOn shop entered:\n- Get 1 Type Potion"
     },
     {
       "id": "rustjaw-shredder",
@@ -10680,7 +10688,7 @@
         "Pet"
       ],
       "url": "https://www.backpackbrawl.com/items/rustjaw-shredder/",
-      "text": "Start of Dawn:\n- Gain 20 Armor per absorbed Part\n- Gain +15% faster attacks per absorbed Part\nOn hit:\n- Inflict 3 Bleed\nOn shop entered:\n- Get 1 Part\n- Absorb 2 Star Parts\n^ No Parts absorbed yet"
+      "text": "Start of Dawn:\n- Gain 25 Armor per absorbed Part\n- Gain +15% faster attacks per absorbed Part\nOn hit:\n- Inflict 3 Bleed\nOn shop entered:\n- Get 1 Part\n- Absorb 2 Star Parts\n^ No Parts absorbed yet"
     },
     {
       "id": "sprint-bot",
@@ -11027,7 +11035,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/duneshaper-jazerant/",
-      "text": "Start of Dawn:\n- Gain 90 Armor and 10 Resist\n- Reduce Damage taken by 30%\nDuring Dusk Night:\n- Reduce Damage taken by 40% instead\nWhen time of day changes:\n- Gain 12 Armor per Star item\n- Steal 2 Buff per Star item\n- Inflict 2 Poison and 2 Slow per Star item"
+      "text": "Start of Dawn:\n- Gain 130 Armor and 10 Resist\n- Reduce Damage taken by 30%\nDuring Dusk Night:\n- Reduce Damage taken by 40% instead\nWhen time of day changes:\n- Gain 12 Armor per Star item\n- Steal 2 Buff per Star item\n- Inflict 2 Poison and 2 Slow per Star item"
     },
     {
       "id": "bag-of-bargains",
@@ -11049,7 +11057,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/canopic-jar/",
-      "text": "Every 4 seconds:\nActivate absorbed items:\n- No Type Charm absorbed yet\nHealth below 50%:\n- Gain 15 Regeneration\n- Inflict 2 Curse per second for 10 seconds\nOn shop entered:\n- Absorb 1 Star Type Charm"
+      "text": "Every 4 seconds:\nActivate absorbed items:\n- No Type Charm absorbed yet\nHealth below 50%:\n- Steal 15 Max Health per second for 20 seconds\n- Inflict 2 Curse per second for 20 seconds\nOn shop entered:\n- Absorb 1 Star Type Charm"
     },
     {
       "id": "dustwind-turban",
@@ -11060,7 +11068,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/dustwind-turban/",
-      "text": "Start of Dawn:\n- Gain 65 Armor\n- Reduce Stun duration by 40%\nEvery 3.8 seconds:\n- Steal 3 Buff\nEvery 6 Buff stolen:\n- Gain 20 Armor\n- Inflict 1 Curse and 1 Slow\n- Next activation requires 1 more Buff"
+      "text": "Start of Dawn:\n- Gain 65 Armor\n- Reduce Stun duration by 40%\nEvery 3.8 seconds:\n- Steal 4 Buff\nEvery 6 Buff stolen:\n- Gain 20 Armor\n- Inflict 1 Curse and 1 Slow\n- Next activation requires 1 more Buff"
     },
     {
       "id": "magic-carpet",
@@ -11071,7 +11079,7 @@
         "Accessory"
       ],
       "url": "https://www.backpackbrawl.com/items/magic-carpet/",
-      "text": "On Star Melee Ranged Pet hit:\n- 50% chance to gain 5 Haste for 3 seconds\nEvery 5 seconds:\n- Star Melee Ranged Pet gains +10% faster attacks"
+      "text": "Start of Dawn:\n- Gain 12 Armor per Star Melee Ranged Pet\nOn Star Melee Ranged Pet hit:\n- 50% chance to gain 5 Haste for 3 seconds\nEvery 5 seconds:\n- Star Melee Ranged Pet gains +10% faster attacks"
     },
     {
       "id": "mysterious-lamp",
@@ -11093,7 +11101,7 @@
         "Armor"
       ],
       "url": "https://www.backpackbrawl.com/items/sandbinder-shackles/",
-      "text": "On Star Type Mineral inflicts Debuff:\n- 35% chance this inflicts 3 more Debuff\nOn shop entered:\n- Find a special rock!\nMultithrow"
+      "text": "On Star Type Mineral inflicts Debuff:\n- 45% chance this inflicts 3 more Debuff\nOn shop entered:\n- Find a special rock!\nStar Type Mineral can now be thrown multiple times"
     },
     {
       "id": "scorpion-king",
@@ -11284,6 +11292,484 @@
       ],
       "url": "https://www.backpackbrawl.com/items/bargain-of-tainted-transfusion/",
       "text": "Start of Dawn:\n- Opponent gains 2 Lifesteal\nWhen hit ( Melee ):\n- 20–40% to gain 1 Thorns\nWhen hit ( Ranged ):\n- 20–40% to inflict 3 Curse\nBargain improves with Bag of Bargains level"
+    },
+    {
+      "id": "spore",
+      "name": "Spore",
+      "hero": "mycella",
+      "rarity": "Common",
+      "types": [
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/spore/",
+      "text": "Every 7 seconds:\n- Inflict 1 Poison\nOn shop entered:\n- Turn into 1 Fleshcap per Star Type Ingredient\n- Turn into 1 Mindcap per Star Pet\n- Turn into 1 Rotcap per Star Type Armor"
+    },
+    {
+      "id": "spoiled-sausage",
+      "name": "Spoiled Sausage",
+      "hero": "mycella",
+      "rarity": "Rare",
+      "types": [
+        "Food",
+        "Ingredient",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/spoiled-sausage/",
+      "text": "Every 4.5 seconds:\n- Deal 3 Damage\n- Remove 1 Empower\n+10% faster for every Star Type Food of another type"
+    },
+    {
+      "id": "fleshcap",
+      "name": "Fleshcap",
+      "hero": "mycella",
+      "rarity": "Rare",
+      "types": [
+        "Fungus",
+        "Ingredient"
+      ],
+      "url": "https://www.backpackbrawl.com/items/fleshcap/",
+      "text": "Every 6.5 seconds:\n- Steal 7 Health"
+    },
+    {
+      "id": "fungus-sprite",
+      "name": "Fungus Sprite",
+      "hero": "mycella",
+      "rarity": "Rare",
+      "types": [
+        "Pet",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/fungus-sprite/",
+      "text": "On hit:\n- Inflict 1 Poison\nOn critical hit:\n- Inflict 1 Poison\nPer Poison on opponent:\n- Gain +1% Crit Chance and +1% faster attacks"
+    },
+    {
+      "id": "mindcap",
+      "name": "Mindcap",
+      "hero": "mycella",
+      "rarity": "Rare",
+      "types": [
+        "Fungus",
+        "Ingredient"
+      ],
+      "url": "https://www.backpackbrawl.com/items/mindcap/",
+      "text": "Every 4.3 seconds:\n- Star Pet gains +1 Damage\n- Inflict 1 Insanity"
+    },
+    {
+      "id": "rotcap",
+      "name": "Rotcap",
+      "hero": "mycella",
+      "rarity": "Rare",
+      "types": [
+        "Fungus",
+        "Ingredient"
+      ],
+      "url": "https://www.backpackbrawl.com/items/rotcap/",
+      "text": "Every 5.1 seconds:\n- Remove 1 Buff or inflict 1 Poison"
+    },
+    {
+      "id": "rotten-apple",
+      "name": "Rotten Apple",
+      "hero": "mycella",
+      "rarity": "Rare",
+      "types": [
+        "Ingredient",
+        "Food",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/rotten-apple/",
+      "text": "Every 4 seconds:\n- Deal 3 Damage\n- Remove 1 Haste\n+10% faster for every Star Type Food of another type"
+    },
+    {
+      "id": "spore-print-scroll",
+      "name": "Spore Print Scroll",
+      "hero": "mycella",
+      "rarity": "Rare",
+      "types": [
+        "Accessory",
+        "Scroll"
+      ],
+      "url": "https://www.backpackbrawl.com/items/spore-print-scroll/",
+      "text": "Every 5 seconds:\n- Inflict 1 Poison per Star Type Fungus\nOn shop entered:\n- Turn Star Apple into Rotten Apple\n- Turn Star Tender Sausage into Spoiled Sausage\n- Turn Star Weathered Skull into Cultured Skull\n- Turn Star Fly Agaric into Fungus Sprite"
+    },
+    {
+      "id": "cultured-skull",
+      "name": "Cultured Skull",
+      "hero": "mycella",
+      "rarity": "Rare",
+      "types": [
+        "Accessory",
+        "Skull",
+        "Charm",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/cultured-skull/",
+      "text": "Every 4.5 seconds:\n- Drain 0.5 Stamina\n- Inflict 1 Debuff"
+    },
+    {
+      "id": "spore-essence",
+      "name": "Spore Essence",
+      "hero": "mycella",
+      "rarity": "Epic",
+      "types": [
+        "Accessory",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/spore-essence/",
+      "text": "When Star item activates:\n- 20% chance to steal 4 Health\nEvery 3 seconds:\n- Use 2 Mana to transfer 2 Debuff to opponent"
+    },
+    {
+      "id": "axolotl-familiar",
+      "name": "Axolotl Familiar",
+      "hero": "mycella",
+      "rarity": "Unique",
+      "types": [
+        "Pet"
+      ],
+      "url": "https://www.backpackbrawl.com/items/axolotl-familiar/",
+      "text": "Start of Dawn:\n- Gain 10 Regeneration\nWhen you heal:\n- Heal another 3 Health"
+    },
+    {
+      "id": "fleshfeeder-slug",
+      "name": "Fleshfeeder Slug",
+      "hero": "mycella",
+      "rarity": "Unique",
+      "types": [
+        "Pet",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/fleshfeeder-slug/",
+      "text": "Start of Dawn:\n- Gain 25 Max Health per absorbed Fleshcap\n- This is 5% slower per absorbed Fleshcap\nOn hit:\nActivate absorbed items:\n- No Fleshcap absorbed yet\nOn shop entered:\n- Absorb 1 Star Fleshcap"
+    },
+    {
+      "id": "fungalmancer-focus",
+      "name": "Fungalmancer Focus",
+      "hero": "mycella",
+      "rarity": "Unique",
+      "types": [
+        "Ranged",
+        "Weapon",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/fungalmancer-focus/",
+      "text": "On attack:\n- Use 4 Mana to skip 1.25 seconds Cooldown on Star Type Fungus\nOn hit:\n- Inflict 3 Poison"
+    },
+    {
+      "id": "inkblood-croaker",
+      "name": "Inkblood Croaker",
+      "hero": "mycella",
+      "rarity": "Unique",
+      "types": [
+        "Pet",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/inkblood-croaker/",
+      "text": "On hit:\n- Inflict 2 Bleed\n- Inflict 1 Poison per Star Type Fungus\nEvery 12 Bleed inflicted by you:\n- Activate Poison"
+    },
+    {
+      "id": "mindcap-crown",
+      "name": "Mindcap Crown",
+      "hero": "mycella",
+      "rarity": "Unique",
+      "types": [
+        "Armor",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/mindcap-crown/",
+      "text": "Every 4 seconds:\n- Inflict 1 Insanity per Star Type Fungus\nPer Insanity on opponent:\n- Star Pet gain +1% faster attacks"
+    },
+    {
+      "id": "spellcap-colony",
+      "name": "Spellcap Colony",
+      "hero": "mycella",
+      "rarity": "Unique",
+      "types": [
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/spellcap-colony/",
+      "text": "Every 4 seconds:\n- Gain 2 Mana per Star Type Fungus\nEvery 35 Mana gained by you:\n- Gain 30 Max Health\n- Gain 15 Resist\n- Inflict 2 Debuff per Star Melee Ranged Pet Type Fungus\n- Next activation requires 1 more Mana"
+    },
+    {
+      "id": "sporestalker",
+      "name": "Sporestalker",
+      "hero": "mycella",
+      "rarity": "Unique",
+      "types": [
+        "Pet",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/sporestalker/",
+      "text": "On hit:\n- Inflict 2 Poison per Star Type Fungus\n- Remove 2 Buff\nWhen hit( Pet ):\n- 50% chance to:\n- Inflict Disable on attacking Pet for 1.2 seconds\n- Skip 1.5 seconds Cooldown"
+    },
+    {
+      "id": "veiled-sporecap-cape",
+      "name": "Veiled Sporecap Cape",
+      "hero": "mycella",
+      "rarity": "Unique",
+      "types": [
+        "Armor",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/veiled-sporecap-cape/",
+      "text": "Start of Dawn:\n- Gain 30 Max Health per Star Type Fungus\nOn Star Melee Ranged Pet hit:\n- 40% chance to inflict 2 Slow\nOn shop entered:\n- Increase Max Health gained by 14 permanently"
+    },
+    {
+      "id": "walkermelon",
+      "name": "Walkermelon",
+      "hero": "mycella",
+      "rarity": "Epic",
+      "types": [
+        "Pet",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/walkermelon/",
+      "text": "On hit:\n- Gain 2 Mana\n- Cleanse 2 Debuff\n- Steal 3 Health\nActivate absorbed items:\n- No Type Ingredient absorbed yet\nOn shop entered:\n- Absorb 1 Star Type Ingredient (0/2)"
+    },
+    {
+      "id": "fleshcap-cluster",
+      "name": "Fleshcap Cluster",
+      "hero": "mycella",
+      "rarity": "Epic",
+      "types": [
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/fleshcap-cluster/",
+      "text": "Every 3.1 seconds:\n- Steal 8 Health\nActivate absorbed items:\n- No Type Ingredient absorbed yet\nOn shop entered:\n- Absorb 1 Star Type Ingredient (0/1)"
+    },
+    {
+      "id": "rod-of-reclamation",
+      "name": "Rod of Reclamation",
+      "hero": "mycella",
+      "rarity": "Epic",
+      "types": [
+        "Ranged",
+        "Weapon",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/rod-of-reclamation/",
+      "text": "On attack:\n- Use 3 Mana to steal 1 Buff and inflict 2 Poison\nOn hit:\n- Inflict 2 Poison"
+    },
+    {
+      "id": "mindcap-cluster",
+      "name": "Mindcap Cluster",
+      "hero": "mycella",
+      "rarity": "Epic",
+      "types": [
+        "Accessory",
+        "Skull",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/mindcap-cluster/",
+      "text": "Every 4 seconds:\n- Star Pet gains +2 Damage\n- Drain 0.5 Stamina\n- Inflict 2 Insanity"
+    },
+    {
+      "id": "mushrat",
+      "name": "Mushrat",
+      "hero": "mycella",
+      "rarity": "Epic",
+      "types": [
+        "Pet",
+        "Rat",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/mushrat/",
+      "text": "On hit:\n- Gain +1 Damage per Star Type Fungus Type Rat\n- Inflict 1 Insanity"
+    },
+    {
+      "id": "toadstool-targe",
+      "name": "Toadstool Targe",
+      "hero": "mycella",
+      "rarity": "Epic",
+      "types": [
+        "Armor",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/toadstool-targe/",
+      "text": "Start of Dawn:\n- Gain 30 Armor\nWhen hit ( Melee Ranged Pet ):\n- 35% chance to:\n- Block 10 Damage\n- Inflict 1 Poison"
+    },
+    {
+      "id": "armed-walkermelon",
+      "name": "Armed Walkermelon",
+      "hero": "mycella",
+      "rarity": "Legendary",
+      "types": [
+        "Pet",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/armed-walkermelon/",
+      "text": "On hit:\n- Gain 3 Mana\n- Cleanse 3 Debuff\n- Steal 8 Health\n- Remove 3 Buff\nActivate absorbed items:\n- No Type Ingredient absorbed yet\nOn shop entered:\n- Absorb 1 Star Type Ingredient (0/3)"
+    },
+    {
+      "id": "moldy-fungarium",
+      "name": "Moldy Fungarium",
+      "hero": "mycella",
+      "rarity": "Legendary",
+      "types": [
+        "Accessory",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/moldy-fungarium/",
+      "text": "Every 4.1 seconds:\n- Steal 6 Health per Star Type Ingredient\n- Inflict 1 Insanity per Star Pet\n- Remove 1 Buff per Star Type Armor\n- Inflict 1 Poison per Star Type Fungus\nOn shop entered:\n- 25% chance to get 1 Essence\n- Turn Star Apple into Rotten Apple\n- Turn Star Tender Sausage into Spoiled Sausage\n- Turn Star Weathered Skull into Cultured Skull\n- Turn Star Fly Agaric into Fungus Sprite\n- Turn Star Essence into Spore Essence"
+    },
+    {
+      "id": "fleshcap-colony",
+      "name": "Fleshcap Colony",
+      "hero": "mycella",
+      "rarity": "Legendary",
+      "types": [
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/fleshcap-colony/",
+      "text": "Every 3.3 seconds:\n- Steal 10 Health\n- Remove 1 Buff\nActivate absorbed items:\n- No Type Ingredient absorbed yet\nOn shop entered:\n- Absorb 1 Star Type Ingredient (0/2)"
+    },
+    {
+      "id": "sporeweaver-s-hat",
+      "name": "Sporeweaver's Hat",
+      "hero": "mycella",
+      "rarity": "Legendary",
+      "types": [
+        "Armor",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/sporeweaver-s-hat/",
+      "text": "Start of Dawn:\n- Gain 6 Mana\nEvery 3.5 seconds:\n- Gain 3 Mana\n- Transfer 1 Debuff per Star Type Fungus"
+    },
+    {
+      "id": "staff-of-infestation",
+      "name": "Staff of Infestation",
+      "hero": "mycella",
+      "rarity": "Legendary",
+      "types": [
+        "Ranged",
+        "Weapon",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/staff-of-infestation/",
+      "text": "On attack:\n- Gain +5% faster attacks\n- Use 5 Mana to:\n- Steal 2 Buff\n- Inflict 3 Poison\nOn hit:\n- Inflict 3 Poison"
+    },
+    {
+      "id": "rotcap-cluster",
+      "name": "Rotcap Cluster",
+      "hero": "mycella",
+      "rarity": "Legendary",
+      "types": [
+        "Armor",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/rotcap-cluster/",
+      "text": "Start of Dawn:\n- Gain 40 Armor\n- Increase block by 2 Damage per Star Type Fungus\nWhen hit ( Melee Ranged Pet ):\n- 35% chance to:\n- Block 10 Damage\n- Inflict 2 Poison\nOn shop entered:\n- Turn Star Apple into Rotten Apple\n- Turn Star Tender Sausage into Spoiled Sausage\n- Turn Star Weathered Skull into Cultured Skull\n- Turn Star Fly Agaric into Fungus Sprite"
+    },
+    {
+      "id": "apple-fritter-critter",
+      "name": "Apple Fritter Critter",
+      "hero": "mycella",
+      "rarity": "Legendary",
+      "types": [
+        "Pet",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/apple-fritter-critter/",
+      "text": "On hit:\n- Steal 14 Health\n- Gain +10% faster attacks\nActivate absorbed items:\n- No Type Ingredient absorbed yet\nOn shop entered:\n- Absorb 1 Star Type Ingredient (0/2)"
+    },
+    {
+      "id": "sporebat",
+      "name": "Sporebat",
+      "hero": "mycella",
+      "rarity": "Legendary",
+      "types": [
+        "Pet",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/sporebat/",
+      "text": "On hit:\n- Use 2 Mana to transfer 4 Debuff\n- Steal 10 Health\nOn shop entered:\n- Get 1 Spore"
+    },
+    {
+      "id": "mindcap-colony",
+      "name": "Mindcap Colony",
+      "hero": "mycella",
+      "rarity": "Legendary",
+      "types": [
+        "Accessory",
+        "Skull",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/mindcap-colony/",
+      "text": "Every 4 seconds:\n- Star Pet gains +3 Damage\n- Steal 1 Stamina\n- Transfer 2 Debuff\n- Inflict 3 Insanity"
+    },
+    {
+      "id": "hivemind-snapper",
+      "name": "Hivemind Snapper",
+      "hero": "mycella",
+      "rarity": "Mythic",
+      "types": [
+        "Pet",
+        "Skull",
+        "Fungus",
+        "Ingredient"
+      ],
+      "url": "https://www.backpackbrawl.com/items/hivemind-snapper/",
+      "text": "Start of Dawn:\n- Gain 60 Armor\n- Gain 40 Max Health per Star Pet Type Fungus\nOn hit:\n- This and Star Pet gain +4 Damage\n- Gain 4 Regeneration and 3 Mana\n- Inflict 3 Insanity\n- Steal 0.5 Stamina"
+    },
+    {
+      "id": "inkblood-infestor",
+      "name": "Inkblood Infestor",
+      "hero": "mycella",
+      "rarity": "Mythic",
+      "types": [
+        "Ranged",
+        "Weapon",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/inkblood-infestor/",
+      "text": "On attack:\n- Gain +5% faster attacks\n- Use 6 Mana to:\n- Steal 3 Buff\n- Inflict 3 Poison\nOn hit:\n- Inflict 3 Poison and 3 Bleed\nActivate absorbed items:\n- No Type Ingredient absorbed yet\nOn shop entered:\n- Absorb 1 Star Type Ingredient (0/3)"
+    },
+    {
+      "id": "rotcap-colony",
+      "name": "Rotcap Colony",
+      "hero": "mycella",
+      "rarity": "Mythic",
+      "types": [
+        "Armor",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/rotcap-colony/",
+      "text": "Start of Dawn:\n- Gain 50 Armor and 15 Mana\n- Increase block by 3 Damage per Star Type Fungus\nWhen hit ( Melee Ranged Pet ):\n- 40% chance to:\n- Block 18 Damage\n- Inflict 2 Poison\n- Transfer 2 Debuff\nOn shop entered:\n- Turn Star Apple into Rotten Apple\n- Turn Star Tender Sausage into Spoiled Sausage\n- Turn Star Weathered Skull into Cultured Skull\n- Turn Star Fly Agaric into Fungus Sprite"
+    },
+    {
+      "id": "sentient-walkermelon",
+      "name": "Sentient Walkermelon",
+      "hero": "mycella",
+      "rarity": "Mythic",
+      "types": [
+        "Pet",
+        "Skull",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/sentient-walkermelon/",
+      "text": "On hit:\n- This gains +6 Damage\n- Gain 4 Mana\n- Transfer 5 Debuff\n- Steal 10 Health\n- Remove 4 Buff\nActivate absorbed items:\n- No Type Ingredient absorbed yet\nOn shop entered:\n- Absorb 1 Star Type Ingredient (0/4)"
+    },
+    {
+      "id": "sporeweaver-s-sac",
+      "name": "Sporeweaver's Sac",
+      "hero": "mycella",
+      "rarity": "Unique",
+      "types": [
+        "Bag"
+      ],
+      "url": "https://www.backpackbrawl.com/items/sporeweaver-s-sac/",
+      "text": "When Type Fungus inside activates:\n- 25% chance to steal 2 Health\nOn shop entered:\n- If there is a Type Fungus inside:\n- Get 1 Spore"
+    },
+    {
+      "id": "phylactery-truffle",
+      "name": "Phylactery Truffle",
+      "hero": "shared",
+      "rarity": "Relic",
+      "types": [
+        "Charm",
+        "Ingredient",
+        "Food",
+        "Fungus"
+      ],
+      "url": "https://www.backpackbrawl.com/items/phylactery-truffle/",
+      "text": "Every 4.4 seconds:\n- Heal 5 Health per Star Type Food Type Plant Type Fungus\nStart of Dusk:\n- This goes 100% faster\nWhen absorbed:\n- Get 1 Phylactery Truffle\n+10% faster for every Star Type Food of another type"
     }
   ],
   "failures": []

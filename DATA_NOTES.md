@@ -2,17 +2,17 @@
 
 ## Verified baseline
 
-- Game version: `6.0.1`
+- Game version: `7.2.0` (official patch notes 6.1.0–7.2.0 applied on 2026-11-18)
 - Verification date: `2026-08-07`
 - Star-target override verification date: `2026-08-06`
 - Runtime data: `optimizer-catalog.js` plus reviewed overrides in `optimizer-data.js`
 - Board model: 9 columns × 6 rows, all 54 cells active
-- Current board catalog: 956 items
-- Calculation-ready: 922 items
-- Review-required: 34 items — 32 Bags and 2 items with incomplete Star target wording
+- Current board catalog: 995 items
+- Calculation-ready: 960 items
+- Review-required: 35 items — 33 Bags and 2 items with incomplete Star target wording
 - Manually reviewed overrides: 15 representative fixtures plus 17 official Star-target restorations
 
-The official 6.0.1 patch notes establish the game version. The official item library currently provides 1,026 English records and their categories. Its 70 Boon and Past Boon records are excluded because they are not placed on the board, leaving 956 official board records. The official page now includes Skara; the 40-record Backpack Brawl Pro Skara query is retained as a cross-check and deduplicated by slug. The resulting current board catalog contains 956 unique ids.
+The official 7.2.0 patch notes establish the game version. The local snapshot holds 1,065 English records. Its 70 Boon and Past Boon records are excluded because they are not placed on the board, leaving 995 board records. Season 7 Boons are not in the snapshot yet because the patch notes do not publish them all. The official page now includes Skara; the 40-record Backpack Brawl Pro Skara query is retained as a cross-check and deduplicated by slug. The resulting current board catalog contains 995 unique ids.
 
 The official library does not expose cell-level layouts in its readable page data. Backpack Brawl Pro individual pages expose explicit `occupied` and `star` grid cells, type tags, item art, and effect text. `scripts/build-full-optimizer-catalog.mjs` reads those structured fields for every catalog item and downloads missing images locally.
 
@@ -37,7 +37,7 @@ Seventeen previously partial items now use Star target wording verified against 
 - `Weapon` is a normalized supertype on both `Melee` and `Ranged` weapons while the specific tags remain available.
 - A target covering multiple cells of one source group counts once (`unique-target`).
 - Different source instances and distinct extracted target groups count independently.
-- Runtime never calls external sites; all 956 item records and images are local.
+- Runtime never calls external sites; all 995 item records and images are local.
 
 ## Reports and rebuilds
 

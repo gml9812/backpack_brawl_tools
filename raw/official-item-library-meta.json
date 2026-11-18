@@ -4,6 +4,10 @@
   "fetchedAt": "2026-08-10T05:51:37.474Z",
   "lastModified": "Thu, 06 Aug 2026 10:46:41 GMT",
   "sha256": "dd2c00f17faf8cea22c7f239b451bb858f5933793828c34e8be60080b06da4b7",
-  "itemCount": 1026,
-  "boardItemCount": 956
+  "itemCount": 1065,
+  "boardItemCount": 995,
+  "patchedThroughVersion": "7.2.0",
+  "patchNotesThrough": "2026-10-30",
+  "patchedOn": "2026-11-18",
+  "patchSource": "https://www.backpackbrawl.com/patch-notes/"
 }

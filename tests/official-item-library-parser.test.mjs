@@ -7,8 +7,8 @@ import { htmlToText, validateOfficialItems } from '../scripts/official-item-libr
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const snapshot = JSON.parse(await fs.readFile(path.join(root, 'raw', 'official-item-library.json'), 'utf8'));
 const validation = validateOfficialItems(snapshot.items);
-assert.equal(validation.itemCount, 1026);
-assert.equal(validation.boardItemCount, 956);
+assert.equal(validation.itemCount, 1065);
+assert.equal(validation.boardItemCount, 995);
 assert.equal(new Set(snapshot.items.map((item) => item.id)).size, snapshot.items.length);
 
 const goldenSkull = snapshot.items.find((item) => item.id === 'golden-skull');

@@ -1,13 +1,13 @@
 {
   "schemaVersion": 2,
-  "generatedOn": "2026-08-10T05:56:41.509Z",
+  "generatedOn": "2026-11-18T06:08:35.811Z",
   "source": "https://www.backpackbrawl.com/items/",
   "sourceLastModified": "Thu, 06 Aug 2026 10:46:41 GMT",
-  "gameVersion": "6.0.1",
-  "itemCount": 956,
-  "selectableCount": 921,
+  "gameVersion": "7.2.0",
+  "itemCount": 995,
+  "selectableCount": 960,
   "partialCount": 35,
-  "withStars": 508,
+  "withStars": 540,
   "partialItems": [
     {
       "id": "armor-pack",
@@ -66,10 +66,6 @@
       "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {
-      "id": "dragonscale-cuirass",
-      "reason": "Official Star target wording could not be mapped safely."
-    },
-    {
       "id": "drift-net",
       "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
@@ -119,6 +115,10 @@
     },
     {
       "id": "shadow-satchel",
+      "reason": "Bag items are excluded from the fixed 9×6 board model."
+    },
+    {
+      "id": "sporeweaver-s-sac",
       "reason": "Bag items are excluded from the fixed 9×6 board model."
     },
     {

@@ -14,7 +14,7 @@ const diffPath = path.join(rawDirectory, 'official-item-library-diff.json');
 const offline = process.argv.includes('--offline');
 const force = process.argv.includes('--force');
 const verifiedOn = new Date().toISOString().slice(0, 10);
-const boardCategories = new Set(['shared-shop', 'shared-craftable', 'relics', 'buzz', 'celeste', 'chana', 'dorf', 'enoch', 'fern', 'harkon', 'hob-gang', 'kragg', 'morrow', 'nymphedora', 'pepper', 'ronan', 'sage', 'skara', 'tink', 'zahir']);
+const boardCategories = new Set(['shared-shop', 'shared-craftable', 'relics', 'buzz', 'celeste', 'chana', 'dorf', 'enoch', 'fern', 'harkon', 'hob-gang', 'kragg', 'morrow', 'mycella', 'nymphedora', 'pepper', 'ronan', 'sage', 'skara', 'tink', 'zahir']);
 
 async function readJson(file, fallback = null) {
   try { return JSON.parse(await fs.readFile(file, 'utf8')); } catch { return fallback; }
@@ -88,6 +88,8 @@ function inferGroups(record, knownTypes, knownNames) {
     const segment = tail.slice(0, Math.min(...[punctuation, action, 70].filter((value) => value >= 0))).trim();
     if (!segment) continue;
     if (/^items?\b/i.test(segment)) { conditions.set('any', { any: true, label: `Star ${segment}` }); continue; }
+    const namedItem = knownNames.find((candidate) => candidate.name.includes(' ') && new RegExp(`^${candidate.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}s?\\b`, 'i').test(segment));
+    if (namedItem) { conditions.set(`item:${namedItem.id}`, { anyItemIds: [namedItem.id], label: `Star ${segment}` }); continue; }
     const matchedTypes = knownTypes.filter((type) => new RegExp(`\\b${type.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}s?\\b`, 'i').test(segment));
     if (matchedTypes.length) {
       const uniqueTypes = [...new Set(matchedTypes)];

@@ -13,11 +13,11 @@ const data = global.BB_OPTIMIZER_DATA;
 const core = global.BBOptimizerCore;
 
 assert.equal(data.schemaVersion, 1);
-assert.equal(data.version, '6.0.1');
+assert.equal(data.version, '7.2.0');
 assert.match(data.verifiedOn, /^\d{4}-\d{2}-\d{2}$/);
 assert.deepEqual(data.board, { columns: 9, rows: 6 });
-assert.equal(data.items.length, 956, 'The current board-item catalog must be complete');
-assert.equal(data.catalog.selectable, 922);
+assert.equal(data.items.length, 995, 'The current board-item catalog must be complete');
+assert.equal(data.catalog.selectable, 960);
 assert.match(data.catalog.combatVerifiedOn, /^\d{4}-\d{2}-\d{2}$/);
 const woodenSword = data.items.find((item) => item.id === 'wooden-sword');
 assert.equal(woodenSword.combat.price, '3');
@@ -25,7 +25,7 @@ const woodenSwordDamage = woodenSword.combat.baseStats.find((stat) => stat.label
 assert.match(woodenSwordDamage.value, /^3.4$/);
 assert.ok(woodenSword.combat.baseStats.some((stat) => stat.label === 'Cooldown'));
 assert.equal(woodenSword.combat.levels.length, 0, 'Official Item Library does not publish level tables');
-assert.equal(data.catalog.reviewRequired, 34);
+assert.equal(data.catalog.reviewRequired, 35);
 assert.equal(new Set(data.items.map((item) => item.id)).size, data.items.length);
 const newlyPublishedItemIds = [
   'black-dragon-whelpling',
@@ -115,7 +115,7 @@ for (const [id, expectedTargets] of Object.entries(restoredStarTargets)) {
 
 const dragonscaleCuirass = data.items.find((item) => item.id === 'dragonscale-cuirass');
 assert.equal(dragonscaleCuirass.dataStatus, 'verified');
-assert.deepEqual(dragonscaleCuirass.starGroups.map((group) => group.target.anyTypes), [['Melee'], ['Melee', 'Pet', 'Ranged']]);
+assert.deepEqual(dragonscaleCuirass.starGroups.map((group) => group.target.any), [true]);
 
 const remainingUnmapped = data.items
   .filter((item) => /Star target wording could not be mapped safely\./.test(item.unsupportedReason || ''))
